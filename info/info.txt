@@ -1,0 +1,20 @@
+List of urls which search for "шарф труба" products:
+https://defua.com/?search=шарф+труба
+https://hitman.com.ua/index.php?route=product/search&search=шарф%20труба
+https://hofner.com.ua/index.php?route=product/search&search=шарф%20труба
+https://ibis.net.ua/ua/search/?searchstring=шарф+труба
+https://kamber.com.ua/katalog/search/?q=шарф+труба
+https://killa.com.ua/index.php?route=product/isearch&search=шарф%20труба
+...
+
+Products aggreagator (telegram bot) should take a product input, search through the list of websites for the product, and provide an output of price ranges and some other info about the product on the respective websites. It should not return a website if the product is not listed on it.
+
+NOTE: there are different separators between search query words: 'шарф+труба', 'шарф%20труба', etc. 
+NOTE: not all urls have '=' character before search query.
+
+Expected telegram bot output (prototype):
+шарф труба (2 websites)
++ Defua: 545грн - 1800грн, Colors: Grey, Black, Coyote, Link: https://defua.com/?search=шарф+труба
++ Hitman: 600грн - 1300грн, Colors: Black, Coyote, Link: https://hitman.com.ua/index.php?route=product/search&search=шарф%20труба
+
+The 'buy-mil-equipment.xlsx' file in 'data' folder stores lists of websites and some info about them. All new websites should be added to that file according to the style and format specified inside. The main script imports necessary data from the mentioned Excel file using Pandas module.
