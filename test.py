@@ -10,49 +10,66 @@ pd.options.display.max_colwidth=None
 
 excel_dir = os.path.join("data", "buy-mil-equipment.xlsx")
 
+# Read websites data from an Excel file
 websites_df = (
     pd.read_excel(
         excel_dir,
-        skiprows=3, 
-        usecols=["name","website_url","search_request_format","search_request_base","separator"],
+        sheet_name="main",
+        skiprows=7, 
+        usecols=[
+            "name",
+            "url_base",
+            "url_headers_placeholders",
+            "search_query_separator"
+            ],
         converters={
             "name": lambda x: str(x).strip(),
-            "website_url": lambda x: str(x).strip(),
-            "search_request_format": lambda x: str(x).strip(),
-            "search_request_base": lambda x: str(x).strip(),
-            "separator": lambda x: str(x).strip()
+            "url_base": lambda x: str(x).strip(),
+            "url_headers_placeholders": lambda x: str(x).strip(),
+            "search_query_separator": lambda x: str(x).strip()
             }
         )
     .dropna()
+    .replace("NONE", "")   # replace 'NONE' placeholder with empty string
     .reset_index(drop=True)
     )
 
-print(websites_df)
-#              name                    website_url                                                          search_request_format                                                search_request_base separator
-# 0           Ataka         https://attack.kiev.ua                             https://attack.kiev.ua/search/?search=шарф%20труба                             https://attack.kiev.ua/search/?search=       %20
-# 1          Abrams          https://abrams.com.ua                           https://abrams.com.ua/ua/search/?search=шарф%20труба                           https://abrams.com.ua/ua/search/?search=       %20
-# 2          Hitman       https://hitman.com.ua/ua       https://hitman.com.ua/index.php?route=product/search&search=шарф%20труба       https://hitman.com.ua/index.php?route=product/search&search=       %20
-# 3          Hofner          https://hofner.com.ua       https://hofner.com.ua/index.php?route=product/search&search=шарф%20труба       https://hofner.com.ua/index.php?route=product/search&search=       %20
-# 4            Ibis            https://ibis.net.ua                         https://ibis.net.ua/ua/search/?searchstring=шарф+труба                       https://ibis.net.ua/ua/search/?searchstring=         +
+# New column with concatenated base URL and the headers with placeholders
+websites_df = websites_df.assign(full_url_placeholders = websites_df["url_base"] + websites_df["url_headers_placeholders"])
+
+# print(websites_df)
+
+#                   name                         url_base                                     url_headers_placeholders search_query_separator                                                                 full_url_placeholders
+# 0                Ataka           https://attack.kiev.ua                           /search/page-{page}?search={query}                    %20                              https://attack.kiev.ua/search/page-{page}?search={query}
+# 1               Abrams            https://abrams.com.ua                       /ua/search/?search={query}&page={page}                    %20                           https://abrams.com.ua/ua/search/?search={query}&page={page}
+# 2               Hitman            https://hitman.com.ua                       /ua/search/?search={query}&page={page}                    %20                           https://hitman.com.ua/ua/search/?search={query}&page={page}
+# 3               Hofner            https://hofner.com.ua   /index.php?route=product/search&search={query}&page={page}                    %20       https://hofner.com.ua/index.php?route=product/search&search={query}&page={page}
+# 4                 Ibis              https://ibis.net.ua                 /ua/search/?searchstring={query}&page={page}                      +                       https://ibis.net.ua/ua/search/?searchstring={query}&page={page}
 # ...
+
+##########################################################################
+##########################################################################
+
+# TEMPORARY STATIC product to search for. This must be replaced with an input statement to allow the user to enter the product name
+product = "флісова шапка"
+# product = input("Enter a product to search: ")
+
+# TEMPORARY static page value
+page = 1
+
+for i, url in enumerate(websites_df["full_url_placeholders"]):
+    # Assign separator between words to a variable 
+    query = product.replace(" ", websites_df.loc[i,"search_query_separator"])
+    
+    if "strikeshop" in url:  # first page on this website is written as 'p-0' in the URL
+        print(url.format(page=page-1, query=query))
+    else:
+        print(url.format(page=page, query=query))
 
 sys.exit()
 
-
-# Define the base URL and search URL of the website
-base_url = "https://ibis.net.ua" 
-search_url = "https://ibis.net.ua/ua/search/?searchstring="
-
-# Define the product to search for. This can be replaced with an input statement to allow the user to enter the product name
-product = "Opinel"
-# product = input("Enter a product to search: ")
-
-# Replace spaces in the product name with '+' to format it for the search URL
-search_query = product.replace(" ", "+")
-
-# Combine the search URL and the formatted product name to create the full URL
-full_url = search_url + search_query
-print("\n", full_url)
+##########################################################################
+##########################################################################
 
 # Send a GET request to the website
 response = requests.get(full_url)
