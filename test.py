@@ -2,6 +2,8 @@ import requests
 import re
 import os
 import sys
+import time
+import random
 
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -51,20 +53,79 @@ websites_df = websites_df.assign(full_url_placeholders = websites_df["url_base"]
 ##########################################################################
 
 # TEMPORARY STATIC product to search for. This must be replaced with an input statement to allow the user to enter the product name
-product = "флісова шапка"
+product = "патч"
 # product = input("Enter a product to search: ")
 
-# TEMPORARY static page value
-page = 1
+# Configure the session and set user-agent header
+session = requests.Session()
 
-for i, url in enumerate(websites_df["full_url_placeholders"]):
-    # Assign separator between words to a variable 
-    query = product.replace(" ", websites_df.loc[i,"search_query_separator"])
-    
-    if "strikeshop" in url:  # first page on this website is written as 'p-0' in the URL
-        print(url.format(page=page-1, query=query))
-    else:
-        print(url.format(page=page, query=query))
+# List of user agents
+user_agents = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15",
+    "Mozilla/5.0 (Linux; Android 11; Pixel 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.1234.56 Mobile Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko"
+]
+
+for i, raw_url in enumerate(websites_df["full_url_placeholders"]):
+    # TEMPORARY static page value
+    page = 1
+    print(websites_df.loc[i,"name"])
+    # while True:
+    while i < 2:
+        # Assign separator between words to a variable 
+        query = product.replace(" ", websites_df.loc[i, "search_query_separator"])
+        
+        # Substitute placeholders on the current page URL
+        if "strikeshop" in raw_url:  # first page on this website is written as 'p-0' in the URL
+            url = raw_url.format(page=page-1, query=query)
+        else:
+            url = raw_url.format(page=page, query=query)
+            
+        # Randomly select a user agent
+        user_agent = random.choice(user_agents)
+        
+        # Set the user-agent header
+        headers = {"User-Agent": user_agent}
+        
+        # Send a GET request to the URL
+        response = requests.get(url, headers=headers)
+        
+        # Check if the page exists
+        if response.status_code == 200:
+            # Parse the content of the response with BeautifulSoup
+            soup = BeautifulSoup(response.content, "html.parser")
+
+            # Find all product containers on the page
+            product_containers = soup.find_all(class_="product-layout")
+
+            # Check if there are no product containers on the page
+            if not product_containers:
+                break
+
+            # Iterate through the product containers and print names and prices for available products
+            for product_container in product_containers:
+                product_name = product_container.find("h4").find("a").text
+                price = product_container.find(class_="price").text.strip()
+                availability_button = product_container.find("button", {"disabled": "disabled"})
+
+                if not availability_button:
+                    print()
+                    print("Product Name:", product_name)
+                    print("Price:", f"{int(re.findall(r'\d+', price)[0]):,.0f} грн.")
+                    print("Availability: Available")
+                    print()
+                
+            # Wait for a random sleep interval (1 to 3 seconds)
+            time.sleep(random.uniform(1, 3))
+            
+            # Move to the next page
+            page += 1
+        else:
+            # If the page doesn't exist, break the loop
+            break
+
 
 sys.exit()
 
