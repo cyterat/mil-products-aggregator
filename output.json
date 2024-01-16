@@ -1,0 +1,488 @@
+[
+  {
+    "website": "Ataka",
+    "price_uah_min": 200,
+    "price_uah_max": 720,
+    "products_qty": 68,
+    "social_network": "https://www.facebook.com/ATAKA.kiev.ua/",
+    "tel_vodafone": "+380955587673",
+    "tel_kyivstar": "+380679305772",
+    "details": [
+      {
+        "product": "А.Т.А.К.А. ПАТЧ DEADLY JUNGGLER OLV",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. ПАТЧ DEADLY JUNGGLER PINK",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. Пвх патч Night vision",
+        "price_uah": 250
+      },
+      {
+        "product": "А.Т.А.К.А. ПВХ ПАТЧ NIGHT VISION PINK/GOLD",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. ПВХ ПАТЧ NIGHT VISION UKRAINE EDITION",
+        "price_uah": 250
+      },
+      {
+        "product": "А.Т.А.К.А. ПВХ патч «Life» classic",
+        "price_uah": 250
+      },
+      {
+        "product": "А.Т.А.К.А. ПВХ ПАТЧ «LIFE» COYOTE",
+        "price_uah": 250
+      },
+      {
+        "product": "Патч CHIZAS BLACK А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч CHIZAS COYOTE А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч CHIZAS OLIVE А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "ПАТЧ CHIZAS PINK LIMITED А.Т.А.К.А. X SANCHI",
+        "price_uah": 400
+      },
+      {
+        "product": "ПАТЧ CHIZAS RED LIMITED А.Т.А.К.А. X SANCHI",
+        "price_uah": 400
+      },
+      {
+        "product": "ПАТЧ CHIZAS TIFFANY LIMITED А.Т.А.К.А. X SANCHI",
+        "price_uah": 400
+      },
+      {
+        "product": "ПАТЧ CHIZAS YELLOW LIMITED А.Т.А.К.А. X SANCHI",
+        "price_uah": 400
+      },
+      {
+        "product": "Патч SANCHI CHIZASTER GREEN",
+        "price_uah": 380
+      },
+      {
+        "product": "Патч SANCHI CHIZASTER RED",
+        "price_uah": 380
+      },
+      {
+        "product": "Патч SANCHIDOGSTER",
+        "price_uah": 380
+      },
+      {
+        "product": "ПАТЧ THE UKRAINE BRO COYOTE PVC",
+        "price_uah": 255
+      },
+      {
+        "product": "ПАТЧ THE UKRAINE BRO DESERT WOODLAND",
+        "price_uah": 350
+      },
+      {
+        "product": "Патч The Ukraine Bro STANDART PVC",
+        "price_uah": 255
+      },
+      {
+        "product": "Патч The Ukraine Bro UA PVC",
+        "price_uah": 255
+      },
+      {
+        "product": "ПАТЧ THE UKRAINE BRO WOODLAND",
+        "price_uah": 350
+      },
+      {
+        "product": "Патч WELCOME TO UKRAINE OLIVE",
+        "price_uah": 250
+      },
+      {
+        "product": "ПАТЧ WELCOME TO UKRAINE TIFFANY",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч «Don’t shoot» PVC",
+        "price_uah": 200
+      },
+      {
+        "product": "Патч «Only Kill» PVC",
+        "price_uah": 220
+      },
+      {
+        "product": "ПАТЧ БІЛЕТ DONBAS SHIT SHOW GREY А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "ПАТЧ БІЛЕТ DONBAS SHIT SHOW OLIVE А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "ПАТЧ БІЛЕТ DONBAS SHIT SHOW RED А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "ПАТЧ БІЛЕТ DONBAS SHIT SHOW UKR VERSION А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "ПАТЧ БІЛЕТ DONBAS SHIT SHOW WHITE/BLACK А.Т.А.К.А. X SANCHI",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч БОЙОВИЙ МАРІО",
+        "price_uah": 250
+      },
+      {
+        "product": "ПАТЧ БОЙОВИЙ МАРІО V2",
+        "price_uah": 250
+      },
+      {
+        "product": "Патч Молодість BLACK PVC",
+        "price_uah": 250
+      },
+      {
+        "product": "Патч Молодість OLIVE PVC",
+        "price_uah": 250
+      },
+      {
+        "product": "Патч Молодість PINK PVC",
+        "price_uah": 250
+      },
+      {
+        "product": "ПАТЧ МОЛОДІСТЬ TIFFANY PVC",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч Очі Тигра ",
+        "price_uah": 200
+      },
+      {
+        "product": "ПВХ ПАТЧ 'SanChi NIGHT KILLER'",
+        "price_uah": 420
+      },
+      {
+        "product": "ПВХ ПАТЧ 'SANCHIZASTER' ",
+        "price_uah": 370
+      },
+      {
+        "product": "ПВХ ПАТЧ VORTEX STANDART VERSION",
+        "price_uah": 350
+      },
+      {
+        "product": "Пвх патч Бойова качка |Виходець біолабораторій",
+        "price_uah": 250
+      },
+      {
+        "product": "ФІРМОВИЙ ПАТЧ А.Т.А.К.А. (МІНІ ЛОГО) TIFFANY EDITION",
+        "price_uah": 300
+      },
+      {
+        "product": "ФІРМОВИЙ ПАТЧ А.Т.А.К.А. (МІНІ ЛОГО) СТАНДАРТ",
+        "price_uah": 200
+      },
+      {
+        "product": "А.Т.А.К.А. Патч 'Evolution' Coyote",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. Патч 'Evolution' Grey ",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. Патч 'Evolution' RED",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. Патч 'Свобода це повний магазин' ",
+        "price_uah": 265
+      },
+      {
+        "product": "А.Т.А.К.А. Патч Freddy Krueger LIMITED",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. Патч Leatherface LIMITED",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. ПВХ Патч 'БЕМЧ' Чорний",
+        "price_uah": 200
+      },
+      {
+        "product": "А.Т.А.К.А. Пвх патч Akatsuki x Rocket",
+        "price_uah": 250
+      },
+      {
+        "product": "А.Т.А.К.А. Пвх ПАТЧ JOKER 3D",
+        "price_uah": 250
+      },
+      {
+        "product": "А.Т.А.К.А. Пвх патч Military Spartan",
+        "price_uah": 205
+      },
+      {
+        "product": "Панель для патчів світла 30х30 см",
+        "price_uah": 540
+      },
+      {
+        "product": "Патч BABY YODA PVC",
+        "price_uah": 205
+      },
+      {
+        "product": "ПАТЧ FUCK YOU PVC TIFFANY",
+        "price_uah": 300
+      },
+      {
+        "product": "ПАТЧ MONEY DEATH PVC PINK",
+        "price_uah": 300
+      },
+      {
+        "product": "ПАТЧ MONEY DEATH PVC TIFFANY",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч OPERATOR AS FUCK BLACK",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч OPERATOR AS FUCK COYOTE",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч OPERATOR AS FUCK OLIVE",
+        "price_uah": 300
+      },
+      {
+        "product": "Патч «Бойовий Барт» PVC",
+        "price_uah": 255
+      },
+      {
+        "product": "А.Т.А.К.А. Патч 'Evolution' Olive",
+        "price_uah": 300
+      },
+      {
+        "product": "А.Т.А.К.А. Пвх патч Кухар",
+        "price_uah": 210
+      },
+      {
+        "product": "ПАНЕЛЬ ДЛЯ ПАТЧІВ СВІТЛА 40Х40 СМ",
+        "price_uah": 720
+      },
+      {
+        "product": "А.Т.А.К.А. Пвх патч «Глок на борту» ",
+        "price_uah": 205
+      },
+      {
+        "product": "Фірмовий патч А.Т.А.К.А. (повний)",
+        "price_uah": 200
+      }
+    ]
+  },
+  {
+    "website": "Abrams",
+    "price_uah_min": 140,
+    "price_uah_max": 2200,
+    "products_qty": 48,
+    "social_network": "https://www.instagram.com/abrams_reserve/",
+    "tel_vodafone": "+380955216148",
+    "tel_kyivstar": "+380688736587",
+    "details": [
+      {
+        "product": "\nПатч Gear Lab Arrow Skull | Coyote/Black...",
+        "price_uah": 300
+      },
+      {
+        "product": "\nКилимок для патчів Abrams/Hoffmann Equipment 50x100 | Multicam ...",
+        "price_uah": 2200
+      },
+      {
+        "product": "\nПатч Hoffmann 'Just doing it'...",
+        "price_uah": 390
+      },
+      {
+        "product": "\nПатч Hoffmann 'Returned from hell'...",
+        "price_uah": 390
+      },
+      {
+        "product": "\nПатч Hoffmann 'It's my life, take it or leave it, set me free.'...",
+        "price_uah": 390
+      },
+      {
+        "product": "\nПатч Zero Foxtrot Get Stacked Patch...",
+        "price_uah": 410
+      },
+      {
+        "product": "\nПатч Hoffmann Браконьєри...",
+        "price_uah": 390
+      },
+      {
+        "product": "\nПатч Hoffmann & Abrams 'The Chariot'...",
+        "price_uah": 390
+      },
+      {
+        "product": "\nПатч Cavalry Group Кавалерія | Multicam Black...",
+        "price_uah": 350
+      },
+      {
+        "product": "\nПатч Cavalry Group Кавалерія | Multicam...",
+        "price_uah": 350
+      },
+      {
+        "product": "\nПатч Agilite Nylon Pachas Ising team...",
+        "price_uah": 300
+      },
+      {
+        "product": "\nПатч Cavalry Group Кавалерія | Green ...",
+        "price_uah": 350
+      },
+      {
+        "product": "\nПатч Cavalry Group Кавалерія | Black...",
+        "price_uah": 350
+      },
+      {
+        "product": "\nПатч Gear Lab Arrow Skull | Black/White/Red...",
+        "price_uah": 290
+      },
+      {
+        "product": "\nПатч Знімай стріляй Ar-15...",
+        "price_uah": 300
+      },
+      {
+        "product": "\nПатч 'Shoot Shoot' shaka...",
+        "price_uah": 300
+      },
+      {
+        "product": "\nПатч Shoot Shoot Ar-15...",
+        "price_uah": 300
+      },
+      {
+        "product": "\nПатч I Want To Believe | Red Logo...",
+        "price_uah": 339
+      },
+      {
+        "product": "\nПатч I Want To Believe | Blue Logo...",
+        "price_uah": 339
+      },
+      {
+        "product": "\nПатч I Want To Believe | Yellow Logo...",
+        "price_uah": 339
+      },
+      {
+        "product": "\nПатч Abrams 'Прапор пірата Емануеля Віна (Emanuel Wynne)'| Black...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Abrams 'Прапор пірата Річарда Ворлі (Richard Worley)'  | Black...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Abrams 'Прапор пірата Крістофера Муді (Christopher Moody)' | Red...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Abrams 'Прапор пірата Генрі Евері (Henry Every)'| Black...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Hoffmann PVS...",
+        "price_uah": 390
+      },
+      {
+        "product": "\nПатч Hoffmann Соняшник...",
+        "price_uah": 390
+      },
+      {
+        "product": "\nПатч Abrams 'Прапор пірата Томаса Тью (Thomas Tew)'' | Black...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Abrams 'Прапор пірата Едварда Інгленда (Edward England)'| Black...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Abrams 'Прапор пірата Волтера Кенеді (Walter Kennedy)'| Black...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Abrams  'Прапор пірата Стіда Боннета (Stede Bonnet)'| Black...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч Balls Of Steel By Ruslan David Never Give Up...",
+        "price_uah": 400
+      },
+      {
+        "product": "\nПатч US Army ISAF Patch International Security Assistance Force | Multicam...",
+        "price_uah": 250
+      },
+      {
+        "product": "\nПатч Black Helps...",
+        "price_uah": 250
+      },
+      {
+        "product": "\nПатч Gear Lab Arrow Skull | Multicam/Black/Red...",
+        "price_uah": 310
+      },
+      {
+        "product": "\nПатч Gear Lab Arrow Skull | Black/White...",
+        "price_uah": 290
+      },
+      {
+        "product": "\nПатч Zero Foxtrot Bushido Patch...",
+        "price_uah": 620
+      },
+      {
+        "product": "\nПатч Zero Foxtrot Spoils of War Patch...",
+        "price_uah": 620
+      },
+      {
+        "product": "\nПатч Zero Foxtrot Ukraine Stay Zero Patch...",
+        "price_uah": 460
+      },
+      {
+        "product": "\nПатч Gear Lab Fuck This Shit | Black/White/Red...",
+        "price_uah": 290
+      },
+      {
+        "product": "\nПатч Gear Lab No Mercy | Black/Red...",
+        "price_uah": 290
+      },
+      {
+        "product": "\nПатч Прапор 3x4 | Blue/Yellow...",
+        "price_uah": 140
+      },
+      {
+        "product": "\nПатч SquallGear Прапор + Герб | Red/Black...",
+        "price_uah": 190
+      },
+      {
+        "product": "\nПатч SquallGear Прапор + Герб | Blue/Yellow...",
+        "price_uah": 190
+      },
+      {
+        "product": "\nПатч SquallGear Прапор + Герб | Multicam...",
+        "price_uah": 190
+      },
+      {
+        "product": "\nПатч SquallGear Тризуб ЗСУ | Multicam...",
+        "price_uah": 210
+      },
+      {
+        "product": "\nПатч SquallGear Збройні сили України | Multicam...",
+        "price_uah": 170
+      },
+      {
+        "product": "\nПатч Abrams (Squallgear) | Multicam...",
+        "price_uah": 180
+      },
+      {
+        "product": "\nПатч Gear Lab Fuck This Shit | Multicam/Red...",
+        "price_uah": 310
+      }
+    ]
+  }
+]
