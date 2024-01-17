@@ -1,4 +1,5 @@
 import json
+import re
 from websitescraper import WebsiteScraper
 
 def aggregate_data(websites, product_name, include_details=True):
@@ -87,11 +88,13 @@ websites = [
     ]
 
 # Dummy product name
-product_name = "флісова шапка"
+product_name = "ФЛісова    шапКа"
 
+# Replace multiple consecutive whitespaces with a single one
+fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
 
 # Aggregate data and write to JSON file
-result = aggregate_data(websites, product_name, include_details=False)
+result = aggregate_data(websites, fmt_product_name, include_details=False)
 output_file_path = 'output.json'
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
     json.dump(result, output_file, indent=2, ensure_ascii=False)
