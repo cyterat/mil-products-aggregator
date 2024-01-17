@@ -53,9 +53,6 @@ class WebsiteScraper:
         Returns:
         - str, the constructed URL
         """
-        # Replace multiple consecutive whitespaces with a single whitespace
-        query = re.sub(r'\s+', ' ', query)
-        
         return self.base_url.format(page=page, query=query)
 
     def fetch_data(self, url):
