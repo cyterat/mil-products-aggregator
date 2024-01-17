@@ -1,13 +1,14 @@
 import json
 from websitescraper import WebsiteScraper
 
-def aggregate_data(websites, product_name):
+def aggregate_data(websites, product_name, include_details=True):
     """
     Aggregate data from multiple websites based on a given product.
 
     Parameters:
     - websites: list of WebsiteScraper objects, websites to scrape data from
     - product_name: str, the product to search for
+    - include_details: bool, whether to include details in the output (default is True)
 
     Returns:
     - list of dictionaries, aggregated data for each website
@@ -25,7 +26,7 @@ def aggregate_data(websites, product_name):
             price_uah_max = max(prices)
             products_qty = len(products)
 
-            # Create a dictionary representing the website's data
+            # Create the website's data dictionary without details if include_details is False
             website_data = {
                 "website": website.name,
                 "price_uah_min": price_uah_min,
@@ -33,9 +34,18 @@ def aggregate_data(websites, product_name):
                 "products_qty": products_qty,
                 "social_network": website.social_network,
                 "tel_vodafone": website.tel_vodafone,
-                "tel_kyivstar": website.tel_kyivstar,
-                "details": [{"product": product.name, "price_uah": int(product.price.split(' ')[0].replace(',', ''))} for product in products]
+                "tel_kyivstar": website.tel_kyivstar
             }
+
+            if include_details:
+                # Include details only if include_details is True
+                website_data["details"] = [
+                    {
+                        "product": product.name,
+                        "price_uah": int(product.price.split(' ')[0].replace(',', ''))
+                    }
+                    for product in products
+                ]
 
             # Append the website's data to the aggregated data list
             aggregated_data.append(website_data)
@@ -77,10 +87,11 @@ websites = [
     ]
 
 # Dummy product name
-product_name = "патч"
+product_name = "флісова шапка"
+
 
 # Aggregate data and write to JSON file
-result = aggregate_data(websites, product_name)
+result = aggregate_data(websites, product_name, include_details=False)
 output_file_path = 'output.json'
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
     json.dump(result, output_file, indent=2, ensure_ascii=False)
