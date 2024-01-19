@@ -1,11 +1,101 @@
 [
   {
-    "website": "Ataka",
-    "price_uah_min": 160,
-    "price_uah_max": 300,
-    "products_qty": 3,
-    "social_network": "https://www.facebook.com/ATAKA.kiev.ua/",
-    "tel_vodafone": "+380955587673",
-    "tel_kyivstar": "+380679305772"
+    "website": "Ibis",
+    "price_uah_min": 284,
+    "price_uah_max": 2020,
+    "products_qty": 22,
+    "social_network": "https://www.instagram.com/ibis_shooting/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "",
+    "details": [
+      {
+        "product": "Шапка Singing Rock Hat Let`S Rock. Green",
+        "price_uah": 357
+      },
+      {
+        "product": "Шапка дитяча Seeland Conley fleece. Розмір - 8/10. Колір - Fluorescent Orange.",
+        "price_uah": 563
+      },
+      {
+        "product": "Шапка дитяча Seeland Conley fleece. Розмір - 4/6. Колір - Olive.",
+        "price_uah": 563
+      },
+      {
+        "product": "Шапка дитяча Seeland Conley fleece. Розмір - 8/10. Колір - Olive.",
+        "price_uah": 563
+      },
+      {
+        "product": "Шапка дитяча Seeland Conley fleece. Розмір - 4/6. Колір - Fluorescent Orange.",
+        "price_uah": 563
+      },
+      {
+        "product": "Шапка Buff Tech Fleece ц:чорний",
+        "price_uah": 835
+      },
+      {
+        "product": "Шапка Montane Logo Beanie к:eclipse blue",
+        "price_uah": 1478
+      },
+      {
+        "product": "Шапка Skif Tac Гемба One size Зелений",
+        "price_uah": 320
+      },
+      {
+        "product": "Шапка Norfin GY L ц:сірий",
+        "price_uah": 364
+      },
+      {
+        "product": "Шапка Buff Windproof Tech Fleece ц:синій/чорний",
+        "price_uah": 1470
+      },
+      {
+        "product": "Шапка Montane Logo Beanie к:black",
+        "price_uah": 1478
+      },
+      {
+        "product": "Шапка Montane Logo Beanie к:oak green",
+        "price_uah": 1478
+      },
+      {
+        "product": "Шапка Skif Tac Говерла One size Хакі",
+        "price_uah": 284
+      },
+      {
+        "product": "Шапка Blaser Active Outfits Pearl Beanie. One size. Темно-зелений",
+        "price_uah": 2020
+      },
+      {
+        "product": "Шапка Blaser Active Outfits Pearl Beanie One size",
+        "price_uah": 2020
+      },
+      {
+        "product": "Шапка Skif Tac Брескул One size Хакі",
+        "price_uah": 284
+      },
+      {
+        "product": "Шапка Skif Tac Гемба One size Хакі",
+        "price_uah": 320
+      },
+      {
+        "product": "Шапка Riserva R 1526 One size",
+        "price_uah": 1310
+      },
+      {
+        "product": "Шапка Norfin GY XL ц:сірий",
+        "price_uah": 364
+      },
+      {
+        "product": "Шапка Turbat Oryx. M. Burgundy",
+        "price_uah": 425
+      },
+      {
+        "product": "Шапка Turbat Oryx. M. Blue",
+        "price_uah": 425
+      },
+      {
+        "product": "Шапка Turbat Oryx. L. Burgundy",
+        "price_uah": 425
+      }
+    ]
   }
 ]

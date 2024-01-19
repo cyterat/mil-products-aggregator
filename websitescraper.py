@@ -4,6 +4,7 @@ import re
 import time
 import random
 
+
 class Product:
     def __init__(self, name, price, stock_status):
         """
@@ -17,6 +18,7 @@ class Product:
         self.name = name
         self.price = price
         self.stock_status = stock_status
+
 
 class WebsiteScraper:
     def __init__(self, name, base_url, search_query_separator, product_container_class, extract_info_functions, social_network, tel_vodafone, tel_kyivstar):
@@ -42,6 +44,7 @@ class WebsiteScraper:
         self.tel_vodafone = tel_vodafone
         self.tel_kyivstar = tel_kyivstar
 
+
     def build_url(self, page, query):
         """
         Build the complete URL with placeholders replaced.
@@ -54,6 +57,7 @@ class WebsiteScraper:
         - str, the constructed URL
         """
         return self.base_url.format(page=page, query=query)
+
 
     def fetch_data(self, url):
         """
@@ -85,6 +89,7 @@ class WebsiteScraper:
             print(f"Received an unexpected status code: {response.status_code}")
             return None
 
+
     def parse_html(self, content):
         """
         Parse the HTML content using BeautifulSoup.
@@ -97,9 +102,10 @@ class WebsiteScraper:
         """
         return BeautifulSoup(content, "html.parser")
 
+
     def extract_information(self, soup):
         """
-        Extract product information from the parsed HTML.
+        Extracts product information from the parsed HTML.
 
         Parameters:
         - soup: BeautifulSoup object, the parsed HTML
@@ -107,19 +113,46 @@ class WebsiteScraper:
         Returns:
         - list of Product objects, the extracted product information
         """
+        # Find all HTML elements with the specified product container class
         product_containers = soup.find_all(class_=self.product_container_class)
         products = []
+
+        # Iterate through each product container
         for product_container in product_containers:
-            product_info = self.extract_info_functions(product_container)
-            if product_info and product_info['stock_status']:
-                # Replace double quotes with single quotes in the product name
-                product_name = product_info['name'].replace('"', "'")
-                products.append(Product(
-                    name=product_name,
-                    price=f"{int(re.findall(r'\d+', product_info['price'])[0]):,.0f} грн.",
-                    stock_status=True
-                ))
+            try:
+                # Extract product information using the specified extraction functions
+                product_info = self.extract_info_functions(product_container)
+                
+                # Check if product_info is not None and the product is in stock
+                if product_info is not None and product_info.get('stock_status', False):
+                    # Check if 'name' and 'price' are present in product_info
+                    if 'name' in product_info and 'price' in product_info:
+                        # Replace double quotes with single quotes in the product name
+                        product_name = product_info['name'].replace('"', "'")
+
+                        # Append a Product object to the list of products
+                        products.append(Product(
+                            name=product_name,
+                            # price=int(product_info['price']),
+                            price=product_info['price'],
+                            stock_status=True
+                        ))
+
+            except AttributeError:
+                # Ignore error related to scraping empty pages on some websites
+                pass
+            
+            except Exception as e:
+                # Display other errors
+                print(f"Error extracting information: {e}")
+
+        # Print a message if no products were found on the page
+        if not products:
+            print("No products found on this page.")
+
+        print("Finished extraction.")
         return products
+
 
     def scrape(self, product):
         """
@@ -131,33 +164,54 @@ class WebsiteScraper:
         Returns:
         - list of Product objects, the aggregated product information
         """
+        # Initialize variables
         page = 1
         aggregated_products = []
+
+        # Infinite loop to iterate over pages
         while True:
+            # Format the product name for the URL query
             query = product.replace(" ", self.search_query_separator)
+            
+            # Build the URL for the current page and query
             url = self.build_url(page, query)
+            
+            # Fetch HTML content from the URL
             content = self.fetch_data(url)
 
-            if not content:
+            # Check if content is empty or None
+            if not content or content is None:
                 print(f"No content received from {url}")
                 break
 
+            # Parse HTML content using BeautifulSoup
             soup = self.parse_html(content)
             print(f"Scraping data from {url}...")
 
-            products_on_page = self.extract_information(soup)
+            try:
+                # Extract product information from the parsed HTML
+                products_on_page = self.extract_information(soup)
+                
+                # Check if no products were found on the current page
+                if not products_on_page:
+                    break
 
-            if not products_on_page:
-                print(f"No products found on this page.")
-                break
+            except Exception as e:
+                # Handle any errors that occur during information extraction
+                print(f"Error extracting information: {e}")
 
-            aggregated_products.extend(products_on_page)
-            
-            # Add a random sleep between 1 and 3 seconds
+            else:
+                # Extend the list of aggregated products with products from the current page
+                aggregated_products.extend(products_on_page)
+
+            # Add a random sleep between 1 and 3 seconds to simulate human-like behavior
             sleep_duration = random.uniform(1, 3)
-            print(f"Sleeping for {sleep_duration:.2f} seconds...")
+            print(f"Sleeping for {sleep_duration:.2f} seconds...\n")
             time.sleep(sleep_duration)
-            
+
+            # Move to the next page
             page += 1
 
+        # Print the total number of products scraped
+        print(f"Scraped {len(aggregated_products)} products.")
         return aggregated_products
