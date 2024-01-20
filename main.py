@@ -192,9 +192,18 @@ fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
 # Aggregate data and write to JSON file
 result = aggregate_data(websites, fmt_product_name, include_details=True)
 
+# Sorting the list of dictionaries based on 'price_uah_min'
+sorted_result = sorted(result, key=lambda x: x['price_uah_min'], reverse=False)  # Set reverse=True for descending order
+
+# Sorting the 'details' list within each dictionary based on 'price_uah'
+for entry in sorted_result:
+    entry['details'] = sorted(entry['details'], key=lambda x: x['price_uah'], reverse=False)  # Set reverse=True for descending order
+
+# Create path
 output_file_path = os.path.join(os.getcwd(),"data","output.json")
 
+# Write to JSON file
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
-    json.dump(result, output_file, indent=2, ensure_ascii=False)
+    json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
 
 print(f"Data written to {output_file_path}")

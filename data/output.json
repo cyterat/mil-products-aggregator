@@ -1,28 +1,5 @@
 [
   {
-    "website": "Ataka",
-    "price_uah_min": 4000,
-    "price_uah_max": 7000,
-    "products_qty": 3,
-    "social_network": "https://www.facebook.com/ATAKA.kiev.ua/",
-    "tel_vodafone": "+380955587673",
-    "tel_kyivstar": "+380679305772",
-    "details": [
-      {
-        "product": "Крук довга цівка M-Lok 1U004 CERAKOTE ARMOR BLACK",
-        "price_uah": 7000
-      },
-      {
-        "product": "Крук довга цівка M-Lok на АКСУ із коротким верхнім містком Armor Black",
-        "price_uah": 4000
-      },
-      {
-        "product": "Крук середня цівка M-Lok Чорна",
-        "price_uah": 6135
-      }
-    ]
-  },
-  {
     "website": "Ibis",
     "price_uah_min": 504,
     "price_uah_max": 109220,
@@ -32,344 +9,12 @@
     "tel_kyivstar": "",
     "details": [
       {
-        "product": "Цівка МЕ середня для Сайги (мисл. версія). M-LOCK. к:чорний",
-        "price_uah": 5550
+        "product": "Чохол Алебарда захисний для цівки pencott",
+        "price_uah": 504
       },
       {
-        "product": "Цівка FAB Defense полімерна для Сайги. Колір - оливковий",
-        "price_uah": 2750
-      },
-      {
-        "product": "Цівка FAB Defense MP5 RS для MP5",
-        "price_uah": 7260
-      },
-      {
-        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги чорне",
-        "price_uah": 3200
-      },
-      {
-        "product": "Консольна цівка ODIN O2 Lite для AR15 Довжина - 9,5’’",
-        "price_uah": 11760
-      },
-      {
-        "product": "Цівка Magpul MOE AK Hand Guard для Сайги. BLK",
-        "price_uah": 2920
-      },
-      {
-        "product": "Цівка GEISSELE Super Modular Rail MK4 M-LOK 9.5'",
-        "price_uah": 17800
-      },
-      {
-        "product": "Цівка BCM KMR *ALPHA* 15' KeyMod колір: чорний",
-        "price_uah": 14440
-      },
-      {
-        "product": "Цівка MDT для ESS Full Rail 18' FDE",
-        "price_uah": 13040
-      },
-      {
-        "product": "Цівка з планками Picatinny для Walther Colt M16 кал. 22 LR. Довга",
-        "price_uah": 7570
-      },
-      {
-        "product": "Консольна цівка JP Enterprises MK III Modular Hand Guard XХL для карабінів на базі AR-10 Довжина - 17.25'",
-        "price_uah": 17280
-      },
-      {
-        "product": "Консольна цівка JP Enterprises MK III Modular Hand Guard XХL для карабінів на базі AR-15 Довжина - 17.25'",
-        "price_uah": 20000
-      },
-      {
-        "product": "Цівка Cadex Defence для карабіна H&K MP5/T94",
-        "price_uah": 18080
-      },
-      {
-        "product": "Цівка CAA алюмининй для AR15 6 планок Пікатінні",
-        "price_uah": 21720
-      },
-      {
-        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. BLK",
-        "price_uah": 7000
-      },
-      {
-        "product": "Цівка CAA для AR15 з планками Пікатінні",
-        "price_uah": 5120
-      },
-      {
-        "product": "Цівка Lancer LCH5 Carbon Fiber для AR15 довжина 8'",
-        "price_uah": 15200
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Сайги (мисл. верс.) Колір - олива",
-        "price_uah": 1680
-      },
-      {
-        "product": "Цівка FAB Defense PR для Remington 870",
-        "price_uah": 2370
-      },
-      {
-        "product": "Цівка МЕ довга для Сайги (мисл. версія) к:чорний",
-        "price_uah": 6000
-      },
-      {
-        "product": "Цівка FAB Defense полімерна для Сайги. Колір - пісочний",
-        "price_uah": 2750
-      },
-      {
-        "product": "Цівка модульна Cadex Defence для рушниці Remington 870",
-        "price_uah": 18200
-      },
-      {
-        "product": "Цівка Fabarm для рушниці XLR5",
-        "price_uah": 6450
-      },
-      {
-        "product": "Цівка Blaser R8 Ultimate Elastomer SW/Match",
-        "price_uah": 22790
-      },
-      {
-        "product": "Цівка MDT для ESS Full Rail 18' Black",
-        "price_uah": 12600
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - чорний",
-        "price_uah": 1160
-      },
-      {
-        "product": "Цівка CAA для AR15 на 6 планок",
-        "price_uah": 19600
-      },
-      {
-        "product": "Цівка Forest XT/ Synchro/Hardwood для карабіна Sauer S 303. Матеріал - пластик. Колір - зелений.",
-        "price_uah": 13550
-      },
-      {
-        "product": "Цівка МЕ тактична для Сайги (мисл. версія). M-LOK. к:чорний",
-        "price_uah": 5000
-      },
-      {
-        "product": "Цівка Blaser R8 Ultimate Lether",
-        "price_uah": 27090
-      },
-      {
-        "product": "Цівка Blaser R8 Ultimate Elastomer",
-        "price_uah": 22790
-      },
-      {
-        "product": "Цівка ATI для АК",
-        "price_uah": 2000
-      },
-      {
-        "product": "Цівка BCM MCMR-9 (M-LOK Compatible Modular Rail) Black",
-        "price_uah": 14120
-      },
-      {
-        "product": "Цівка BCM MCMR-15 (M-LOK® Compatible* Modular Rail)",
-        "price_uah": 14800
-      },
-      {
-        "product": "Цівка FAB Defense NFR Carbine для AR15. Black",
-        "price_uah": 6020
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD AR15 M-LOK. Колір - чорний",
-        "price_uah": 1630
-      },
-      {
-        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. Black",
-        "price_uah": 2360
-      },
-      {
-        "product": "Цівка TROY AK47 Long. 13.5”. M-LOK",
-        "price_uah": 14400
-      },
-      {
-        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. FDE",
-        "price_uah": 7600
-      },
-      {
-        "product": "Цівка FAB Defense полімерна для Сайги. Black",
-        "price_uah": 2750
-      },
-      {
-        "product": "Цівка Magpul MOE SL для AR15/M4",
-        "price_uah": 2680
-      },
-      {
-        "product": "Цівка FAB Defense NFR Rifle для AR15. Black",
-        "price_uah": 9680
-      },
-      {
-        "product": "Цівка TROY AK47 Short. 10”. M-LOK",
-        "price_uah": 13560
-      },
-      {
-        "product": "Цівка FAB Defense VFR для вивіш. ствола M4/M16/AR15. Матеріал - алюміній. Колір - чорний",
-        "price_uah": 12260
-      },
-      {
-        "product": "Цівка з планками Picatinny для Walther Colt M4 кал. 22 LR. Коротка",
-        "price_uah": 6150
-      },
-      {
-        "product": "Цівка Magpul SL для MP5 M-LOK",
-        "price_uah": 3680
-      },
-      {
-        "product": "Цівка Leapers UTG PRO Ultra Slim15' для AR15. M-LOK. Black/Blue",
-        "price_uah": 10520
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Сайги (мисл. верс.) Колір - чорний",
-        "price_uah": 1680
-      },
-      {
-        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги пісочне",
-        "price_uah": 3200
-      },
-      {
-        "product": "Цівка MKE для Т41. Профіль - Picatinny",
-        "price_uah": 26160
-      },
-      {
-        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. FDE",
-        "price_uah": 2360
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - пісочний",
-        "price_uah": 1160
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Сайги (мисл. верс.) Колір - пісочний",
-        "price_uah": 1680
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD AR15 M-LOK. Колір - олива",
-        "price_uah": 1630
-      },
-      {
-        "product": "Консольна цівка ODIN O2 Lite для AR-10 Довжина - 17,5’’",
-        "price_uah": 10000
-      },
-      {
-        "product": "Цівка Magpul SGA Rem870 - сіра",
-        "price_uah": 2320
-      },
-      {
-        "product": "Цівка MDT для ESS No Rail 15' Black",
-        "price_uah": 9440
-      },
-      {
-        "product": "Цівка Leapers UTG PRO Ultra Slim15' для AR15. M-LOK. Black/Red",
-        "price_uah": 10920
-      },
-      {
-        "product": "Цівка Leapers UTG PRO Super Slim для Сайги. M-LOK. Black",
-        "price_uah": 8960
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Mossberg 500/590. Колір - пісочний",
-        "price_uah": 1160
-      },
-      {
-        "product": "Цівка Kriss Vector MK5 Modular Rail. Колір - чорний",
-        "price_uah": 5880
-      },
-      {
-        "product": "Цівка Leapers UTG для Remington 870",
-        "price_uah": 1840
-      },
-      {
-        "product": "Цівка Magpul AK Hand Guard для Сайги. FDE",
-        "price_uah": 2920
-      },
-      {
-        "product": "Цівка FAB Defense PR для Remington 870",
-        "price_uah": 2370
-      },
-      {
-        "product": "Цівка MKE для Т43. Профіль - Picatinny",
-        "price_uah": 26160
-      },
-      {
-        "product": "Цівка CAA HX3K для MP5K",
-        "price_uah": 5720
-      },
-      {
-        "product": "Цівка модульна Cadex Defence 870 MCS Modular Fore-end Pump Guard для рушниці Remington 870",
-        "price_uah": 16400
-      },
-      {
-        "product": "Цівка Classic XT для карабіна Sauer S 303. Матеріал - пластик. Колір - коричневий.",
-        "price_uah": 13290
-      },
-      {
-        "product": "Цівка ERGO MAX для карабіна Sauer 404. Матеріал - пластик",
-        "price_uah": 18400
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - олива",
-        "price_uah": 1160
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Mossberg 500/590. Колір - олива",
-        "price_uah": 1160
-      },
-      {
-        "product": "Цівка FAB Defense VFR-SVD для СВД/Тигр",
-        "price_uah": 9290
-      },
-      {
-        "product": "Цівка Magpul SGA Rem870 - FDE",
-        "price_uah": 2320
-      },
-      {
-        "product": "Комплект Hogue OverMolded (приклад + цівка) для Remington 870 кал. 20. Колір - чорний",
-        "price_uah": 2880
-      },
-      {
-        "product": "Приклад і цівка Classic Team Sauer для карабіна Sauer S 303. Матеріал - горіх.",
-        "price_uah": 24550
-      },
-      {
-        "product": "Приклад і цівка для карабіна Blaser R93. Горіх 8-ї категорії якості.",
-        "price_uah": 109220
-      },
-      {
-        "product": "Приклад і цівка для карабіна Blaser R93. Горіх 5-ї категорії якості.",
-        "price_uah": 53320
-      },
-      {
-        "product": "Приклад і цівка Classic Team Sauer для карабіна Sauer S 303. Матеріал - горіх.",
-        "price_uah": 34830
-      },
-      {
-        "product": "Приклад і цівка Classic Bavarian для карабіна Sauer S 303. Матеріал - горіх.",
-        "price_uah": 28040
-      },
-      {
-        "product": "Приклад і цівка Synchro XT для карабіна Sauer S 303. Матеріал - пластик",
-        "price_uah": 82560
-      },
-      {
-        "product": "Приклад і цівка для карабіна Merkel RX.HELIX. Матеріал - пластик. Колір - чорний.",
-        "price_uah": 29110
-      },
-      {
-        "product": "Упор Leapers UTG Angled Mount на цівка. M-LOK. Black",
-        "price_uah": 2360
-      },
-      {
-        "product": "Приклад і цівка Classic для карабіна Sauer S 303",
-        "price_uah": 34830
-      },
-      {
-        "product": "Приклад і цівка ShurShot Stock для рушниці Remington 870. Матеріал - пластик. Колір - чорний.",
-        "price_uah": 4000
-      },
-      {
-        "product": "Упор Magpul M-LOK Hand Stop Kit передній на цівку - FDE",
-        "price_uah": 1920
+        "product": "Чохол Алебарда захист для цівки ALB06 мультикам",
+        "price_uah": 675
       },
       {
         "product": "Накладка BCM захисна 5.5' на цівку KeyMod (5 шт. в уп.) колір: пісочний",
@@ -384,36 +29,368 @@
         "price_uah": 720
       },
       {
-        "product": "Накладка BCM захисна 5.5' на цівку KeyMod (5 шт. в уп.) колір: чорний",
-        "price_uah": 740
-      },
-      {
-        "product": "Інструмент Real Avid AR-15 для цівки",
-        "price_uah": 1240
-      },
-      {
         "product": "Накладка BCM захисна 5.5' на цівку KeyMod (5 шт. в уп.) колір: олива",
         "price_uah": 720
       },
       {
-        "product": "База QD-антабки JP Enterprises на цівку",
-        "price_uah": 2920
-      },
-      {
-        "product": "Чохол Алебарда захисний для цівки pencott",
-        "price_uah": 504
+        "product": "Накладка BCM захисна 5.5' на цівку KeyMod (5 шт. в уп.) колір: чорний",
+        "price_uah": 740
       },
       {
         "product": "Адаптер GrovTec для кріплення QD антабка на цівку AR",
         "price_uah": 960
       },
       {
-        "product": "Чохол Алебарда захист для цівки ALB06 мультикам",
-        "price_uah": 675
+        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - чорний",
+        "price_uah": 1160
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - пісочний",
+        "price_uah": 1160
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD для Mossberg 500/590. Колір - пісочний",
+        "price_uah": 1160
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - олива",
+        "price_uah": 1160
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD для Mossberg 500/590. Колір - олива",
+        "price_uah": 1160
+      },
+      {
+        "product": "Інструмент Real Avid AR-15 для цівки",
+        "price_uah": 1240
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD AR15 M-LOK. Колір - чорний",
+        "price_uah": 1630
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD AR15 M-LOK. Колір - олива",
+        "price_uah": 1630
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD для Сайги (мисл. верс.) Колір - олива",
+        "price_uah": 1680
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD для Сайги (мисл. верс.) Колір - чорний",
+        "price_uah": 1680
+      },
+      {
+        "product": "Цівка FAB Defense VANGUARD для Сайги (мисл. верс.) Колір - пісочний",
+        "price_uah": 1680
+      },
+      {
+        "product": "Цівка Leapers UTG для Remington 870",
+        "price_uah": 1840
+      },
+      {
+        "product": "Упор Magpul M-LOK Hand Stop Kit передній на цівку - FDE",
+        "price_uah": 1920
+      },
+      {
+        "product": "Цівка ATI для АК",
+        "price_uah": 2000
+      },
+      {
+        "product": "Цівка Magpul SGA Rem870 - сіра",
+        "price_uah": 2320
+      },
+      {
+        "product": "Цівка Magpul SGA Rem870 - FDE",
+        "price_uah": 2320
+      },
+      {
+        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. Black",
+        "price_uah": 2360
+      },
+      {
+        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. FDE",
+        "price_uah": 2360
+      },
+      {
+        "product": "Упор Leapers UTG Angled Mount на цівка. M-LOK. Black",
+        "price_uah": 2360
+      },
+      {
+        "product": "Цівка FAB Defense PR для Remington 870",
+        "price_uah": 2370
+      },
+      {
+        "product": "Цівка FAB Defense PR для Remington 870",
+        "price_uah": 2370
+      },
+      {
+        "product": "Цівка Magpul MOE SL для AR15/M4",
+        "price_uah": 2680
+      },
+      {
+        "product": "Цівка FAB Defense полімерна для Сайги. Колір - оливковий",
+        "price_uah": 2750
+      },
+      {
+        "product": "Цівка FAB Defense полімерна для Сайги. Колір - пісочний",
+        "price_uah": 2750
+      },
+      {
+        "product": "Цівка FAB Defense полімерна для Сайги. Black",
+        "price_uah": 2750
+      },
+      {
+        "product": "Комплект Hogue OverMolded (приклад + цівка) для Remington 870 кал. 20. Колір - чорний",
+        "price_uah": 2880
+      },
+      {
+        "product": "Цівка Magpul MOE AK Hand Guard для Сайги. BLK",
+        "price_uah": 2920
+      },
+      {
+        "product": "Цівка Magpul AK Hand Guard для Сайги. FDE",
+        "price_uah": 2920
+      },
+      {
+        "product": "База QD-антабки JP Enterprises на цівку",
+        "price_uah": 2920
+      },
+      {
+        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги чорне",
+        "price_uah": 3200
+      },
+      {
+        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги пісочне",
+        "price_uah": 3200
+      },
+      {
+        "product": "Цівка Magpul SL для MP5 M-LOK",
+        "price_uah": 3680
+      },
+      {
+        "product": "Приклад і цівка ShurShot Stock для рушниці Remington 870. Матеріал - пластик. Колір - чорний.",
+        "price_uah": 4000
+      },
+      {
+        "product": "Цівка МЕ тактична для Сайги (мисл. версія). M-LOK. к:чорний",
+        "price_uah": 5000
+      },
+      {
+        "product": "Цівка CAA для AR15 з планками Пікатінні",
+        "price_uah": 5120
+      },
+      {
+        "product": "Цівка МЕ середня для Сайги (мисл. версія). M-LOCK. к:чорний",
+        "price_uah": 5550
+      },
+      {
+        "product": "Цівка CAA HX3K для MP5K",
+        "price_uah": 5720
+      },
+      {
+        "product": "Цівка Kriss Vector MK5 Modular Rail. Колір - чорний",
+        "price_uah": 5880
+      },
+      {
+        "product": "Цівка МЕ довга для Сайги (мисл. версія) к:чорний",
+        "price_uah": 6000
+      },
+      {
+        "product": "Цівка FAB Defense NFR Carbine для AR15. Black",
+        "price_uah": 6020
+      },
+      {
+        "product": "Цівка з планками Picatinny для Walther Colt M4 кал. 22 LR. Коротка",
+        "price_uah": 6150
+      },
+      {
+        "product": "Цівка Fabarm для рушниці XLR5",
+        "price_uah": 6450
+      },
+      {
+        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. BLK",
+        "price_uah": 7000
       },
       {
         "product": "Цівка для рушницю Fabarm ELOS B",
         "price_uah": 7100
+      },
+      {
+        "product": "Цівка FAB Defense MP5 RS для MP5",
+        "price_uah": 7260
+      },
+      {
+        "product": "Цівка з планками Picatinny для Walther Colt M16 кал. 22 LR. Довга",
+        "price_uah": 7570
+      },
+      {
+        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. FDE",
+        "price_uah": 7600
+      },
+      {
+        "product": "Цівка Leapers UTG PRO Super Slim для Сайги. M-LOK. Black",
+        "price_uah": 8960
+      },
+      {
+        "product": "Цівка FAB Defense VFR-SVD для СВД/Тигр",
+        "price_uah": 9290
+      },
+      {
+        "product": "Цівка MDT для ESS No Rail 15' Black",
+        "price_uah": 9440
+      },
+      {
+        "product": "Цівка FAB Defense NFR Rifle для AR15. Black",
+        "price_uah": 9680
+      },
+      {
+        "product": "Консольна цівка ODIN O2 Lite для AR-10 Довжина - 17,5’’",
+        "price_uah": 10000
+      },
+      {
+        "product": "Цівка Leapers UTG PRO Ultra Slim15' для AR15. M-LOK. Black/Blue",
+        "price_uah": 10520
+      },
+      {
+        "product": "Цівка Leapers UTG PRO Ultra Slim15' для AR15. M-LOK. Black/Red",
+        "price_uah": 10920
+      },
+      {
+        "product": "Консольна цівка ODIN O2 Lite для AR15 Довжина - 9,5’’",
+        "price_uah": 11760
+      },
+      {
+        "product": "Цівка FAB Defense VFR для вивіш. ствола M4/M16/AR15. Матеріал - алюміній. Колір - чорний",
+        "price_uah": 12260
+      },
+      {
+        "product": "Цівка MDT для ESS Full Rail 18' Black",
+        "price_uah": 12600
+      },
+      {
+        "product": "Цівка MDT для ESS Full Rail 18' FDE",
+        "price_uah": 13040
+      },
+      {
+        "product": "Цівка Classic XT для карабіна Sauer S 303. Матеріал - пластик. Колір - коричневий.",
+        "price_uah": 13290
+      },
+      {
+        "product": "Цівка Forest XT/ Synchro/Hardwood для карабіна Sauer S 303. Матеріал - пластик. Колір - зелений.",
+        "price_uah": 13550
+      },
+      {
+        "product": "Цівка TROY AK47 Short. 10”. M-LOK",
+        "price_uah": 13560
+      },
+      {
+        "product": "Цівка BCM MCMR-9 (M-LOK Compatible Modular Rail) Black",
+        "price_uah": 14120
+      },
+      {
+        "product": "Цівка TROY AK47 Long. 13.5”. M-LOK",
+        "price_uah": 14400
+      },
+      {
+        "product": "Цівка BCM KMR *ALPHA* 15' KeyMod колір: чорний",
+        "price_uah": 14440
+      },
+      {
+        "product": "Цівка BCM MCMR-15 (M-LOK® Compatible* Modular Rail)",
+        "price_uah": 14800
+      },
+      {
+        "product": "Цівка Lancer LCH5 Carbon Fiber для AR15 довжина 8'",
+        "price_uah": 15200
+      },
+      {
+        "product": "Цівка модульна Cadex Defence 870 MCS Modular Fore-end Pump Guard для рушниці Remington 870",
+        "price_uah": 16400
+      },
+      {
+        "product": "Консольна цівка JP Enterprises MK III Modular Hand Guard XХL для карабінів на базі AR-10 Довжина - 17.25'",
+        "price_uah": 17280
+      },
+      {
+        "product": "Цівка GEISSELE Super Modular Rail MK4 M-LOK 9.5'",
+        "price_uah": 17800
+      },
+      {
+        "product": "Цівка Cadex Defence для карабіна H&K MP5/T94",
+        "price_uah": 18080
+      },
+      {
+        "product": "Цівка модульна Cadex Defence для рушниці Remington 870",
+        "price_uah": 18200
+      },
+      {
+        "product": "Цівка ERGO MAX для карабіна Sauer 404. Матеріал - пластик",
+        "price_uah": 18400
+      },
+      {
+        "product": "Цівка CAA для AR15 на 6 планок",
+        "price_uah": 19600
+      },
+      {
+        "product": "Консольна цівка JP Enterprises MK III Modular Hand Guard XХL для карабінів на базі AR-15 Довжина - 17.25'",
+        "price_uah": 20000
+      },
+      {
+        "product": "Цівка CAA алюмининй для AR15 6 планок Пікатінні",
+        "price_uah": 21720
+      },
+      {
+        "product": "Цівка Blaser R8 Ultimate Elastomer SW/Match",
+        "price_uah": 22790
+      },
+      {
+        "product": "Цівка Blaser R8 Ultimate Elastomer",
+        "price_uah": 22790
+      },
+      {
+        "product": "Приклад і цівка Classic Team Sauer для карабіна Sauer S 303. Матеріал - горіх.",
+        "price_uah": 24550
+      },
+      {
+        "product": "Цівка MKE для Т41. Профіль - Picatinny",
+        "price_uah": 26160
+      },
+      {
+        "product": "Цівка MKE для Т43. Профіль - Picatinny",
+        "price_uah": 26160
+      },
+      {
+        "product": "Цівка Blaser R8 Ultimate Lether",
+        "price_uah": 27090
+      },
+      {
+        "product": "Приклад і цівка Classic Bavarian для карабіна Sauer S 303. Матеріал - горіх.",
+        "price_uah": 28040
+      },
+      {
+        "product": "Приклад і цівка для карабіна Merkel RX.HELIX. Матеріал - пластик. Колір - чорний.",
+        "price_uah": 29110
+      },
+      {
+        "product": "Приклад і цівка Classic Team Sauer для карабіна Sauer S 303. Матеріал - горіх.",
+        "price_uah": 34830
+      },
+      {
+        "product": "Приклад і цівка Classic для карабіна Sauer S 303",
+        "price_uah": 34830
+      },
+      {
+        "product": "Приклад і цівка для карабіна Blaser R93. Горіх 5-ї категорії якості.",
+        "price_uah": 53320
+      },
+      {
+        "product": "Приклад і цівка Synchro XT для карабіна Sauer S 303. Матеріал - пластик",
+        "price_uah": 82560
+      },
+      {
+        "product": "Приклад і цівка для карабіна Blaser R93. Горіх 8-ї категорії якості.",
+        "price_uah": 109220
       }
     ]
   },
@@ -427,100 +404,16 @@
     "tel_kyivstar": "+380967980043",
     "details": [
       {
-        "product": "Цівка ATI для АК",
-        "price_uah": 2040
+        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - олива",
+        "price_uah": 1184
       },
       {
-        "product": "Цівка Magpul SL для MP5 M-LOK",
-        "price_uah": 3754
+        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - пісочний",
+        "price_uah": 1184
       },
       {
-        "product": "Цівка Magpul SGA Rem870 - сіра",
-        "price_uah": 2367
-      },
-      {
-        "product": "Цівка FAB Defense MP5 RS для MP5",
-        "price_uah": 7406
-      },
-      {
-        "product": "Цівка TROY AK47 Short. 10”. M-LOK",
-        "price_uah": 13832
-      },
-      {
-        "product": "Цівка TROY AK47 Long. 13.5”. M-LOK",
-        "price_uah": 14688
-      },
-      {
-        "product": "Крук RIS цівка для АКС-74У",
-        "price_uah": 3264
-      },
-      {
-        "product": "Цівка Leapers UTG для Remington 870",
-        "price_uah": 1877
-      },
-      {
-        "product": "Цівка MDT для ESS No Rail 15' Black",
-        "price_uah": 9629
-      },
-      {
-        "product": "Цівка FAB Defense PR для Remington 870",
-        "price_uah": 2418
-      },
-      {
-        "product": "Цівка FAB Defense PR для Remington 870",
-        "price_uah": 2418
-      },
-      {
-        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. FDE",
-        "price_uah": 2408
-      },
-      {
-        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. Black",
-        "price_uah": 2408
-      },
-      {
-        "product": "Цівка FAB Defense NFR Rifle для AR15. Black",
-        "price_uah": 9639
-      },
-      {
-        "product": "Крук RIS цівка для АКС-74У Coyote Tan",
-        "price_uah": 3264
-      },
-      {
-        "product": "Цівка MKE для Т41. Профіль - Picatinny",
-        "price_uah": 26684
-      },
-      {
-        "product": "Цівка Magpul AK Hand Guard для Сайги. FDE",
-        "price_uah": 2979
-      },
-      {
-        "product": "Цівка BCM MCMR-15 (M-LOK® Compatible* Modular Rail)",
-        "price_uah": 15096
-      },
-      {
-        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. BLK",
-        "price_uah": 7140
-      },
-      {
-        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. FDE",
-        "price_uah": 7752
-      },
-      {
-        "product": "Цівка BCM MCMR-9 (M-LOK Compatible Modular Rail) Black",
-        "price_uah": 14403
-      },
-      {
-        "product": "Упор Leapers UTG Angled Mount на цівка. M-LOK. Black",
-        "price_uah": 2408
-      },
-      {
-        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги чорне",
-        "price_uah": 3264
-      },
-      {
-        "product": "Цівка FAB Defense полімерна для Сайги. Black",
-        "price_uah": 2744
+        "product": "Цівка FAB Defense VANGUARD для Mossberg 500/590. Колір - пісочний",
+        "price_uah": 1184
       },
       {
         "product": "Цівка FAB Defense VANGUARD AR15 M-LOK. Колір - олива",
@@ -531,64 +424,171 @@
         "price_uah": 1663
       },
       {
-        "product": "Цівка Leapers UTG PRO Super Slim для Сайги. M-LOK. Black",
-        "price_uah": 9140
-      },
-      {
-        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги пісочне",
-        "price_uah": 3264
-      },
-      {
-        "product": "Цівка Leapers UTG PRO Ultra Slim15' для AR15. M-LOK. Black/Blue",
-        "price_uah": 10731
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - олива",
-        "price_uah": 1184
-      },
-      {
-        "product": "Крук цівка для АК довге с кріпленням M-Lok Black",
-        "price_uah": 7072
-      },
-      {
-        "product": "Консольна цівка ODIN O2 Lite для AR-10 Довжина - 17,5’’",
-        "price_uah": 10200
-      },
-      {
-        "product": "Крук цівка для АК довга с кріпленням M-Lok Coyote Tan",
-        "price_uah": 7072
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Remington 870. Колір - пісочний",
-        "price_uah": 1184
-      },
-      {
-        "product": "Цівка МЕ довга для Сайги (мисл. версія) к:чорний",
-        "price_uah": 6120
-      },
-      {
-        "product": "Цівка FAB Defense VANGUARD для Mossberg 500/590. Колір - пісочний",
-        "price_uah": 1184
-      },
-      {
-        "product": "Крук Коротка цівка із кріпленнями стандарту M-Lok Black",
-        "price_uah": 3672
-      },
-      {
         "product": "Цівка FAB Defense VANGUARD для Сайги (мисл. верс.) Колір - чорний",
         "price_uah": 1714
+      },
+      {
+        "product": "Цівка Leapers UTG для Remington 870",
+        "price_uah": 1877
+      },
+      {
+        "product": "Цівка ATI для АК",
+        "price_uah": 2040
+      },
+      {
+        "product": "Цівка Magpul SGA Rem870 - сіра",
+        "price_uah": 2367
+      },
+      {
+        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. FDE",
+        "price_uah": 2408
+      },
+      {
+        "product": "Цівка Magpul MOE M-LOK Carbine AR15/M4. Black",
+        "price_uah": 2408
+      },
+      {
+        "product": "Упор Leapers UTG Angled Mount на цівка. M-LOK. Black",
+        "price_uah": 2408
+      },
+      {
+        "product": "Цівка FAB Defense PR для Remington 870",
+        "price_uah": 2418
+      },
+      {
+        "product": "Цівка FAB Defense PR для Remington 870",
+        "price_uah": 2418
+      },
+      {
+        "product": "Цівка FAB Defense полімерна для Сайги. Black",
+        "price_uah": 2744
+      },
+      {
+        "product": "Цівка Magpul AK Hand Guard для Сайги. FDE",
+        "price_uah": 2979
       },
       {
         "product": "Цівка FAB Defense KPR полімерна для Сайги/Вулкан. Колір - чорний",
         "price_uah": 2999
       },
       {
+        "product": "Крук RIS цівка для АКС-74У",
+        "price_uah": 3264
+      },
+      {
+        "product": "Крук RIS цівка для АКС-74У Coyote Tan",
+        "price_uah": 3264
+      },
+      {
+        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги чорне",
+        "price_uah": 3264
+      },
+      {
+        "product": "Цівка Magpul MOE AKM Hand Guard для Сайги пісочне",
+        "price_uah": 3264
+      },
+      {
+        "product": "Крук Коротка цівка із кріпленнями стандарту M-Lok Black",
+        "price_uah": 3672
+      },
+      {
         "product": "Крук Коротка цівка із кріпленнями стандарту M-Lok CERAKOTE Coyote Tan",
         "price_uah": 3672
       },
       {
+        "product": "Цівка Magpul SL для MP5 M-LOK",
+        "price_uah": 3754
+      },
+      {
+        "product": "Цівка МЕ довга для Сайги (мисл. версія) к:чорний",
+        "price_uah": 6120
+      },
+      {
+        "product": "Крук цівка для АК довге с кріпленням M-Lok Black",
+        "price_uah": 7072
+      },
+      {
+        "product": "Крук цівка для АК довга с кріпленням M-Lok Coyote Tan",
+        "price_uah": 7072
+      },
+      {
+        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. BLK",
+        "price_uah": 7140
+      },
+      {
+        "product": "Цівка FAB Defense MP5 RS для MP5",
+        "price_uah": 7406
+      },
+      {
+        "product": "Цівка Magpul Zhukov Hand Guard для Сайги. FDE",
+        "price_uah": 7752
+      },
+      {
+        "product": "Цівка Leapers UTG PRO Super Slim для Сайги. M-LOK. Black",
+        "price_uah": 9140
+      },
+      {
+        "product": "Цівка MDT для ESS No Rail 15' Black",
+        "price_uah": 9629
+      },
+      {
+        "product": "Цівка FAB Defense NFR Rifle для AR15. Black",
+        "price_uah": 9639
+      },
+      {
+        "product": "Консольна цівка ODIN O2 Lite для AR-10 Довжина - 17,5’’",
+        "price_uah": 10200
+      },
+      {
+        "product": "Цівка Leapers UTG PRO Ultra Slim15' для AR15. M-LOK. Black/Blue",
+        "price_uah": 10731
+      },
+      {
         "product": "Цівка FAB Defense VFR для вивіш. ствола M4/M16/AR15. Матеріал - алюміній. Колір - чорний",
         "price_uah": 12506
+      },
+      {
+        "product": "Цівка TROY AK47 Short. 10”. M-LOK",
+        "price_uah": 13832
+      },
+      {
+        "product": "Цівка BCM MCMR-9 (M-LOK Compatible Modular Rail) Black",
+        "price_uah": 14403
+      },
+      {
+        "product": "Цівка TROY AK47 Long. 13.5”. M-LOK",
+        "price_uah": 14688
+      },
+      {
+        "product": "Цівка BCM MCMR-15 (M-LOK® Compatible* Modular Rail)",
+        "price_uah": 15096
+      },
+      {
+        "product": "Цівка MKE для Т41. Профіль - Picatinny",
+        "price_uah": 26684
+      }
+    ]
+  },
+  {
+    "website": "Ataka",
+    "price_uah_min": 4000,
+    "price_uah_max": 7000,
+    "products_qty": 3,
+    "social_network": "https://www.facebook.com/ATAKA.kiev.ua/",
+    "tel_vodafone": "+380955587673",
+    "tel_kyivstar": "+380679305772",
+    "details": [
+      {
+        "product": "Крук довга цівка M-Lok на АКСУ із коротким верхнім містком Armor Black",
+        "price_uah": 4000
+      },
+      {
+        "product": "Крук середня цівка M-Lok Чорна",
+        "price_uah": 6135
+      },
+      {
+        "product": "Крук довга цівка M-Lok 1U004 CERAKOTE ARMOR BLACK",
+        "price_uah": 7000
       }
     ]
   }
