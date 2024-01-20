@@ -73,7 +73,7 @@ websites = [
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
             'name': container.find("h4").find("a").text,
-            'price': re.search(r'\b\d{1,3}(?:\s\d{3})*\b', container.find(class_="price").text.strip()).group(0).replace(' ',''),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip()).group(0).replace(' ',''),
             'stock_status': not container.find("button", {"disabled": "disabled"})
             },
         social_network="https://www.facebook.com/ATAKA.kiev.ua/",
@@ -87,12 +87,82 @@ websites = [
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
             'name': container.find("h4").find("a").text,
-            'price': container.find(class_="price").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip()).group(0).replace(' ',''),
             'stock_status': "Немає в наявності" not in container.find("div", class_="stock-status").text
             },
         social_network="https://www.instagram.com/abrams_reserve/",
         tel_vodafone="+380955216148",
         tel_kyivstar="+380688736587"
+        ),
+    WebsiteScraper(
+        name="Hofner",
+        base_url="https://hofner.com.ua/index.php?route=product/search&search={query}&page={page}",
+        search_query_separator="%20",
+        product_container_class="product-layout",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="info_block").find(class_="name").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_=["price", "price-new"]).text.strip()).group(0).replace(' ',''),
+            'stock_status': not container.find(class_='outstock_product')
+            },
+        social_network="https://www.instagram.com/hofner.ukraine/",
+        tel_vodafone="",
+        tel_kyivstar="+380968120013"
+        ),
+    WebsiteScraper(
+        name="Ibis",
+        base_url="https://ibis.net.ua/ua/search/?searchstring={query}&page={page}",
+        search_query_separator="+",
+        product_container_class="product_brief_table",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="pb_product_name").text.strip(),
+            'price': re.search(r"\b\d*", container.find(class_=["pb_price", "pb_price_witholdprice"]).text.strip()).group(0),
+            'stock_status': not container.find(class_="red")
+            },
+        social_network="https://www.instagram.com/ibis_shooting/",
+        tel_vodafone="",
+        tel_kyivstar=""
+        ),
+    WebsiteScraper(
+        name="Kamber",
+        base_url="https://kamber.com.ua/katalog/search/filter/page={page}/?q={query}",
+        search_query_separator="+",
+        product_container_class="catalog-grid__item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="catalogCard-title").find("a").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="catalogCard-price").text.strip()).group(0).replace(' ',''),
+            'stock_status': not container.find(class_="catalogCard-price __light")
+            },
+        social_network="https://www.instagram.com/kamber_tactical/",
+        tel_vodafone="",
+        tel_kyivstar="+380684262823"
+        ),
+    WebsiteScraper(
+        name="Killa",
+        base_url="https://killa.com.ua/uk/index.php?route=product/isearch&search={query}&page={page}",
+        search_query_separator="%20",
+        product_container_class="product-layout",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="product-thumb").find("h4").find("a").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip()).group(0).replace(' ',''),
+            'stock_status': "немає в наявності" not in container.find(class_="caption").find(class_="status").text.lower()
+            },
+        social_network="https://www.instagram.com/killa_voentorg",
+        tel_vodafone="",
+        tel_kyivstar="+380967980043"
+        ),
+    WebsiteScraper(
+        name="Maroder",
+        base_url="https://maroder.com.ua/uk/page/{page}/?post_type=product&s={query}",
+        search_query_separator="+",
+        product_container_class="product-item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="category-discription-grid").find("h4").find("a").text.strip(),
+            'price': re.findall(r"\b\d{1,3}(?:,\d{3})*\b", container.find(class_="price").text.strip())[-1].replace(",", ""),
+            'stock_status': not container.find(class_="out_of_stock_title")
+            },
+        social_network="https://www.instagram.com/mrd_tactical/",
+        tel_vodafone="",
+        tel_kyivstar="+380685571337"
         ),
     
     # WebsiteScraper(
@@ -110,82 +180,11 @@ websites = [
     #     tel_kyivstar="+380674784747"
     #     ),
     
-    WebsiteScraper(
-        name="Hofner",
-        base_url="https://hofner.com.ua/index.php?route=product/search&search={query}&page={page}",
-        search_query_separator="%20",
-        product_container_class="product-layout",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="info_block").find(class_="name").text.strip(),
-            'price': container.find(class_=["price", "price-new"]).text.strip(),
-            'stock_status': not container.find(class_='outstock_product')
-            },
-        social_network="https://www.instagram.com/hofner.ukraine/",
-        tel_vodafone="",
-        tel_kyivstar="+380968120013"
-        ),
-    WebsiteScraper(
-        name="Ibis",
-        base_url="https://ibis.net.ua/ua/search/?searchstring={query}&page={page}",
-        search_query_separator="+",
-        product_container_class="product_brief_table",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="pb_product_name").text.strip(),
-            'price': container.find(class_=["pb_price", "pb_price_witholdprice"]).text.strip(),
-            'stock_status': not container.find(class_="red")
-            },
-        social_network="https://www.instagram.com/ibis_shooting/",
-        tel_vodafone="",
-        tel_kyivstar=""
-        ),
-    WebsiteScraper(
-        name="Kamber",
-        base_url="https://kamber.com.ua/katalog/search/filter/page={page}/?q={query}",
-        search_query_separator="+",
-        product_container_class="catalog-grid__item",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="catalogCard-title").find("a").text.strip(),
-            'price': container.find(class_="catalogCard-price").text.strip(),
-            'stock_status': not container.find(class_="catalogCard-price __light")
-            },
-        social_network="https://www.instagram.com/kamber_tactical/",
-        tel_vodafone="",
-        tel_kyivstar="+380684262823"
-        ),
-    WebsiteScraper(
-        name="Killa",
-        base_url="https://killa.com.ua/index.php?route=product/isearch&search={query}&page={page}",
-        search_query_separator="%20",
-        product_container_class="product-layout",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="product-thumb").find("h4").find("a").text.strip(),
-            'price': container.find(class_="price").text.strip(),
-            'stock_status': "немає в наявності" not in container.find(class_="caption").find(class_="status").text.lower()
-            },
-        social_network="https://www.instagram.com/killa_voentorg",
-        tel_vodafone="",
-        tel_kyivstar="+380967980043"
-        ),
-    WebsiteScraper(
-        name="Maroder",
-        base_url="https://maroder.com.ua/uk/page/{page}/?post_type=product&s={query}",
-        search_query_separator="+",
-        product_container_class="product-item",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="category-discription-grid").find("h4").find("a").text.strip(),
-            # 'price': container.find(class_="price").find_all(string=re.compile(r"\s+"))[-1].replace("\xa0", "").replace(",", ""),
-            'price': re.findall(r'\b\d{1,3}(?:,\d{3})*\b', container.find(class_="price").text.strip())[-1].replace(",", ""),
-            'stock_status': not container.find(class_="out_of_stock_title")
-            },
-        social_network="https://www.instagram.com/mrd_tactical/",
-        tel_vodafone="",
-        tel_kyivstar="+380685571337"
-        )
     ]
 
 
 # Dummy product name
-product_name = "плитоноска"
+product_name = "цівка"
 
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
