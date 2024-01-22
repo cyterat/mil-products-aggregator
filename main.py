@@ -164,6 +164,20 @@ websites = [
     #     tel_vodafone="",
     #     tel_kyivstar="+380685571337"
     #     ),
+    # WebsiteScraper(
+    #     name="Militarist",
+    #     base_url="https://militarist.ua/ua/search/?q={query}&s=&PAGEN_2={page}",
+    #     search_query_separator="+",
+    #     product_container_class="card_product",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="card_item-name").text.strip(),
+    #         'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find("p", class_="price_new").text.strip()).group(0).replace(" ",""),
+    #         'stock_status': not container.find("div", class_="status no_stock")
+    #         },
+    #     social_network="http://instagram.com/tm_militarist",
+    #     tel_vodafone="",
+    #     tel_kyivstar="+380678296207"
+    #     ),
     
     # WebsiteScraper(
     #     name="Hitman",
@@ -210,20 +224,34 @@ websites = [
     #     tel_vodafone="+380994603556",
     #     tel_kyivstar="+380962019665"
     #     ),   
-    WebsiteScraper(
-        name="Prof1Group",
-        base_url="https://prof1group.ua/search?text={query}&page={page}",
-        search_query_separator="+",
-        product_container_class="product-card-col",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="product-card__name").text.strip(),
-            'price': re.search(r"\b\d*", container.find(class_="product-card__price-new js-product-new-price").text.strip()).group(0),
-            'stock_status': not container.find("span", class_="product-card__label background_not_available")
-            },
-        social_network="https://www.instagram.com/prof1group.ua/",
-        tel_vodafone="",
-        tel_kyivstar="+380676595979"
-        ),   
+    # WebsiteScraper(
+    #     name="Prof1Group",
+    #     base_url="https://prof1group.ua/search?text={query}&page={page}",
+    #     search_query_separator="+",
+    #     product_container_class="product-card-col",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="product-card__name").text.strip(),
+    #         'price': re.search(r"\b\d*", container.find(class_="product-card__price-new js-product-new-price").text.strip()).group(0),
+    #         'stock_status': not container.find("span", class_="product-card__label background_not_available")
+    #         },
+    #     social_network="https://www.instagram.com/prof1group.ua/",
+    #     tel_vodafone="",
+    #     tel_kyivstar="+380676595979"
+    #     ),   
+    # WebsiteScraper(
+    #     name="Punisher",
+    #     base_url="https://punisher.com.ua/magazin/search/filter/page={page}/?q={query}",
+    #     search_query_separator="+",
+    #     product_container_class="catalog-grid__item",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="catalogCard-title").text.strip(),
+    #         'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="catalogCard-price").text.strip()).group(0).replace(" ",""),
+    #         'stock_status': container.find(class_="btn __special j-buy-button-add") != None
+    #         },
+    #     social_network="https://www.instagram.com/punisher.com.ua/",
+    #     tel_vodafone="+380500587070",
+    #     tel_kyivstar="+380970587000"
+    #     ), 
     
     ]
 
