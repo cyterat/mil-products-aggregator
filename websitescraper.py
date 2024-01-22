@@ -3,7 +3,7 @@ import time
 import random
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
-
+from difflib import SequenceMatcher
 
 class Product:
     def __init__(self, name, price, stock_status):
@@ -43,7 +43,7 @@ class WebsiteScraper:
         self.social_network = social_network
         self.tel_vodafone = tel_vodafone
         self.tel_kyivstar = tel_kyivstar
-
+        self.previous_page_content = set()
 
     def build_url(self, page, query):
         """
@@ -57,7 +57,6 @@ class WebsiteScraper:
         - str, the constructed URL
         """
         return self.base_url.format(page=page, query=query)
-
 
     def fetch_data(self, url):
         """
@@ -81,7 +80,6 @@ class WebsiteScraper:
             print(f"Received an unexpected status code: {response.status_code}")
             return None
 
-
     def parse_html(self, content):
         """
         Parse the HTML content using BeautifulSoup.
@@ -94,10 +92,52 @@ class WebsiteScraper:
         """
         return BeautifulSoup(content, "html.parser")
 
+    def get_page_content(self, soup):
+        """
+        Extract relevant content from the page and convert it to a set for comparison.
+
+        Parameters:
+        - soup: BeautifulSoup object, the parsed HTML
+
+        Returns:
+        - set, the extracted content set
+        """
+        product_names = [product.text for product in soup.find_all(class_=self.product_container_class)]
+        return set(product_names)
+
+    def similarity_check(self, set1, set2):
+        """
+        Calculate the Jaccard similarity coefficient between two sets.
+
+        Parameters:
+        - set1: set, the first set
+        - set2: set, the second set
+
+        Returns:
+        - float, the Jaccard similarity coefficient
+        """
+        intersection_size = len(set1.intersection(set2))
+        union_size = len(set1.union(set2))
+        similarity_coefficient = intersection_size / union_size if union_size != 0 else 0
+        return similarity_coefficient
+
+    def detect_duplicate_content(self, current_page_content):
+        """
+        Compare the content of the current page with the previous page.
+
+        Parameters:
+        - current_page_content: set, the content set of the current page
+
+        Returns:
+        - bool, indicating whether the content is duplicate
+        """
+        similarity = self.similarity_check(self.previous_page_content, current_page_content)
+        self.previous_page_content = current_page_content
+        return similarity >= 0.99  # Adjust the similarity threshold as needed
 
     def extract_information(self, soup):
         """
-        Extracts product information from the parsed HTML.
+        Extract product information from the parsed HTML.
 
         Parameters:
         - soup: BeautifulSoup object, the parsed HTML
@@ -105,46 +145,33 @@ class WebsiteScraper:
         Returns:
         - list of Product objects, the extracted product information
         """
-        # Find all HTML elements with the specified product container class
         product_containers = soup.find_all(class_=self.product_container_class)
         products = []
 
-        # Iterate through each product container
         for product_container in product_containers:
             try:
-                # Extract product information using the specified extraction functions
                 product_info = self.extract_info_functions(product_container)
-                
-                # Check if product_info is not None and the product is in stock
-                if product_info is not None and product_info.get('stock_status', False):
-                    # Check if 'name' and 'price' are present in product_info
-                    if 'name' in product_info and 'price' in product_info:
-                        # Replace double quotes with single quotes in the product name
-                        product_name = product_info['name'].replace('"', "'")
 
-                        # Append a Product object to the list of products
+                if product_info is not None and product_info.get('stock_status', False):
+                    if 'name' in product_info and 'price' in product_info:
+                        product_name = product_info['name'].replace('"', "'")
                         products.append(Product(
                             name=product_name,
-                            # price=int(product_info['price']),
                             price=product_info['price'],
                             stock_status=True
                         ))
 
             except AttributeError:
-                # Ignore error related to scraping empty pages on some websites
                 pass
-            
+
             except Exception as e:
-                # Display other errors
                 print(f"Error extracting information: {e}")
 
-        # Print a message if no products were found on the page
         if not products:
             print("No products found on this page.")
 
         print("Finished extraction.")
         return products
-
 
     def scrape(self, product):
         """
@@ -156,54 +183,44 @@ class WebsiteScraper:
         Returns:
         - list of Product objects, the aggregated product information
         """
-        # Initialize variables
         page = 1
         aggregated_products = []
 
-        # Infinite loop to iterate over pages
         while True:
-            # Format the product name for the URL query
             query = product.replace(" ", self.search_query_separator)
-            
-            # Build the URL for the current page and query
             url = self.build_url(page, query)
-            
-            # Fetch HTML content from the URL
             content = self.fetch_data(url)
 
-            # Check if content is empty or None
             if not content or content is None:
                 print(f"No content received from {url}")
                 break
 
-            # Parse HTML content using BeautifulSoup
             soup = self.parse_html(content)
             print(f"Scraping data from {url}...")
 
+            current_page_content = self.get_page_content(soup)
+
+            if self.detect_duplicate_content(current_page_content):
+                print("Detected duplicate content. Stopping scraping.")
+                break
+
             try:
-                # Extract product information from the parsed HTML
                 products_on_page = self.extract_information(soup)
-                
-                # Check if no products were found on the current page
+
                 if not products_on_page:
                     break
 
             except Exception as e:
-                # Handle any errors that occur during information extraction
                 print(f"Error extracting information: {e}")
 
             else:
-                # Extend the list of aggregated products with products from the current page
                 aggregated_products.extend(products_on_page)
 
-            # Add a random sleep between 1 and 3 seconds to simulate human-like behavior
             sleep_duration = random.uniform(1, 3)
             print(f"Sleeping for {sleep_duration:.2f} seconds...\n")
             time.sleep(sleep_duration)
 
-            # Move to the next page
             page += 1
 
-        # Print the total number of products scraped
         print(f"Scraped {len(aggregated_products)} products.")
         return aggregated_products
