@@ -3,7 +3,7 @@ import time
 import random
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
-from difflib import SequenceMatcher
+
 
 class Product:
     def __init__(self, name, price, stock_status):
