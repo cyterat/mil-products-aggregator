@@ -4,6 +4,14 @@
 
 ***
 
+Currently supported online stores:
+[Ataka](https://attack.kiev.ua), [Abrams](https://abrams.com.ua), [Hofner](https://hofner.com.ua), [Ibis](https://ibis.net.ua),
+[Kamber](https://kamber.com.ua), [Killa](https://killa.com.ua), [Maroder](https://maroder.com.ua), [Militarka](https://militarka.com.ua),
+[Molli](https://molliua.com), [Prof1Group](https://prof1group.ua)
+
+
+***
+
 ### Script output
 
 _Note: the `main.py` script produces a JSON list of dictionaries where each dictionary represents a scraped website._
@@ -26,4 +34,5 @@ Example of a single scraped website in `output.json`:
 ### Future ideas
 - Add more websites
 - Include websites and products urls in `output.json`
+- Include more phone number fields in `output.json`
 - Implement async to reduce the overall scraping time
