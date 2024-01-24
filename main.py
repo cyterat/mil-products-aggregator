@@ -252,12 +252,68 @@ websites = [
     #     tel_vodafone="+380500587070",
     #     tel_kyivstar="+380970587000"
     #     ), 
+    # WebsiteScraper(
+    #     name="Specprom-kr",
+    #     base_url="https://specprom-kr.com.ua/index.php?route=product/search&search={query}&page={page}",
+    #     search_query_separator="%20",
+    #     product_container_class="product-layout",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="product-name").text.strip(),
+    #         'price': container.find_all(class_=["special_no_format","price_no_format"])[-1].text.split(".")[0].replace(" ",""),
+    #         'stock_status': not container.find(class_="stock-status outofstock")
+    #         },
+    #     social_network="https://www.instagram.com/specprom_kr/",
+    #     tel_vodafone="",
+    #     tel_kyivstar=""
+    #     ), 
+    # WebsiteScraper(
+    #     name="Sts",
+    #     base_url="https://sts-gear.com/ua/site_search/page_{page}?search_term={query}",
+    #     search_query_separator="+",
+    #     product_container_class="cs-online-edit cs-product-gallery__item js-productad",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="cs-goods-title").text.strip(),
+    #         'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="cs-goods-price__value cs-goods-price__value_type_current").text).group(0).replace(" ",""),
+    #         'stock_status': "Немає в наявності" not in container.find(attrs={"data-qaid":"presence_data"})
+    #         },
+    #     social_network="https://www.instagram.com/stsgear/",
+    #     tel_vodafone="",
+    #     tel_kyivstar="+38674457255"
+    #     ), 
+    # WebsiteScraper(
+    #     name="Sturm",
+    #     base_url="https://sturm.com.ua/search/?search={query}&page={page}",
+    #     search_query_separator="%20",
+    #     product_container_class="product-layout",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="caption").find("h4").text.strip(),
+    #         'price': re.search(r"\b\d*",  container.find(class_="price-new").text.replace(" ","")).group(0),
+    #         'stock_status': "Закінчився" not in container.find("button", class_="button-cart")
+    #         },
+    #     social_network="https://www.facebook.com/sturmmag/",
+    #     tel_vodafone="+380667590005",
+    #     tel_kyivstar="+380671723639"
+    #     ), 
+    WebsiteScraper(
+        name="Stvol",
+        base_url="https://stvol.ua/search?page={page}&query={query}",
+        search_query_separator="+",
+        product_container_class="product-card product-card--theme-catalog",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="product-card__title").text.strip(),
+            'price': container.find(class_="product-card__price product-card__price--current").text.strip().split(".")[0].replace(" ",""),
+            'stock_status': "Товар закінчився" not in container.find(class_="product-card__bottom")
+            },
+        social_network="https://www.instagram.com/stvol_ua/",
+        tel_vodafone="+380504177677",
+        tel_kyivstar=""
+        ), 
     
     ]
 
 
 # Dummy product name
-product_name = "плитоноска"
+product_name = "флісова шапка"
 
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
