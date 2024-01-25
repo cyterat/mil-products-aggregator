@@ -37,7 +37,7 @@ Example of a single scraped website in `output.json`:
 
 ### Terminal output example
 
-_Note only end lines included in the screenshot_
+_Note: only end lines are included in the screenshot_
 
 ![terminal-output-example](data/mil-products-scrapinf-cli-example.png)
 
