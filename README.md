@@ -1,4 +1,5 @@
 # 🛒 Military Products Aggregator
+
 [![Python - 3.12.0](https://img.shields.io/badge/Python-3.12.0-f4d159)](https://www.python.org/downloads/release/python-3120/)
 [![excel](https://img.shields.io/badge/excel-buy_mil_equipment-1D6F42)](data/buy-mil-equipment.xlsx)
 
@@ -6,17 +7,20 @@
 
 Currently supported online stores:
 [Ataka](https://attack.kiev.ua), [Abrams](https://abrams.com.ua), [Hofner](https://hofner.com.ua), [Ibis](https://ibis.net.ua),
-[Kamber](https://kamber.com.ua), [Killa](https://killa.com.ua), [Maroder](https://maroder.com.ua), [Militarist](https://militarist.ua), 
-[Militarka](https://militarka.com.ua), [Molli](https://molliua.com), [Prof1Group](https://prof1group.ua), [Punisher](https://punisher.com.ua)
-
+[Kamber](https://kamber.com.ua), [Killa](https://killa.com.ua), [Maroder](https://maroder.com.ua), [Militarist](https://militarist.ua),
+[Militarka](https://militarka.com.ua), [Molli](https://molliua.com), [Prof1Group](https://prof1group.ua), [Punisher](https://punisher.com.ua),
+[Specprom-kr](https://specprom-kr.com.ua), [Sts](https://sts-gear.com), [Sturm](https://sturm.com.ua), [Stvol](https://stvol.ua),
+[Tactical Gear](https://tacticalgear.ua), [Ukrarmor](https://ukrarmor.com.ua), [Utactic](https://utactic.com), [Velmet](https://velmet.ua),
+[Global Ballisticks](https://globalballistics.com.ua)
 
 ***
 
-### Script output
+## Script output
 
 _Note: the `main.py` script produces a JSON list of dictionaries where each dictionary represents a scraped website._
 
 Example of a single scraped website in `output.json`:
+
 - __website__: str,
 - __price_uah_min__: int,
 - __price_uah_max__: int,
@@ -31,7 +35,8 @@ Example of a single scraped website in `output.json`:
 
 ***
 
-### Future ideas
+## Future ideas
+
 - Add more websites
 - Include websites and products urls in `output.json`
 - Include more phone number fields in `output.json`
