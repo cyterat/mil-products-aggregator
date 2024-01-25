@@ -1,5 +1,20 @@
 [
   {
+    "website": "Kamber",
+    "price_uah_min": 542,
+    "price_uah_max": 542,
+    "products_qty": 1,
+    "social_network": "https://www.instagram.com/kamber_tactical/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380684262823",
+    "details": [
+      {
+        "product": "Одинарний підсумок під магазин MPO",
+        "price_uah": 542
+      }
+    ]
+  },
+  {
     "website": "Prof1Group",
     "price_uah_min": 834,
     "price_uah_max": 16679,
@@ -43,6 +58,1495 @@
       {
         "product": "Плитоноска UARM 'FRPC™ Fast Response Plate Carrier, size XL' (чохол для бронежилета та камербанд) Multicam",
         "price_uah": 16679
+      }
+    ]
+  },
+  {
+    "website": "Punisher",
+    "price_uah_min": 980,
+    "price_uah_max": 36000,
+    "products_qty": 34,
+    "social_network": "https://www.instagram.com/punisher.com.ua/",
+    "tel_vodafone": "+380500587070",
+    "tel_kyivstar": "+380970587000",
+    "details": [
+      {
+        "product": "Медичний підсумок ММ14",
+        "price_uah": 980
+      },
+      {
+        "product": "Магазинний підсумок Emerson LBT Style 7.62 Triple Magazine Pouch",
+        "price_uah": 1600
+      },
+      {
+        "product": "Медичний підсумок Hoffmann Equipment",
+        "price_uah": 1792
+      },
+      {
+        "product": "Полегшений бронежилет Emerson JPC VEST Easy Style",
+        "price_uah": 2600
+      },
+      {
+        "product": "Рюкзак GRAD Modular Assault Pack (MAP) 10L",
+        "price_uah": 2640
+      },
+      {
+        "product": "Плитоноска Emerson JPC Tactical Vest для дітей",
+        "price_uah": 2800
+      },
+      {
+        "product": "Полегшений бронежилет Emerson JPC VEST Easy Style MC 500D",
+        "price_uah": 3000
+      },
+      {
+        "product": "Полегшений бронежилет Emerson Jump Plate Carrier 2.0",
+        "price_uah": 3400
+      },
+      {
+        "product": "Полегшений бронежилет Emerson NJPC Tactical Vest",
+        "price_uah": 4000
+      },
+      {
+        "product": "Тактичний жилет OneTigris Nightmare Tactical Vest",
+        "price_uah": 4280
+      },
+      {
+        "product": "Плитоноска Emerson LBT6094A Plate Carrier з підсумками Уцінка",
+        "price_uah": 4680
+      },
+      {
+        "product": "Плитоноска Punisher Blis",
+        "price_uah": 4760
+      },
+      {
+        "product": "Плитоноска IdoGear LSR Tactical Vest",
+        "price_uah": 4800
+      },
+      {
+        "product": "Плитоноска Emerson FS Style Strandhogg Plate Carrier W/ROC",
+        "price_uah": 5120
+      },
+      {
+        "product": "Полегшений бронежилет Emerson BlueLabel Quick Release Jump Plate Carrier 2.0",
+        "price_uah": 5120
+      },
+      {
+        "product": "Плитоноска Emerson CP Style Adaptive Vest -Heavy Version",
+        "price_uah": 5280
+      },
+      {
+        "product": "Плитоноска Emerson NCPC Tactical Vest",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска Emerson CPC Tactical Vest",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска Emerson FCS Style VEST W/MK Chest Rig",
+        "price_uah": 5600
+      },
+      {
+        "product": "Плитоноска One Tigris DOOM Plate Carrier",
+        "price_uah": 5880
+      },
+      {
+        "product": "Плитоноска Punisher",
+        "price_uah": 5960
+      },
+      {
+        "product": "Плитоноска IdoGear CPC Tactical Vest",
+        "price_uah": 6000
+      },
+      {
+        "product": "Плитоноска GRAD 6094 QRS V2",
+        "price_uah": 7160
+      },
+      {
+        "product": "Плитоноска Emerson BlueLabel Quick Release 094K Plate Carrier",
+        "price_uah": 7200
+      },
+      {
+        "product": "Плитоноска Emerson LBT6094A Plate Carrier з підсумками",
+        "price_uah": 7600
+      },
+      {
+        "product": "Плитоноска WAS Warrior DCS Plate Carrier Base",
+        "price_uah": 9000
+      },
+      {
+        "product": "Плитоноска WAS CPC PCR Covert Plate Carrier з розвантажувальною системою Pathfinder Chest Rig",
+        "price_uah": 11400
+      },
+      {
+        "product": "Плитоноска WAS Warrior DCS DA5.56",
+        "price_uah": 12000
+      },
+      {
+        "product": "Плитоноска WAS Warrior DCS M4",
+        "price_uah": 12000
+      },
+      {
+        "product": "Плитоноска WAS Warrior DCS AK",
+        "price_uah": 12000
+      },
+      {
+        "product": "Плитоноска GRAD AVS Plate Carrier",
+        "price_uah": 12640
+      },
+      {
+        "product": "Полегшений бронежилет Crye Precision Jumpable Plate Carrier (JPC)",
+        "price_uah": 14080
+      },
+      {
+        "product": "Плитоноска LBT-6094G4 Plate Carrier",
+        "price_uah": 23400
+      },
+      {
+        "product": "Плитоноска GRAD AVS Plate Carrier укомплектована",
+        "price_uah": 36000
+      }
+    ]
+  },
+  {
+    "website": "Killa",
+    "price_uah_min": 1126,
+    "price_uah_max": 19343,
+    "products_qty": 55,
+    "social_network": "https://www.instagram.com/killa_voentorg",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380967980043",
+    "details": [
+      {
+        "product": "Плитоноска Assault Plate Carrier APC (чохол для бронежилета) (Coyote Brown), P1G-Tac®",
+        "price_uah": 1126
+      },
+      {
+        "product": "Плитоноска Assault Plate Carrier APC (чохол для бронежилета) (MTP/MCU camo), P1G-Tac®",
+        "price_uah": 1126
+      },
+      {
+        "product": "Плитоноска Assault Plate Carrier APC II Gen. (чохол для бронежилета) (Coyote Brown), P1G-Tac®",
+        "price_uah": 2536
+      },
+      {
+        "product": "Плитоноска Assault Plate Carrier APC II Gen. (чохол для бронежилета) (MTP/MCU camo), P1G-Tac®",
+        "price_uah": 2787
+      },
+      {
+        "product": "Плитоноска тактична з підсумками MOLLE Multicam",
+        "price_uah": 3728
+      },
+      {
+        "product": "Плитоноска тактична з підсумками MOLLE MM-14 (піксель ЗСУ)",
+        "price_uah": 3728
+      },
+      {
+        "product": "Плитоноска Pentagon Milon Plate Carrier Vest Mk2 Black",
+        "price_uah": 4725
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II MM14",
+        "price_uah": 5016
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Black",
+        "price_uah": 5016
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Coyote",
+        "price_uah": 5332
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Ranger Green",
+        "price_uah": 5332
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS MM14",
+        "price_uah": 5347
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Black",
+        "price_uah": 5347
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Coyote",
+        "price_uah": 5347
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II MM14",
+        "price_uah": 5788
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Black",
+        "price_uah": 5788
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Coyote",
+        "price_uah": 5788
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Ranger Green",
+        "price_uah": 5788
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS MM14",
+        "price_uah": 5898
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Black",
+        "price_uah": 5898
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Coyote",
+        "price_uah": 5898
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Ranger Green",
+        "price_uah": 5898
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Ranger Green",
+        "price_uah": 5925
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II MM14",
+        "price_uah": 6339
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Black",
+        "price_uah": 6339
+      },
+      {
+        "product": "Плитоноска Tailor M-24 з системою швидкого скиду Multicam",
+        "price_uah": 6668
+      },
+      {
+        "product": "Плитоноска Tailor M-24 з системою швидкого скиду ММ-14 піксель ЗСУ",
+        "price_uah": 6668
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Coyote",
+        "price_uah": 6890
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Ranger Green",
+        "price_uah": 6890
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL MM14",
+        "price_uah": 6945
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Black",
+        "price_uah": 6945
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Coyote",
+        "price_uah": 6945
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST XL QRS MM14",
+        "price_uah": 6945
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST XL QRS Black",
+        "price_uah": 6945
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST XL QRS Coyote",
+        "price_uah": 6945
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Ranger Green",
+        "price_uah": 6945
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST XL QRS Ranger Green",
+        "price_uah": 6945
+      },
+      {
+        "product": "Плитоноска Anafarta колір мультикам + 8 підсумків",
+        "price_uah": 7000
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II MM14",
+        "price_uah": 7496
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Black",
+        "price_uah": 7496
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Coyote",
+        "price_uah": 7496
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Ranger Green",
+        "price_uah": 7496
+      },
+      {
+        "product": "Плитоноска швидкоскидна, MultiCam, Український виробник",
+        "price_uah": 7613
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Multicam",
+        "price_uah": 7992
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Multicam",
+        "price_uah": 7992
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Multicam",
+        "price_uah": 8268
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Multicam",
+        "price_uah": 8268
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Multicam",
+        "price_uah": 9370
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Multicam",
+        "price_uah": 9370
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Multicam",
+        "price_uah": 9756
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST XL QRS Multicam",
+        "price_uah": 9756
+      },
+      {
+        "product": "Плитоноска Plate Carrier Olive (чохол для бронежилета), U-win",
+        "price_uah": 12308
+      },
+      {
+        "product": "Плитоноска Plate Carrier Coyote (чохол для бронежилета), U-win",
+        "price_uah": 13485
+      },
+      {
+        "product": "Плитоноска Plate Carrier MultiCam (чохол для бронежилета) (Multicam), U-win",
+        "price_uah": 13485
+      },
+      {
+        "product": "Плитоноска UARM FRPC™ Fast Response Plate Carrier, size M (чохол для бронежилета) (Multicam), Українська броня",
+        "price_uah": 19343
+      }
+    ]
+  },
+  {
+    "website": "Militarka",
+    "price_uah_min": 1200,
+    "price_uah_max": 17500,
+    "products_qty": 54,
+    "social_network": "https://www.instagram.com/militarka_ua/",
+    "tel_vodafone": "+380666163133",
+    "tel_kyivstar": "+380673011848",
+    "details": [
+      {
+        "product": "Плитоноска (Plate carrier) Turtle Molle чорна",
+        "price_uah": 1200
+      },
+      {
+        "product": "Плитоноска (Plate carrier) Turtle Molle койот",
+        "price_uah": 1200
+      },
+      {
+        "product": "Плитоноска JPC (Jumpable Plate Carrier) олива",
+        "price_uah": 1440
+      },
+      {
+        "product": "Плитоноска JPC (Jumpable Plate Carrier) койот",
+        "price_uah": 1440
+      },
+      {
+        "product": "Плитоноска (Plate carrier) з підсумками Gen. 2 чорна",
+        "price_uah": 1800
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II чорна",
+        "price_uah": 4900
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II MM14",
+        "price_uah": 4900
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II койот",
+        "price_uah": 4915
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Ranger Green",
+        "price_uah": 5280
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS койот",
+        "price_uah": 5300
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS чорна",
+        "price_uah": 5300
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS ММ-14",
+        "price_uah": 5300
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II койот",
+        "price_uah": 5700
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II чорна",
+        "price_uah": 5730
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II ММ-14",
+        "price_uah": 5730
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Ranger Green",
+        "price_uah": 5733
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass Fast QRS чорна",
+        "price_uah": 5840
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass Fast QRS ММ-14",
+        "price_uah": 5850
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass Fast QRS койот",
+        "price_uah": 5850
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass Fast QRS Ranger Green",
+        "price_uah": 5850
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II ММ-14",
+        "price_uah": 6200
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II чорна",
+        "price_uah": 6270
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II койот",
+        "price_uah": 6800
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Ranger Green",
+        "price_uah": 6800
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL койот",
+        "price_uah": 6870
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL чорна",
+        "price_uah": 6870
+      },
+      {
+        "product": "Плитоноска M-Tac Cuirass QRS XL Ranger Green",
+        "price_uah": 6870
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL ММ-14",
+        "price_uah": 6870
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL чорна",
+        "price_uah": 6880
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL ММ-14",
+        "price_uah": 6880
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Ranger Green",
+        "price_uah": 6880
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL койот",
+        "price_uah": 6880
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Ranger Green",
+        "price_uah": 7425
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II койот",
+        "price_uah": 7425
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II ММ-14",
+        "price_uah": 7425
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II чорна",
+        "price_uah": 7425
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Multicam",
+        "price_uah": 7900
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Multicam",
+        "price_uah": 7900
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW олива",
+        "price_uah": 7995
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW койот",
+        "price_uah": 7995
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW койот",
+        "price_uah": 7995
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW темна олива",
+        "price_uah": 7995
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW ММ-14",
+        "price_uah": 7995
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW Ranger Green",
+        "price_uah": 7995
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW ММ-14",
+        "price_uah": 7995
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass Fast QRS Multicam",
+        "price_uah": 8190
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Multicam",
+        "price_uah": 8190
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Multicam",
+        "price_uah": 9000
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Multicam",
+        "price_uah": 9200
+      },
+      {
+        "product": "Плитоноска M-Tac Cuirass QRS XL Multicam",
+        "price_uah": 9660
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Multicam",
+        "price_uah": 9660
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW Multicam",
+        "price_uah": 10050
+      },
+      {
+        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW MultiCam",
+        "price_uah": 10050
+      },
+      {
+        "product": "Плитоноска модульна Redwood Tactical APC multicam",
+        "price_uah": 17500
+      }
+    ]
+  },
+  {
+    "website": "Tactical Gear",
+    "price_uah_min": 1999,
+    "price_uah_max": 11276,
+    "products_qty": 9,
+    "social_network": "https://www.instagram.com/tacticalgear.ua/",
+    "tel_vodafone": "+380959010002",
+    "tel_kyivstar": "+380979010002",
+    "details": [
+      {
+        "product": "Плитоноска Condor COMPACT PLATE CARRIER CPC",
+        "price_uah": 1999
+      },
+      {
+        "product": "Плитоноска тактична з молле Condor Sentry Lightweight Plate Carrier 201042",
+        "price_uah": 2476
+      },
+      {
+        "product": "Плитоноска тактична чохол з молле Condor Sentry Plate Carrier LCS 201068",
+        "price_uah": 2492
+      },
+      {
+        "product": "Плитоноска тактична чохол бронежилету прихованого носіння Condor SPECTER PLATE CARRIER 201214",
+        "price_uah": 2604
+      },
+      {
+        "product": "Плитоноска тактична молле чохол Condor Gunner Lightweight Plate Carrier 201039",
+        "price_uah": 3276
+      },
+      {
+        "product": "Плитоноска тактична чохол бронежилету Condor PHALANX PLATE CARRIER 201203",
+        "price_uah": 3436
+      },
+      {
+        "product": "Плитоноска Pentagon ASPIS VEST K20008",
+        "price_uah": 4236
+      },
+      {
+        "product": "Плитоноска Pentagon MILON PLATE CARRIER VEST MK2 K20007",
+        "price_uah": 6124
+      },
+      {
+        "product": "Плитоноска Condor CYCLONE RS PLATE CARRIER US1218",
+        "price_uah": 11276
+      }
+    ]
+  },
+  {
+    "website": "Ibis",
+    "price_uah_min": 2420,
+    "price_uah_max": 43100,
+    "products_qty": 13,
+    "social_network": "https://www.instagram.com/ibis_shooting/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "",
+    "details": [
+      {
+        "product": "Бронежилет Tactical Extreme TE Plate Carrier LC. Khaki",
+        "price_uah": 2420
+      },
+      {
+        "product": "UARM Плитоноска RPC без плит",
+        "price_uah": 6036
+      },
+      {
+        "product": "UARM Плитоноска RPC без плит",
+        "price_uah": 6192
+      },
+      {
+        "product": "UARM Плитоноска FPC",
+        "price_uah": 10116
+      },
+      {
+        "product": "UARM Плитоноска FPC",
+        "price_uah": 10578
+      },
+      {
+        "product": "UARM Плитоноска FRPC без плит M",
+        "price_uah": 10654
+      },
+      {
+        "product": "UARM Плитоноска FRPC",
+        "price_uah": 10860
+      },
+      {
+        "product": "UARM Плитоноска FRPC без плит M",
+        "price_uah": 11232
+      },
+      {
+        "product": "UARM Плитоноска FRPC без плит L",
+        "price_uah": 11464
+      },
+      {
+        "product": "UARM Плитоноска FRPC без плит M",
+        "price_uah": 11502
+      },
+      {
+        "product": "UARM Плитоноска FRPC без плит XL",
+        "price_uah": 12707
+      },
+      {
+        "product": "Бронежилет U-Win зі швидким скиданням із камербандами під балістичні пакети. Мультикам",
+        "price_uah": 19480
+      },
+      {
+        "product": "Бронежилет Укртак з плитами і бічним захистом. One size. Мультикам",
+        "price_uah": 43100
+      }
+    ]
+  },
+  {
+    "website": "Global Ballisticks",
+    "price_uah_min": 2690,
+    "price_uah_max": 42990,
+    "products_qty": 56,
+    "social_network": "https://www.instagram.com/globalballistics/",
+    "tel_vodafone": "+380662533086",
+    "tel_kyivstar": "+380984377908",
+    "details": [
+      {
+        "product": "Плитоноска з верхнім і боковим швидким скидом Ares gen. 2",
+        "price_uah": 2690
+      },
+      {
+        "product": "Плитоноска з верхнім і боковим швидким скидом Ares gen. 2. Піксель ММ14.",
+        "price_uah": 2690
+      },
+      {
+        "product": "Плитоноска з верхнім і боковим швидким скидом Ares gen. 2. Олива.",
+        "price_uah": 2690
+      },
+      {
+        "product": "Плитоноска ARES gen.2 МУЛЬТИКАМ З 3-ма ПІДСУМКАМИ під магазини",
+        "price_uah": 3690
+      },
+      {
+        "product": "Плитоноска ARES gen.2 МУЛЬТИКАМ З 3-ма ПІДСУМКАМИ під магазини",
+        "price_uah": 3690
+      },
+      {
+        "product": "Плитоноска ARES gen.2 ОЛИВА. З 3-ма ПІДСУМКАМИ під магазини",
+        "price_uah": 3690
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з швидким боковим та верхнім скиданням (без плит і підсумків) ОЛИВА",
+        "price_uah": 3990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 чорного кольору з швидким боковим та верхнім скиданням (без плит і підсумків)",
+        "price_uah": 3990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 піксель з швидким боковим та верхнім скиданням (без плит і підсумків)",
+        "price_uah": 4190
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з швидким боковим та верхнім скиданням мультикам (без плит і підсумків)",
+        "price_uah": 4190
+      },
+      {
+        "product": "Тактичний жилет - плитоноска Warmor Gen.3 Pro з швидким боковим та верхнім скиданням мультикам (без плит і підсумків)",
+        "price_uah": 4390
+      },
+      {
+        "product": "Тактичний жилет - плитоноска Warmor Gen.3 Pro піксель з швидким боковим та верхнім скиданням (без плит і підсумків)",
+        "price_uah": 4390
+      },
+      {
+        "product": "Плитоноска ARES gen.2 МУЛЬТИКАМ в МАХ комплектації",
+        "price_uah": 4740
+      },
+      {
+        "product": "Плитоноска ARES gen.2 МУЛЬТИКАМ в МАХ комплектації",
+        "price_uah": 4740
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 піксель зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 4990
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 мультикам зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 4990
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 олива зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 4990
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 чорна зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 4990
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 СИНЬОГО кольору зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 4990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 чорна з підсумками під магазини і швидким боковим та верхнім скиданням (без плит)",
+        "price_uah": 4990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит)",
+        "price_uah": 5190
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 піксель з підсумками під магазини і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 5190
+      },
+      {
+        "product": "Плитоноска покращена Warmor Gen.3 pro з підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит)",
+        "price_uah": 5390
+      },
+      {
+        "product": "Тактичний жилет - плитоноска Warmor Gen.3 Pro піксель з підсумками під магазини і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 5390
+      },
+      {
+        "product": "Тактичний жилет - плитоноска Warmor Gen.3 Pro  з підсумками під магазини і швидким боковим та верхнім скиданням  (без плит) ОЛИВА",
+        "price_uah": 5390
+      },
+      {
+        "product": "Тактична покращена плитоноска Warmor Gen.4 з 4 підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит)",
+        "price_uah": 5990
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 піксель зі збільшеною площею захисту, з підсумками під магазини і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 5990
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 зі збільшеною площею захисту, з підсумками під магазини і швидким боковим та верхнім скиданням  (без плит) ЧОРНА",
+        "price_uah": 5990
+      },
+      {
+        "product": "Тактична плитоноска Warmor Gen.4 олива зі збільшеною площею захисту, з підсумками під магазини і швидким боковим та верхнім скиданням  (без плит)",
+        "price_uah": 5990
+      },
+      {
+        "product": "Плитоноска жіноча Warmor Gen.3 FL (for Ladies). З підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит).",
+        "price_uah": 6190
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 Max олива зі швидким боковим та верхнім скиданням з підсумками, сумка сбросу, напашник, аптечка",
+        "price_uah": 6990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 Max чорна зі швидким боковим та верхнім скиданням з підсумками, сумка сбросу, напашник, аптечка",
+        "price_uah": 6990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 Max мультикам зі швидким боковим та верхнім скиданням з підсумками під магазини, сумка сбросу, напашник, аптечка",
+        "price_uah": 6990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 Max в пікселі зі швидким боковим та верхнім скиданням з підсумками, сумка сбросу, напашник, аптечка",
+        "price_uah": 6990
+      },
+      {
+        "product": "Покращена плитоноска Warmor Gen.3 Мах Pro мультикам зі швидким скиданням з підсумками під магазини, сумка сбросу, напашник, аптечка, турнікет",
+        "price_uah": 7490
+      },
+      {
+        "product": "Покращена плитоноска Warmor Gen.3 Max Pro піксель зі швидким скиданням з підсумками під магазини, сумка сбросу, напашник, аптечка, турнікет",
+        "price_uah": 7490
+      },
+      {
+        "product": "Посилена плитоноска Warmor Gen.4 Max з оптимальним набором підсумків",
+        "price_uah": 7990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит)",
+        "price_uah": 7990
+      },
+      {
+        "product": "Кевларовий бронежилет у максимальній комплектації: пластини Armox 4 класу захисту (ДСТУ) + плитоноска Warmor gen.3 Max піксель",
+        "price_uah": 11990
+      },
+      {
+        "product": "Кевларовий бронежилет у максимальній комплектації: пластини Armox 4 класу захисту (ДСТУ) + плитоноска Warmor gen.3 Max мультикам",
+        "price_uah": 11990
+      },
+      {
+        "product": "Тактичний жилет - плитоноска  Warmor Gen.3 Max Pro піксель з захистом шиї і плечей по 1 класу ДСТУ 8782:2018",
+        "price_uah": 16500
+      },
+      {
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 Max з захистом шиї і плечей по 1 класу ДСТУ 8782:2018",
+        "price_uah": 16500
+      },
+      {
+        "product": "Бронежилет 6-го класу. Мультикам. Вага 6.2 кг.",
+        "price_uah": 16900
+      },
+      {
+        "product": "Бронежилет 6-го класу. Піксель (ММ14). Вага 6.2 кг.",
+        "price_uah": 16900
+      },
+      {
+        "product": "Посилена плитоноска Warmor Gen.4 c оптимальним набором підсумків і захистом плечей і шиї",
+        "price_uah": 17490
+      },
+      {
+        "product": "Кевларовий бронежилет в максимальній комплектації: полегшені керамічні пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.3 Max мультикам",
+        "price_uah": 18490
+      },
+      {
+        "product": "Кевларовий бронежилет в максимальній комплектації: полегшені керамічні пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.3 Max піксель",
+        "price_uah": 18490
+      },
+      {
+        "product": "Бронежилет Gen.4.: полегшені керамічні пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.4 з 4 підсумками АК",
+        "price_uah": 18490
+      },
+      {
+        "product": "Бронежилет в максимальній комплектації мултикам: полегшені керамічні пластини 6 класу захисту ДСТУ + плитоноска Warmor gen.3 Max + балістичний захист боків і паху",
+        "price_uah": 20490
+      },
+      {
+        "product": "Бронежилет в максимальній комплектації піксель: полегшені керамічні пластини 6 класу захисту ДСТУ + плитоноска Warmor gen.3 Max + балістичний захист боків і паху",
+        "price_uah": 20490
+      },
+      {
+        "product": "Базовий набір індивідуального захисту: шолом + плитоноска з набором підсумків + комплект плит 6 кл. ДСТУ",
+        "price_uah": 27990
+      },
+      {
+        "product": "Бронежилет в максимальній комплектації мультикам: плитоноска Warmor gen.3 Max + балістичний захист боків, паху, плечей, шиї  + полегшені керамічні пластини 6 класу захисту ДСТУ",
+        "price_uah": 28990
+      },
+      {
+        "product": "Бронежилет в максимальній комплектації піксель: плитоноска Warmor gen.3 Max + балістичний захист боків, паху, плечей, шиї  + полегшені керамічні пластини 6 класу захисту ДСТУ",
+        "price_uah": 28990
+      },
+      {
+        "product": "Бронежилет Gen.4.: м'який захист по 1 класу + полегшені пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.4 з 4 підсумками АК",
+        "price_uah": 28990
+      },
+      {
+        "product": "Плитоноска Warmor Gen. 3 в максимальній комплектації:  балістичний захист шиї, плеч, боковин, живота, паху, поясу і ніг",
+        "price_uah": 33490
+      },
+      {
+        "product": "Бронежилет в максимальній комплектації: полегшені керамічні пластини 6 класу захисту ДСТУ + плитоноска Warmor gen.3 Max + балістичний захист шиї, плеч, боковин, живота, паху, поясу і ніг",
+        "price_uah": 42990
+      }
+    ]
+  },
+  {
+    "website": "Specprom-kr",
+    "price_uah_min": 2990,
+    "price_uah_max": 19900,
+    "products_qty": 32,
+    "social_network": "https://www.instagram.com/specprom_kr/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "",
+    "details": [
+      {
+        "product": "Плитоноска Ares gen.2 МУЛЬТИКАМ",
+        "price_uah": 2990
+      },
+      {
+        "product": "Плитоноска Ares gen.2 ОЛИВА",
+        "price_uah": 2990
+      },
+      {
+        "product": "Плитоноска Ares gen.2 ПИКСЕЛЬ",
+        "price_uah": 2990
+      },
+      {
+        "product": "Плитоноска Ares gen.2 Олива. 3 подсумка АК.",
+        "price_uah": 3390
+      },
+      {
+        "product": "Плитоноска WARMOR с системой быстрого сброса ОЛИВА",
+        "price_uah": 3990
+      },
+      {
+        "product": "Плитоноска WARMOR с системой быстрого сброса ЧЕРНАЯ",
+        "price_uah": 3990
+      },
+      {
+        "product": "Плитоноска WARMOR Gen.3 Pro с сиcтемой быстрого сброса МУЛЬТИКАМ",
+        "price_uah": 4390
+      },
+      {
+        "product": "Плитоноска WARMOR Gen.3 Pro с сиcтемой быстрого сброса ПИКСЕЛЬ",
+        "price_uah": 4390
+      },
+      {
+        "product": "Плитоноска WARMOR Gen.3 Pro с сиcтемой быстрого сброса СИНЯЯ",
+        "price_uah": 4390
+      },
+      {
+        "product": "Плитоноска розвантаження на 9 магазинів МУЛЬТИКАМ",
+        "price_uah": 4390
+      },
+      {
+        "product": "Плитоноска Ares Gen.2 Мультикам. 3 подсумка АК.",
+        "price_uah": 4490
+      },
+      {
+        "product": "Плитоноска Ares Gen.2 Пиксель ММ14. 3 подсумка АК.",
+        "price_uah": 4490
+      },
+      {
+        "product": "Плитоноска WARMOR с системой быстрого сброса с подсумками ОЛИВА",
+        "price_uah": 4590
+      },
+      {
+        "product": "Плитоноска WARMOR с системой быстрого сброса с подсумками ЧЕРНАЯ",
+        "price_uah": 4590
+      },
+      {
+        "product": "Плитоноска WARMOR gen.4 СИНЕГО ЦВЕТА",
+        "price_uah": 4900
+      },
+      {
+        "product": "Плитоноска WARMOR Gen.3 Pro Мультикам. Сиcтема быстрого сброса. 3 подсумка.",
+        "price_uah": 5350
+      },
+      {
+        "product": "Плитоноска WARMOR Gen.3 Pro Пиксель ММ14. Сиcтема быстрого сброса. 3 подсумка.",
+        "price_uah": 5350
+      },
+      {
+        "product": "Плитоноска 'YAKEDA' с сиcтемой быстрого сброса МУЛЬТИКАМ",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска Ares gen.2 МУЛЬТИКАМ С ПОДСУМКАМИ",
+        "price_uah": 5490
+      },
+      {
+        "product": "Плитоноска Ares gen.2 Олива С ПОДСУМКАМИ",
+        "price_uah": 5490
+      },
+      {
+        "product": "Плитоноска Ares gen.2 ПИКСЕЛЬ С ПОДСУМКАМИ",
+        "price_uah": 5490
+      },
+      {
+        "product": "Плитоноска WARMOR gen.4 Мультикам. 4 подсумка.",
+        "price_uah": 5900
+      },
+      {
+        "product": "Плитоноска WARMOR gen.4 Пиксель. 4 подсумка.",
+        "price_uah": 5900
+      },
+      {
+        "product": "Плитоноска WARMOR gen.4 Олива. 4 подсумка.",
+        "price_uah": 5900
+      },
+      {
+        "product": "Плитоноска WARMOR gen.4 Черная. 4 подсумка.",
+        "price_uah": 5900
+      },
+      {
+        "product": "Плитоноска WARMOR с системой быстрого сброса ОЛИВА с подсумками",
+        "price_uah": 6900
+      },
+      {
+        "product": "Плитоноска Warmor Gen.3 Pro Max Черный. Система быстрого сброса. 7 подсумок.",
+        "price_uah": 6900
+      },
+      {
+        "product": "Плитоноска Warmor Gen.3 Pro Max Мультикам. Система быстрого сброса. 7 подсумок.",
+        "price_uah": 7490
+      },
+      {
+        "product": "Плитоноска Warmor Gen.3 Pro Max Пиксель ММ14. Система быстрого сброса. 7 подсумок.",
+        "price_uah": 7490
+      },
+      {
+        "product": "Плитоноска Warmor Gen.4 Max. Мультикам. 9 подсумков.",
+        "price_uah": 8900
+      },
+      {
+        "product": "Бронежилет Warmor Gen.4 с защитой и плитами: мягкая защита по 1 кл. ДСТУ + облегченные керамические пластины 6 класса защиты ГОСТ + плитоноска Warmor Gen.4 с подсумками АК",
+        "price_uah": 19900
+      },
+      {
+        "product": "Бронежилет Warmor Gen.4 с плитами: облегченные керамические пластины 6 класса защиты ГОСТ + плитоноска Warmor Gen.4 с подсумками АК",
+        "price_uah": 19900
+      }
+    ]
+  },
+  {
+    "website": "Molli",
+    "price_uah_min": 3400,
+    "price_uah_max": 9639,
+    "products_qty": 11,
+    "social_network": "https://www.instagram.com/molli.u.a?igshid=NmZiMzY2Mjc%3D",
+    "tel_vodafone": "+380994603556",
+    "tel_kyivstar": "+380962019665",
+    "details": [
+      {
+        "product": "Комплект балістичних пакетів 300х150 мм 1-го класу захисту (ДСТУ 8782:2018) МОЛЛІ BP-003",
+        "price_uah": 3400
+      },
+      {
+        "product": "Плитоноска зі швидким скиданням чорна (PLATE CARRIER) МОЛЛІ PL-012",
+        "price_uah": 4200
+      },
+      {
+        "product": "Плитоноска NOVA з подвійним скиданням піксель (PLATE CARRIER) МОЛЛІ PL-009",
+        "price_uah": 4400
+      },
+      {
+        "product": "Плитоноска МІЦЬ зі швидким скиданням MultiCam (PLATE CARRIER) МОЛЛІ PL-006",
+        "price_uah": 4600
+      },
+      {
+        "product": "Плитоноска з подвійним скиданням піксель (PLATE CARRIER) МОЛЛІ PL-008",
+        "price_uah": 4900
+      },
+      {
+        "product": "Тактичний комплект амуніції 'Базовий' Мультикам МОЛЛІ KMPL-003",
+        "price_uah": 6316
+      },
+      {
+        "product": "Плитоноска МІЦЬ з балістичним захистом, MultiCam (PLATE CARRIER) МОЛЛІ PZ-006",
+        "price_uah": 6800
+      },
+      {
+        "product": "Плитоноска з балістичним захистом, піксель (PLATE CARRIER) МОЛЛІ PZ-008",
+        "price_uah": 7055
+      },
+      {
+        "product": "Плитоноска NOVA з балістичним захистом, піксель (PLATE CARRIER) МОЛЛІ PZ-009",
+        "price_uah": 7480
+      },
+      {
+        "product": "Тактичний комплект амуніції 'Стандарт' Піксель МОЛЛІ KMPL-001",
+        "price_uah": 9495
+      },
+      {
+        "product": "Тактичний комплект амуніції 'Стандарт' Мультикам МОЛЛІ KMPL-002",
+        "price_uah": 9639
+      }
+    ]
+  },
+  {
+    "website": "Stvol",
+    "price_uah_min": 3600,
+    "price_uah_max": 11360,
+    "products_qty": 5,
+    "social_network": "https://www.instagram.com/stvol_ua/",
+    "tel_vodafone": "+380504177677",
+    "tel_kyivstar": "",
+    "details": [
+      {
+        "product": "Плитоноска Gunner Condor (coyote brown)",
+        "price_uah": 3600
+      },
+      {
+        "product": "Плитоноска  Phalanx Condor (slate)",
+        "price_uah": 3600
+      },
+      {
+        "product": "Плитоноска Phalanx Condor (coyote brown)",
+        "price_uah": 3600
+      },
+      {
+        "product": "Плитоноска  Cyclone Condor (coyote brown)",
+        "price_uah": 10080
+      },
+      {
+        "product": "Плитоноска  Cyclone Condor (multicam)",
+        "price_uah": 11360
+      }
+    ]
+  },
+  {
+    "website": "Maroder",
+    "price_uah_min": 3833,
+    "price_uah_max": 7714,
+    "products_qty": 6,
+    "social_network": "https://www.instagram.com/mrd_tactical/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380685571337",
+    "details": [
+      {
+        "product": "Плитоноска EMR QR Multicam",
+        "price_uah": 3833
+      },
+      {
+        "product": "Плитоноска EMR QR GEN 3 Multicam",
+        "price_uah": 4932
+      },
+      {
+        "product": "Плитоноска StrandHogg Plate Carrier Ranger Green. Emersongear",
+        "price_uah": 6846
+      },
+      {
+        "product": "Плитоноска Easy Plate Carrier A-TACS LE. OPS",
+        "price_uah": 6980
+      },
+      {
+        "product": "Плитоноска Easy Plate Carrier A-TACS AU. OPS",
+        "price_uah": 6980
+      },
+      {
+        "product": "Плитоноска LBT6094A Style Plate Carrier Multicam. Emersongear",
+        "price_uah": 7714
+      }
+    ]
+  },
+  {
+    "website": "Militarist",
+    "price_uah_min": 4732,
+    "price_uah_max": 9204,
+    "products_qty": 40,
+    "social_network": "http://instagram.com/tm_militarist",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380678296207",
+    "details": [
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Black",
+        "price_uah": 4732
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II MM14",
+        "price_uah": 4732
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Coyote",
+        "price_uah": 5044
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Black",
+        "price_uah": 5044
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS MM14",
+        "price_uah": 5044
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Coyote",
+        "price_uah": 5200
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Ranger Green",
+        "price_uah": 5200
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Black",
+        "price_uah": 5460
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Coyote",
+        "price_uah": 5460
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II MM14",
+        "price_uah": 5460
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Ranger Green",
+        "price_uah": 5460
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Ranger Green",
+        "price_uah": 5564
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Coyote",
+        "price_uah": 5564
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS MM14",
+        "price_uah": 5564
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Black",
+        "price_uah": 5564
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Ranger Green",
+        "price_uah": 5590
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Black",
+        "price_uah": 5980
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II MM14",
+        "price_uah": 5980
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Coyote",
+        "price_uah": 6500
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Ranger Green",
+        "price_uah": 6500
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Coyote",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Black",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Ranger Green",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL MM14",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Black",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL MM14",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Coyote",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Ranger Green",
+        "price_uah": 6552
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Black",
+        "price_uah": 7072
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Coyote",
+        "price_uah": 7072
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Ranger Green",
+        "price_uah": 7072
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II MM14",
+        "price_uah": 7072
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Multicam",
+        "price_uah": 7540
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS Gen.II Multicam",
+        "price_uah": 7540
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Multicam",
+        "price_uah": 7800
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Multicam",
+        "price_uah": 7800
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Multicam",
+        "price_uah": 8840
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Multicam",
+        "price_uah": 8840
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass QRS XL Multicam",
+        "price_uah": 9204
+      },
+      {
+        "product": "M-Tac плитоноска Cuirass FAST QRS XL Multicam",
+        "price_uah": 9204
+      }
+    ]
+  },
+  {
+    "website": "Velmet",
+    "price_uah_min": 4997,
+    "price_uah_max": 19800,
+    "products_qty": 2,
+    "social_network": "https://www.instagram.com/velmet.ua/",
+    "tel_vodafone": "+380993738778",
+    "tel_kyivstar": "+380673738778",
+    "details": [
+      {
+        "product": "Плитоноска Plate Carrier Perun 5-20 MaWka ®",
+        "price_uah": 4997
+      },
+      {
+        "product": "Плитоноска Perun-6 SOF LC MaWka",
+        "price_uah": 19800
+      }
+    ]
+  },
+  {
+    "website": "Ukrarmor",
+    "price_uah_min": 6450,
+    "price_uah_max": 20350,
+    "products_qty": 8,
+    "social_network": "https://www.instagram.com/ukrarmor/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "",
+    "details": [
+      {
+        "product": "Плитоноска покращена (PRO). Система швидкого скидання. Мультикам",
+        "price_uah": 6450
+      },
+      {
+        "product": "Плитоноска IBV (аналог IOTV). Збільшена площа захисту. Колір Піксель (мм-14). L/XL",
+        "price_uah": 6900
+      },
+      {
+        "product": "Плитоноска 5.11 TacTec®. Shtorm",
+        "price_uah": 9380
+      },
+      {
+        "product": "Бронежилет 4-го класу. Вага 7 кг. Комплект: 2 легкі сталеві бронеплити та плитоноска. Піксель (мм-14)",
+        "price_uah": 12350
+      },
+      {
+        "product": "Бронежилет 5-го класу. Вага 8.6 кг. Комплект: 2 сталеві бронеплити та плитоноска. Мультикам",
+        "price_uah": 14050
+      },
+      {
+        "product": "Бронежилет 3-го класу. Вага 3.8 кг. Комплект: 2 бронеплити та плитоноска. Піксель (мм-14)",
+        "price_uah": 17850
+      },
+      {
+        "product": "Бронежилет 3-го класу (надлегкий). Вага 3.2 кг. Комплект: 2 бронеплити та плитоноска. Мультикам",
+        "price_uah": 19850
+      },
+      {
+        "product": "Бронежилет 6-го класу. Вага 6.2 кг. Керамічні бронеплити 2.8 кг (алюміній оксид). Піксель (мм-14)",
+        "price_uah": 20350
+      }
+    ]
+  },
+  {
+    "website": "Sts",
+    "price_uah_min": 7000,
+    "price_uah_max": 9000,
+    "products_qty": 4,
+    "social_network": "https://www.instagram.com/stsgear/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+38674457255",
+    "details": [
+      {
+        "product": "Плитоноска Броненосець Minimus coyote M",
+        "price_uah": 7000
+      },
+      {
+        "product": "Плитоноска Броненосець Minimus coyote L",
+        "price_uah": 7500
+      },
+      {
+        "product": "Плитоноска Броненосець Minimus MULTICAM® ORIGINAL M",
+        "price_uah": 8500
+      },
+      {
+        "product": "Плитоноска Броненосець Minimus MULTICAM® ORIGINAL XL",
+        "price_uah": 9000
+      }
+    ]
+  },
+  {
+    "website": "Ataka",
+    "price_uah_min": 7560,
+    "price_uah_max": 10000,
+    "products_qty": 2,
+    "social_network": "https://www.facebook.com/ATAKA.kiev.ua/",
+    "tel_vodafone": "+380955587673",
+    "tel_kyivstar": "+380679305772",
+    "details": [
+      {
+        "product": "А.Т.А.К.А. Плитоноска ЛЮТИЙ V2 ПОВНИЙ КОМПЛЕКТ SOF MULTICAM",
+        "price_uah": 7560
+      },
+      {
+        "product": "А.Т.А.К.А. ПЛИТОНОСКА PLATE CARRIER 'АРХАНГЕЛ EVO L ' SOF MULTICAM ",
+        "price_uah": 10000
       }
     ]
   }
