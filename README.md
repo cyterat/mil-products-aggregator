@@ -21,7 +21,7 @@ Currently supported online stores:
 
 _Note: the `main.py` script produces a JSON list of dictionaries where each dictionary represents a scraped website._
 
-Example of a single scraped website in `output.json`:
+Example of the format of a single scraped website in `output.json`:
 
 - __website__: str,
 - __price_uah_min__: int,
@@ -35,7 +35,15 @@ Example of a single scraped website in `output.json`:
   - __product__: str, __price_uah__: int
   - . . .
 
+### JSON file example
+
+Search term: __"плитоноска"__ (platecarrier)
+
+![json-output-example](data/mil-products-scraper-json-example.png)
+
 ### Terminal output example
+
+Search term: __"плитоноска"__ (platecarrier)
 
 _Note: only end lines are included in the screenshot_
 
