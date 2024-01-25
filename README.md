@@ -37,13 +37,13 @@ Example of the format of a single scraped website in `output.json`:
 
 ### JSON file example
 
-Search term: __"плитоноска"__ (platecarrier)
+Search term: __"плитоноска"__ (plate carrier)
 
 ![json-output-example](data/mil-products-scraper-json-example.png)
 
 ### Terminal output example
 
-Search term: __"плитоноска"__ (platecarrier)
+Search term: __"плитоноска"__ (plate carrier)
 
 _Note: only end lines are included in the screenshot_
 
