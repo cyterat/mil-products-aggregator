@@ -17,6 +17,8 @@ Currently supported online stores:
 
 ## Script output
 
+### JSON file format
+
 _Note: the `main.py` script produces a JSON list of dictionaries where each dictionary represents a scraped website._
 
 Example of a single scraped website in `output.json`:
@@ -32,6 +34,12 @@ Example of a single scraped website in `output.json`:
   - __product__: str, __price_uah__: int
   - __product__: str, __price_uah__: int
   - . . .
+
+### Terminal output example
+
+\* _only end lines included in the screenshot_
+
+![terminal-output-example](data/mil-products-scrapinf-cli-example.png)
 
 ***
 
