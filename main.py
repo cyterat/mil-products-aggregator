@@ -367,7 +367,7 @@ websites = [
 
 
 # Dummy product name
-product_name = "плитоноска"
+product_name = "флісова шапка"
 
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
@@ -382,15 +382,33 @@ sorted_result = sorted(result, key=lambda x: x['price_uah_min'], reverse=False) 
 for entry in sorted_result:
     entry['details'] = sorted(entry['details'], key=lambda x: x['price_uah'], reverse=False)  # Set reverse=True for descending order
 
-# Create path
-output_file_path = os.path.join(os.getcwd(),"data","output.json")
+#########################################################
+# THIS CODE SEGMENT WRITES SCRIPT OUTPUT INTO A JSON FILE
+#########################################################
 
-# Write to JSON file
-with open(output_file_path, 'w', encoding='utf-8') as output_file:
-    json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
+# # Create path
+# output_file_path = os.path.join(os.getcwd(),"data","output.json")
 
-print(f"Data written to {output_file_path}")
+# # Write to JSON file
+# with open(output_file_path, 'w', encoding='utf-8') as output_file:
+#     json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
 
-# Print elapsed time
-check_time = time.time() - start_time
-print(f"\nEllapsed time: {check_time:.0f} seconds")
+# print(f"Data written to {output_file_path}")
+
+# # Print elapsed time
+# check_time = time.time() - start_time
+# print(f"\nEllapsed time: {check_time:.0f} seconds")
+
+#########################################################
+# THIS CODE SEGMENT DISPLAYS SCRIPT OUTPUT IN A TERMINAL 
+#########################################################
+
+total_products_qty = sum([website["products_qty"] for website in sorted_result])
+print("Знайдено товарів:", total_products_qty)
+print("")
+
+for website in sorted_result:
+    print(website["website"])
+    print(">", f"К-сть: {website["products_qty"]} шт.")
+    print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
+    print("-"*25)
