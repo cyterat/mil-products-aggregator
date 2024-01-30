@@ -372,7 +372,7 @@ product_name = "флісова шапка"
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
     
-# Aggregate data and write to JSON file
+# Aggregate data
 result = aggregate_data(websites, fmt_product_name, include_details=True)
 
 # Sorting the list of dictionaries based on 'price_uah_min'
