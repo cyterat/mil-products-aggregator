@@ -1,801 +1,802 @@
 [
   {
-    "website": "Kamber",
-    "price_uah_min": 542,
-    "price_uah_max": 542,
-    "products_qty": 1,
-    "social_network": "https://www.instagram.com/kamber_tactical/",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380684262823",
-    "details": [
-      {
-        "product": "Одинарний підсумок під магазин MPO",
-        "price_uah": 542
-      }
-    ]
-  },
-  {
     "website": "Prof1Group",
-    "price_uah_min": 834,
-    "price_uah_max": 16679,
-    "products_qty": 9,
+    "price_uah_min": 54,
+    "price_uah_max": 17334,
+    "products_qty": 155,
     "social_network": "https://www.instagram.com/prof1group.ua/",
     "tel_vodafone": "",
     "tel_kyivstar": "+380676595979",
     "details": [
       {
-        "product": "Плитоноска Assault Plate Carrier 'APC' (чохол для бронежилета) MTP/MCU camo",
-        "price_uah": 834
+        "product": "Сумка 'PROF1 Group' Black",
+        "price_uah": 54
       },
       {
-        "product": "Плитоноска Assault Plate Carrier 'APC' (чохол для бронежилета) Coyote Brown",
-        "price_uah": 834
+        "product": "Сумка поясна 'WAIST POUCH LYCRA® CLEAR' Olive",
+        "price_uah": 264
       },
       {
-        "product": "Плитоноска Assault Plate Carrier 'APC' II Gen. (чохол для бронежилета) Coyote Brown",
-        "price_uah": 1878
+        "product": "Сумка для туалетного приладдя польова (англійська армія) Olive",
+        "price_uah": 522
       },
       {
-        "product": "Плитоноска Assault Plate Carrier 'APC' II Gen. (чохол для бронежилета) MTP/MCU camo",
-        "price_uah": 2064
+        "product": "Сумка для туалетного приладдя польова (англійська армія) Khaki",
+        "price_uah": 522
       },
       {
-        "product": "Плитоноска 'Plate Carrier MultiCam' (чохол для бронежилета) Multicam",
-        "price_uah": 9846
+        "product": "Сумка для туалетного приладдя польова (англійська армія) Black",
+        "price_uah": 522
       },
       {
-        "product": "Плитоноска 'Plate Carrier Coyote' (чохол для бронежилета) Coyote",
-        "price_uah": 9846
+        "product": "Сумка поясна Sturm Mil-Tec 'Traveller' Black Black",
+        "price_uah": 546
       },
       {
-        "product": "Плитоноска 'Plate Carrier Olive' (чохол для бронежилета) Olive",
-        "price_uah": 9846
+        "product": "Сумка поясна Sturm Mil-Tec 'Traveller' Dark Coyote DARK COYOTE",
+        "price_uah": 546
       },
       {
-        "product": "Плитоноска UARM 'FRPC™ Fast Response Plate Carrier, size M' (чохол для бронежилета) Multicam",
-        "price_uah": 14058
+        "product": "Сумка поясна Sturm Mil-Tec 'Traveller' Olive OLIVE",
+        "price_uah": 546
       },
       {
-        "product": "Плитоноска UARM 'FRPC™ Fast Response Plate Carrier, size XL' (чохол для бронежилета та камербанд) Multicam",
-        "price_uah": 16679
+        "product": "Сумка поясна з флягою Olive",
+        "price_uah": 600
+      },
+      {
+        "product": "Сумка поясна з флягою Black",
+        "price_uah": 600
+      },
+      {
+        "product": "Підсумок для скидання магазинів 'BASE' Coyote Brown",
+        "price_uah": 744
+      },
+      {
+        "product": "Сумка поясна 'FANNY PACK MOLLE' Olive",
+        "price_uah": 792
+      },
+      {
+        "product": "Сумка поясна 'FANNY PACK MOLLE' Coyote",
+        "price_uah": 792
+      },
+      {
+        "product": "Сумка поясна 'FANNY PACK MOLLE' Black",
+        "price_uah": 792
+      },
+      {
+        "product": "Сумка для інструментів мала Black",
+        "price_uah": 798
+      },
+      {
+        "product": "Сумка для інструментів маленька Olive",
+        "price_uah": 798
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Range Master Small Pouch' Python",
+        "price_uah": 798
+      },
+      {
+        "product": "Підсумок для скидання магазинів 'BASE' MTP/MCU camo",
+        "price_uah": 840
+      },
+      {
+        "product": "Сумка для інструментів мала Німецький камуфляж",
+        "price_uah": 852
+      },
+      {
+        "product": "Сумка для інструментів велика (600D Pol) Olive",
+        "price_uah": 930
+      },
+      {
+        "product": "Сумка для інструментів велика (600D Pol) Black",
+        "price_uah": 930
+      },
+      {
+        "product": "Сумка для інструментів велика (600D Pol) Німецький камуфляж",
+        "price_uah": 954
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Range Master Medium Pouch' Black",
+        "price_uah": 996
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Range Master Padded Pouch' Black",
+        "price_uah": 1080
+      },
+      {
+        "product": "Сумка-напашник 'Large Lower Accessory Pouch' Olive",
+        "price_uah": 1110
+      },
+      {
+        "product": "Підсумок для скидання магазинів із жорсткою вставкою Multicam",
+        "price_uah": 1164
+      },
+      {
+        "product": "Підсумок для скидання магазинів із жорсткою вставкою Coyote",
+        "price_uah": 1164
+      },
+      {
+        "product": "Підсумок для скидання магазинів із жорсткою вставкою Ukrainian Digital Camo (MM-14)",
+        "price_uah": 1164
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Range Master Bucket Bag 4L' Python",
+        "price_uah": 1206
+      },
+      {
+        "product": "Сумка-напашник 'Large Lower Accessory Pouch' Multicam",
+        "price_uah": 1278
+      },
+      {
+        "product": "Сумка-напашник 'Large Lower Accessory Pouch' Coyote",
+        "price_uah": 1278
+      },
+      {
+        "product": "Сумка-напашник 'Large Lower Accessory Pouch' Black",
+        "price_uah": 1278
+      },
+      {
+        "product": "Підсумок для скидання магазинів '5.11 Tactical Flex Drop Pouch 2.0' RANGER GREEN",
+        "price_uah": 1404
+      },
+      {
+        "product": "Підсумок для скидання магазинів '5.11 Tactical Flex Drop Pouch 2.0' Storm",
+        "price_uah": 1404
+      },
+      {
+        "product": "Підсумок для скидання магазинів '5.11 Tactical Flex Drop Pouch 2.0' Kangaroo",
+        "price_uah": 1404
+      },
+      {
+        "product": "Кнопка скидання магазину для AR/M4 Magpul 'Enhanced AR Magazine Release' Black",
+        "price_uah": 1446
+      },
+      {
+        "product": "Сумка для ноутбука '5.11 Tactical RAPID LAPTOP CASE 15 inch' Kangaroo",
+        "price_uah": 1452
+      },
+      {
+        "product": "Сумка для ноутбука '5.11 Tactical RAPID LAPTOP CASE 15 inch' Coal",
+        "price_uah": 1452
+      },
+      {
+        "product": "Сумка тактична плечова 'SLING BAG TANKER' Olive",
+        "price_uah": 1500
+      },
+      {
+        "product": "Сумка '5.11 Tactical RAPID WAIST PACK 3L' Black",
+        "price_uah": 1872
+      },
+      {
+        "product": "Сумка '5.11 Tactical RAPID WAIST PACK 3L' Kangaroo",
+        "price_uah": 1872
+      },
+      {
+        "product": "Сумка '5.11 Tactical RAPID WAIST PACK 3L' Python",
+        "price_uah": 1872
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'LV6 Waist Pack 2.0' Python",
+        "price_uah": 1992
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'LV6 Waist Pack 2.0' Turbulence",
+        "price_uah": 1992
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'LV6 Waist Pack 2.0' Blueblood",
+        "price_uah": 1992
+      },
+      {
+        "product": "Сумка-кобура 'GUNFIGHTER' Coyote Brown",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка міська для прихованого носіння зброї 'HERALD' Coyote Brown",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'SATELLITE' Combat Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'PARVUS' Coyote Brown",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'PARVUS' Combat Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'SATELLITE' MultiCam Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'PARVUS' Ukrainian Digital Camo (MM-14)",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'SATELLITE' Ukrainian Digital Camo (MM-14)",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка міська для прихованого носіння зброї 'HERALD' Ukrainian Digital Camo (MM-14)",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'GUNFIGHTER' MTP/MCU camo",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'SATELLITE' MTP/MCU camo",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка міська для прихованого носіння зброї 'HERALD' MultiCam Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка міська для прихованого носіння зброї 'HERALD' Combat Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'GUNFIGHTER' Ukrainian Digital Camo (MM-14)",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка міська для прихованого носіння зброї 'HERALD' MTP/MCU camo",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'PARVUS' MTP/MCU camo",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'PARVUS' MultiCam Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'GUNFIGHTER' MultiCam Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'SATELLITE' Coyote Brown",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'GUNFIGHTER' Combat Black",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка-кобура 'GUNFIGHTER' Tundra",
+        "price_uah": 1998
+      },
+      {
+        "product": "Сумка тактична пістолетна поясна '5.11 Tactical Select Carry Pistol Pouch' Charcoal",
+        "price_uah": 2004
+      },
+      {
+        "product": "Сумка швейцарська для інструментів Multi",
+        "price_uah": 2058
+      },
+      {
+        "product": "Сумка нагрудна 5.11 Tactical 'Skyweight Survival Chest Pack' Major Brown",
+        "price_uah": 2196
+      },
+      {
+        "product": "Сумка нагрудна 5.11 Tactical 'Skyweight Survival Chest Pack' Sage Green",
+        "price_uah": 2196
+      },
+      {
+        "product": "Сумка нагрудна 5.11 Tactical 'Skyweight Survival Chest Pack' Volcanic",
+        "price_uah": 2196
+      },
+      {
+        "product": "Сумка-рюкзак тактична 5.11 Tactical 'MOLLE Packable Sling Pack' Volcanic",
+        "price_uah": 2196
+      },
+      {
+        "product": "Сумка-рюкзак тактична 5.11 Tactical 'MOLLE Packable Sling Pack' Sage Green",
+        "price_uah": 2196
+      },
+      {
+        "product": "Сумка-рюкзак тактична 5.11 Tactical 'MOLLE Packable Sling Pack' Major Brown",
+        "price_uah": 2196
+      },
+      {
+        "product": "Сумка транспортна польова 'MAX Pack' Combat Black",
+        "price_uah": 2298
+      },
+      {
+        "product": "Сумка транспортна польова 'MAX Pack' Olive Drab",
+        "price_uah": 2298
+      },
+      {
+        "product": "Сумка середня Sturm Mil-Tec US Combat Parachute Cargo Bag OD Olive Drab",
+        "price_uah": 2346
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'Emergency Ready Pouch 3l' Night Watch",
+        "price_uah": 2400
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'Emergency Ready Pouch 3l' Black",
+        "price_uah": 2400
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Tall Bag 26L' Kangaroo",
+        "price_uah": 2496
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Tall Bag 26L' RANGER GREEN",
+        "price_uah": 2496
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Mike' Kangaroo",
+        "price_uah": 2592
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Mike' Black",
+        "price_uah": 2592
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Mike' Kalamata Green",
+        "price_uah": 2592
+      },
+      {
+        "product": "Сумка універсальна 'GLADIUS' MTP/MCU camo",
+        "price_uah": 2694
+      },
+      {
+        "product": "Сумка універсальна 'GLADIUS' Combat Black",
+        "price_uah": 2694
+      },
+      {
+        "product": "Сумка універсальна 'GLADIUS' Coyote Brown",
+        "price_uah": 2694
+      },
+      {
+        "product": "Сумка универсальна 'GLADIUS' MultiCam Black",
+        "price_uah": 2694
+      },
+      {
+        "product": "Сумка універсальна 'GLADIUS' Ukrainian Digital Camo (MM-14)",
+        "price_uah": 2694
+      },
+      {
+        "product": "Сумка нагрудна 5.11 Tactical 'Skyweight Utility Chest Pack' Major Brown",
+        "price_uah": 2790
+      },
+      {
+        "product": "Сумка нагрудна 5.11 Tactical 'Skyweight Utility Chest Pack' Sage Green",
+        "price_uah": 2790
+      },
+      {
+        "product": "Сумка тактична для прихованого носіння зброї 5.11 Tactical 'Daily Deploy Push Pack' RANGER GREEN",
+        "price_uah": 2802
+      },
+      {
+        "product": "Сумка тактична для прихованого носіння зброї 5.11 Tactical 'Daily Deploy Push Pack' Black",
+        "price_uah": 2802
+      },
+      {
+        "product": "Сумка тактична стрілецька для БК '5.11 Tactical® Bail Out Bag' Flat Dark Earth",
+        "price_uah": 2814
+      },
+      {
+        "product": "Сумка-кобура тактична оперативна плечова '5.11 PUSH Pack' Flat Dark Earth",
+        "price_uah": 2814
+      },
+      {
+        "product": "Сумка тактична для прихованого носіння зброї '5.11 2-Banger Bag' Double Tap",
+        "price_uah": 3084
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'Emergency Ready Bag 6l' Night Watch",
+        "price_uah": 3192
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'Emergency Ready Bag 6l' Black",
+        "price_uah": 3192
+      },
+      {
+        "product": "Сумка транспортна Olive",
+        "price_uah": 3216
+      },
+      {
+        "product": "Сумка транспортна Black",
+        "price_uah": 3216
+      },
+      {
+        "product": "Сумка польова 'AGER' MTP/MCU camo",
+        "price_uah": 3496
+      },
+      {
+        "product": "Сумка польова 'AGER' MultiCam Black",
+        "price_uah": 3496
+      },
+      {
+        "product": "Сумка польова 'AGER' Ukrainian Digital Camo (MM-14)",
+        "price_uah": 3496
+      },
+      {
+        "product": "Сумка польова 'AGER' Combat Black",
+        "price_uah": 3496
+      },
+      {
+        "product": "Сумка польова 'AGER' Coyote Brown",
+        "price_uah": 3496
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Lima' Kangaroo",
+        "price_uah": 3588
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Lima' Black",
+        "price_uah": 3588
+      },
+      {
+        "product": "Сумка універсальна '5.11 Tactical Load Ready Utility Lima' Kalamata Green",
+        "price_uah": 3588
+      },
+      {
+        "product": "Сумка тактична '5.11 Tactical Patrol Ready' Black",
+        "price_uah": 3594
+      },
+      {
+        "product": "Сумка тактична '5.11 Tactical Range Qualifier Bag' Black",
+        "price_uah": 3984
+      },
+      {
+        "product": "Сумка-рюкзак бойова для дисків ДП-27 'BASE' MTP/MCU camo",
+        "price_uah": 4122
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 6' Kangaroo",
+        "price_uah": 4182
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 6' RANGER GREEN",
+        "price_uah": 4182
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 6' Black",
+        "price_uah": 4182
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 6' Double Tap",
+        "price_uah": 4182
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 8' RANGER GREEN",
+        "price_uah": 4584
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 8' Black",
+        "price_uah": 4584
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 8' Double Tap",
+        "price_uah": 4584
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 8' Kangaroo",
+        "price_uah": 4584
+      },
+      {
+        "product": "Сумка-рюкзак 5.11 Tactical 'Overwatch Briefcase 16L' Kangaroo",
+        "price_uah": 4782
+      },
+      {
+        "product": "Сумка транспортна TAP 98 Olive",
+        "price_uah": 4878
+      },
+      {
+        "product": "Сумка транспортна TAP 98 Black",
+        "price_uah": 4878
+      },
+      {
+        "product": "Сумка 5.11 Tactical 'Overwatch Messenger' Double Tap",
+        "price_uah": 5190
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 10' Double Tap",
+        "price_uah": 5388
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 10' Black",
+        "price_uah": 5388
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 10' RANGER GREEN",
+        "price_uah": 5388
+      },
+      {
+        "product": "Сумка-рюкзак тактична '5.11 Tactical RUSH MOAB 10' Kangaroo",
+        "price_uah": 5388
+      },
+      {
+        "product": "Сумка транспортна польова 'Double Strap Duffle Bag' Coyote",
+        "price_uah": 5532
+      },
+      {
+        "product": "Сумка транспортна польова 'Double Strap Duffle Bag' Olive",
+        "price_uah": 5532
+      },
+      {
+        "product": "Сумка тактична '5.11 Tactical Range Ready Bag' Black",
+        "price_uah": 5976
+      },
+      {
+        "product": "Сумка тактична '5.11 Tactical Range Ready Bag' Sandstone",
+        "price_uah": 5976
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Allhaula Duffel 45L' Old Gold",
+        "price_uah": 6438
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Allhaula Duffel 45L' Volcanic",
+        "price_uah": 6438
+      },
+      {
+        "product": "Сумка транспортна Sturm Mil-Tec 'Combat Duffle Bag with Wheel' Coyote",
+        "price_uah": 6918
+      },
+      {
+        "product": "Сумка транспортна Sturm Mil-Tec 'Combat Duffle Bag with Wheel' Olive",
+        "price_uah": 6918
+      },
+      {
+        "product": "Сумка транспортна '5.11 Tactical Range Ready™ Trainer Bag 50L' Kangaroo",
+        "price_uah": 6972
+      },
+      {
+        "product": "Сумка транспортна '5.11 Tactical Range Ready™ Trainer Bag 50L' Black",
+        "price_uah": 6972
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Allhaula Duffel 65L' Volcanic",
+        "price_uah": 7194
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Allhaula Duffel 65L' Old Gold",
+        "price_uah": 7194
+      },
+      {
+        "product": "Камербанд з адаптером для швидкого скидання UARM для 5.11 TacTec Plate Carrier Multicam",
+        "price_uah": 7650
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Allhaula Duffel 90L' Volcanic",
+        "price_uah": 7950
+      },
+      {
+        "product": "Сумка тактична медична транспортна '5.11 Tactical ALS/BLS Duffel Bag 50L' Olympian",
+        "price_uah": 10362
+      },
+      {
+        "product": "Сумка транспортна '5.11 Tactical LOAD UP 22' CARRY ON' RANGER GREEN",
+        "price_uah": 10572
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Mission Ready™ 3.0 90L' Black",
+        "price_uah": 12750
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Mission Ready™ 3.0 90L' RANGER GREEN",
+        "price_uah": 12750
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Mission Ready™ 3.0 90L' Double Tap",
+        "price_uah": 12750
+      },
+      {
+        "product": "Сумка тактична транспортна '5.11 Tactical Mission Ready™ 3.0 90L' Kangaroo",
+        "price_uah": 12750
+      },
+      {
+        "product": "Сумка тактична велика транспортна '5.11 Tactical SOMS 3.0 126L' RANGER GREEN",
+        "price_uah": 16338
+      },
+      {
+        "product": "Сумка тактична велика транспортна '5.11 Tactical SOMS 3.0 126L' Kangaroo",
+        "price_uah": 16338
+      },
+      {
+        "product": "Сумка тактична велика транспортна '5.11 Tactical SOMS 3.0 126L' Black",
+        "price_uah": 16338
+      },
+      {
+        "product": "Сумка тактична велика транспортна '5.11 Tactical SOMS 3.0 126L' Double Tap",
+        "price_uah": 16338
+      },
+      {
+        "product": "Сумка транспортна '5.11 Tactical CAMS ™ 3.0 190L' RANGER GREEN",
+        "price_uah": 17334
+      },
+      {
+        "product": "Сумка транспортна '5.11 Tactical CAMS ™ 3.0 190L' Kangaroo",
+        "price_uah": 17334
+      },
+      {
+        "product": "Сумка транспортна '5.11 Tactical CAMS ™ 3.0 190L' Black",
+        "price_uah": 17334
+      },
+      {
+        "product": "Сумка транспортна '5.11 Tactical CAMS ™ 3.0 190L' Double Tap",
+        "price_uah": 17334
       }
     ]
   },
   {
     "website": "Punisher",
-    "price_uah_min": 980,
-    "price_uah_max": 36000,
-    "products_qty": 34,
+    "price_uah_min": 240,
+    "price_uah_max": 19600,
+    "products_qty": 35,
     "social_network": "https://www.instagram.com/punisher.com.ua/",
     "tel_vodafone": "+380500587070",
     "tel_kyivstar": "+380970587000",
     "details": [
       {
-        "product": "Медичний підсумок ММ14",
-        "price_uah": 980
+        "product": "Кнопка скидання магазинів FMA AKMR для AK",
+        "price_uah": 240
       },
       {
-        "product": "Магазинний підсумок Emerson LBT Style 7.62 Triple Magazine Pouch",
+        "product": "Сумка 281Z Україніка",
+        "price_uah": 280
+      },
+      {
+        "product": "Підсумок Rothco MOLLE Roll-Up Utility Dump Pouch для скидання магазинів",
+        "price_uah": 420
+      },
+      {
+        "product": "Сумка для туалетного приладдя M-Tac",
+        "price_uah": 420
+      },
+      {
+        "product": "Підсумок Emerson Concealed Magazine Recovery Bag для скидання магазинів",
+        "price_uah": 480
+      },
+      {
+        "product": "Тактична сумка TTX через плече",
+        "price_uah": 480
+      },
+      {
+        "product": "Сумка M-Tac Companion Bag Large",
+        "price_uah": 640
+      },
+      {
+        "product": "Збройовий ремінь TTX для АК триточковий зі швидким скиданням",
+        "price_uah": 660
+      },
+      {
+        "product": "Сумка-кобура Punisher наплічна",
+        "price_uah": 720
+      },
+      {
+        "product": "Сумка Punisher для прихованого носіння",
+        "price_uah": 740
+      },
+      {
+        "product": "Підсумок Emerson Magazine Dump Pouch для скидання магазинів",
+        "price_uah": 760
+      },
+      {
+        "product": "Сумка Punisher для скидання магазинів",
+        "price_uah": 1100
+      },
+      {
+        "product": "Сумка M-Tac Urban Line City Patrol Fastex",
+        "price_uah": 1180
+      },
+      {
+        "product": "Сумка TTX для прихованого носіння зброї з кобурою",
+        "price_uah": 1200
+      },
+      {
+        "product": "Сумка-баул Military Duffle Bags (Було у використанні)",
+        "price_uah": 1200
+      },
+      {
+        "product": "Сумка M-Tac Urban Line City Patrol Carabiner Bag",
+        "price_uah": 1280
+      },
+      {
+        "product": "Сумка скидання магазинів M-Tac Lite Elite",
+        "price_uah": 1320
+      },
+      {
+        "product": "Сумка скидання магазинів M-Tac Elite",
+        "price_uah": 1420
+      },
+      {
+        "product": "Сумка для перенесення ПНБ ATN Soft Carry Case for Night Vision Devices",
         "price_uah": 1600
       },
       {
-        "product": "Медичний підсумок Hoffmann Equipment",
-        "price_uah": 1792
+        "product": "Сумка-баул Military Duffle Bags",
+        "price_uah": 1600
       },
       {
-        "product": "Полегшений бронежилет Emerson JPC VEST Easy Style",
-        "price_uah": 2600
-      },
-      {
-        "product": "Рюкзак GRAD Modular Assault Pack (MAP) 10L",
-        "price_uah": 2640
-      },
-      {
-        "product": "Плитоноска Emerson JPC Tactical Vest для дітей",
-        "price_uah": 2800
-      },
-      {
-        "product": "Полегшений бронежилет Emerson JPC VEST Easy Style MC 500D",
-        "price_uah": 3000
-      },
-      {
-        "product": "Полегшений бронежилет Emerson Jump Plate Carrier 2.0",
-        "price_uah": 3400
-      },
-      {
-        "product": "Полегшений бронежилет Emerson NJPC Tactical Vest",
-        "price_uah": 4000
-      },
-      {
-        "product": "Тактичний жилет OneTigris Nightmare Tactical Vest",
-        "price_uah": 4280
-      },
-      {
-        "product": "Плитоноска Emerson LBT6094A Plate Carrier з підсумками Уцінка",
-        "price_uah": 4680
-      },
-      {
-        "product": "Плитоноска Punisher Blis",
-        "price_uah": 4760
-      },
-      {
-        "product": "Плитоноска IdoGear LSR Tactical Vest",
-        "price_uah": 4800
-      },
-      {
-        "product": "Плитоноска Emerson FS Style Strandhogg Plate Carrier W/ROC",
-        "price_uah": 5120
-      },
-      {
-        "product": "Полегшений бронежилет Emerson BlueLabel Quick Release Jump Plate Carrier 2.0",
-        "price_uah": 5120
-      },
-      {
-        "product": "Плитоноска Emerson CP Style Adaptive Vest -Heavy Version",
-        "price_uah": 5280
-      },
-      {
-        "product": "Плитоноска Emerson NCPC Tactical Vest",
-        "price_uah": 5400
-      },
-      {
-        "product": "Плитоноска Emerson CPC Tactical Vest",
-        "price_uah": 5400
-      },
-      {
-        "product": "Плитоноска Emerson FCS Style VEST W/MK Chest Rig",
-        "price_uah": 5600
-      },
-      {
-        "product": "Плитоноска One Tigris DOOM Plate Carrier",
-        "price_uah": 5880
-      },
-      {
-        "product": "Плитоноска Punisher",
-        "price_uah": 5960
-      },
-      {
-        "product": "Плитоноска IdoGear CPC Tactical Vest",
-        "price_uah": 6000
-      },
-      {
-        "product": "Плитоноска GRAD 6094 QRS V2",
-        "price_uah": 7160
-      },
-      {
-        "product": "Плитоноска Emerson BlueLabel Quick Release 094K Plate Carrier",
-        "price_uah": 7200
-      },
-      {
-        "product": "Плитоноска Emerson LBT6094A Plate Carrier з підсумками",
-        "price_uah": 7600
-      },
-      {
-        "product": "Плитоноска WAS Warrior DCS Plate Carrier Base",
-        "price_uah": 9000
-      },
-      {
-        "product": "Плитоноска WAS CPC PCR Covert Plate Carrier з розвантажувальною системою Pathfinder Chest Rig",
-        "price_uah": 11400
-      },
-      {
-        "product": "Плитоноска WAS Warrior DCS DA5.56",
-        "price_uah": 12000
-      },
-      {
-        "product": "Плитоноска WAS Warrior DCS M4",
-        "price_uah": 12000
-      },
-      {
-        "product": "Плитоноска WAS Warrior DCS AK",
-        "price_uah": 12000
-      },
-      {
-        "product": "Плитоноска GRAD AVS Plate Carrier",
-        "price_uah": 12640
-      },
-      {
-        "product": "Полегшений бронежилет Crye Precision Jumpable Plate Carrier (JPC)",
-        "price_uah": 14080
-      },
-      {
-        "product": "Плитоноска LBT-6094G4 Plate Carrier",
-        "price_uah": 23400
-      },
-      {
-        "product": "Плитоноска GRAD AVS Plate Carrier укомплектована",
-        "price_uah": 36000
-      }
-    ]
-  },
-  {
-    "website": "Killa",
-    "price_uah_min": 1126,
-    "price_uah_max": 19343,
-    "products_qty": 55,
-    "social_network": "https://www.instagram.com/killa_voentorg",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380967980043",
-    "details": [
-      {
-        "product": "Плитоноска Assault Plate Carrier APC (чохол для бронежилета) (Coyote Brown), P1G-Tac®",
-        "price_uah": 1126
-      },
-      {
-        "product": "Плитоноска Assault Plate Carrier APC (чохол для бронежилета) (MTP/MCU camo), P1G-Tac®",
-        "price_uah": 1126
-      },
-      {
-        "product": "Плитоноска Assault Plate Carrier APC II Gen. (чохол для бронежилета) (Coyote Brown), P1G-Tac®",
-        "price_uah": 2536
-      },
-      {
-        "product": "Плитоноска Assault Plate Carrier APC II Gen. (чохол для бронежилета) (MTP/MCU camo), P1G-Tac®",
-        "price_uah": 2787
-      },
-      {
-        "product": "Плитоноска тактична з підсумками MOLLE Multicam",
-        "price_uah": 3728
-      },
-      {
-        "product": "Плитоноска тактична з підсумками MOLLE MM-14 (піксель ЗСУ)",
-        "price_uah": 3728
-      },
-      {
-        "product": "Плитоноска Pentagon Milon Plate Carrier Vest Mk2 Black",
-        "price_uah": 4725
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II MM14",
-        "price_uah": 5016
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Black",
-        "price_uah": 5016
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Coyote",
-        "price_uah": 5332
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Ranger Green",
-        "price_uah": 5332
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS MM14",
-        "price_uah": 5347
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Black",
-        "price_uah": 5347
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Coyote",
-        "price_uah": 5347
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II MM14",
-        "price_uah": 5788
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Black",
-        "price_uah": 5788
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Coyote",
-        "price_uah": 5788
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Ranger Green",
-        "price_uah": 5788
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS MM14",
-        "price_uah": 5898
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Black",
-        "price_uah": 5898
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Coyote",
-        "price_uah": 5898
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Ranger Green",
-        "price_uah": 5898
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Ranger Green",
-        "price_uah": 5925
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II MM14",
-        "price_uah": 6339
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Black",
-        "price_uah": 6339
-      },
-      {
-        "product": "Плитоноска Tailor M-24 з системою швидкого скиду Multicam",
-        "price_uah": 6668
-      },
-      {
-        "product": "Плитоноска Tailor M-24 з системою швидкого скиду ММ-14 піксель ЗСУ",
-        "price_uah": 6668
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Coyote",
-        "price_uah": 6890
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Ranger Green",
-        "price_uah": 6890
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL MM14",
-        "price_uah": 6945
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Black",
-        "price_uah": 6945
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Coyote",
-        "price_uah": 6945
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST XL QRS MM14",
-        "price_uah": 6945
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST XL QRS Black",
-        "price_uah": 6945
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST XL QRS Coyote",
-        "price_uah": 6945
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Ranger Green",
-        "price_uah": 6945
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST XL QRS Ranger Green",
-        "price_uah": 6945
-      },
-      {
-        "product": "Плитоноска Anafarta колір мультикам + 8 підсумків",
-        "price_uah": 7000
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II MM14",
-        "price_uah": 7496
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Black",
-        "price_uah": 7496
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Coyote",
-        "price_uah": 7496
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Ranger Green",
-        "price_uah": 7496
-      },
-      {
-        "product": "Плитоноска швидкоскидна, MultiCam, Український виробник",
-        "price_uah": 7613
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Multicam",
-        "price_uah": 7992
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Multicam",
-        "price_uah": 7992
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Multicam",
-        "price_uah": 8268
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Multicam",
-        "price_uah": 8268
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Multicam",
-        "price_uah": 9370
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Multicam",
-        "price_uah": 9370
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Multicam",
-        "price_uah": 9756
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST XL QRS Multicam",
-        "price_uah": 9756
-      },
-      {
-        "product": "Плитоноска Plate Carrier Olive (чохол для бронежилета), U-win",
-        "price_uah": 12308
-      },
-      {
-        "product": "Плитоноска Plate Carrier Coyote (чохол для бронежилета), U-win",
-        "price_uah": 13485
-      },
-      {
-        "product": "Плитоноска Plate Carrier MultiCam (чохол для бронежилета) (Multicam), U-win",
-        "price_uah": 13485
-      },
-      {
-        "product": "Плитоноска UARM FRPC™ Fast Response Plate Carrier, size M (чохол для бронежилета) (Multicam), Українська броня",
-        "price_uah": 19343
-      }
-    ]
-  },
-  {
-    "website": "Militarka",
-    "price_uah_min": 1200,
-    "price_uah_max": 17500,
-    "products_qty": 54,
-    "social_network": "https://www.instagram.com/militarka_ua/",
-    "tel_vodafone": "+380666163133",
-    "tel_kyivstar": "+380673011848",
-    "details": [
-      {
-        "product": "Плитоноска (Plate carrier) Turtle Molle чорна",
-        "price_uah": 1200
-      },
-      {
-        "product": "Плитоноска (Plate carrier) Turtle Molle койот",
-        "price_uah": 1200
-      },
-      {
-        "product": "Плитоноска JPC (Jumpable Plate Carrier) олива",
-        "price_uah": 1440
-      },
-      {
-        "product": "Плитоноска JPC (Jumpable Plate Carrier) койот",
-        "price_uah": 1440
-      },
-      {
-        "product": "Плитоноска (Plate carrier) з підсумками Gen. 2 чорна",
+        "product": "Сумка скидання магазинів Hoffmann Equipment",
         "price_uah": 1800
       },
       {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II чорна",
-        "price_uah": 4900
+        "product": "Сумка M-Tac Waist Bag Elite Hex",
+        "price_uah": 1980
       },
       {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II MM14",
-        "price_uah": 4900
+        "product": "Сумка з кобурою A-Line A33",
+        "price_uah": 2020
       },
       {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II койот",
-        "price_uah": 4915
+        "product": "Тактична сумка Primal Gear Helmet Storage Bag для шолому",
+        "price_uah": 2200
       },
       {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Ranger Green",
-        "price_uah": 5280
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS койот",
-        "price_uah": 5300
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS чорна",
-        "price_uah": 5300
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS ММ-14",
-        "price_uah": 5300
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II койот",
-        "price_uah": 5700
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II чорна",
-        "price_uah": 5730
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II ММ-14",
-        "price_uah": 5730
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Ranger Green",
-        "price_uah": 5733
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass Fast QRS чорна",
-        "price_uah": 5840
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass Fast QRS ММ-14",
-        "price_uah": 5850
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass Fast QRS койот",
-        "price_uah": 5850
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass Fast QRS Ranger Green",
-        "price_uah": 5850
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II ММ-14",
-        "price_uah": 6200
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II чорна",
-        "price_uah": 6270
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II койот",
-        "price_uah": 6800
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Ranger Green",
-        "price_uah": 6800
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL койот",
-        "price_uah": 6870
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL чорна",
-        "price_uah": 6870
-      },
-      {
-        "product": "Плитоноска M-Tac Cuirass QRS XL Ranger Green",
-        "price_uah": 6870
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL ММ-14",
-        "price_uah": 6870
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL чорна",
-        "price_uah": 6880
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL ММ-14",
-        "price_uah": 6880
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Ranger Green",
-        "price_uah": 6880
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL койот",
-        "price_uah": 6880
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Ranger Green",
-        "price_uah": 7425
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II койот",
-        "price_uah": 7425
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II ММ-14",
-        "price_uah": 7425
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II чорна",
-        "price_uah": 7425
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Multicam",
-        "price_uah": 7900
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Multicam",
-        "price_uah": 7900
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW олива",
-        "price_uah": 7995
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW койот",
-        "price_uah": 7995
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW койот",
-        "price_uah": 7995
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW темна олива",
-        "price_uah": 7995
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW ММ-14",
-        "price_uah": 7995
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW Ranger Green",
-        "price_uah": 7995
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW ММ-14",
-        "price_uah": 7995
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass Fast QRS Multicam",
-        "price_uah": 8190
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Multicam",
-        "price_uah": 8190
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Multicam",
-        "price_uah": 9000
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Multicam",
-        "price_uah": 9200
-      },
-      {
-        "product": "Плитоноска M-Tac Cuirass QRS XL Multicam",
-        "price_uah": 9660
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Multicam",
-        "price_uah": 9660
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro UW Multicam",
-        "price_uah": 10050
-      },
-      {
-        "product": "Мілітарка™ плитоноска (Plate carrier) Tactical Pro XL 260х330 UW MultiCam",
-        "price_uah": 10050
-      },
-      {
-        "product": "Плитоноска модульна Redwood Tactical APC multicam",
-        "price_uah": 17500
-      }
-    ]
-  },
-  {
-    "website": "Tactical Gear",
-    "price_uah_min": 1999,
-    "price_uah_max": 11276,
-    "products_qty": 9,
-    "social_network": "https://www.instagram.com/tacticalgear.ua/",
-    "tel_vodafone": "+380959010002",
-    "tel_kyivstar": "+380979010002",
-    "details": [
-      {
-        "product": "Плитоноска Condor COMPACT PLATE CARRIER CPC",
-        "price_uah": 1999
-      },
-      {
-        "product": "Плитоноска тактична з молле Condor Sentry Lightweight Plate Carrier 201042",
-        "price_uah": 2476
-      },
-      {
-        "product": "Плитоноска тактична чохол з молле Condor Sentry Plate Carrier LCS 201068",
-        "price_uah": 2492
-      },
-      {
-        "product": "Плитоноска тактична чохол бронежилету прихованого носіння Condor SPECTER PLATE CARRIER 201214",
-        "price_uah": 2604
-      },
-      {
-        "product": "Плитоноска тактична молле чохол Condor Gunner Lightweight Plate Carrier 201039",
-        "price_uah": 3276
-      },
-      {
-        "product": "Плитоноска тактична чохол бронежилету Condor PHALANX PLATE CARRIER 201203",
-        "price_uah": 3436
-      },
-      {
-        "product": "Плитоноска Pentagon ASPIS VEST K20008",
-        "price_uah": 4236
-      },
-      {
-        "product": "Плитоноска Pentagon MILON PLATE CARRIER VEST MK2 K20007",
-        "price_uah": 6124
-      },
-      {
-        "product": "Плитоноска Condor CYCLONE RS PLATE CARRIER US1218",
-        "price_uah": 11276
-      }
-    ]
-  },
-  {
-    "website": "Ibis",
-    "price_uah_min": 2420,
-    "price_uah_max": 43100,
-    "products_qty": 13,
-    "social_network": "https://www.instagram.com/ibis_shooting/",
-    "tel_vodafone": "",
-    "tel_kyivstar": "",
-    "details": [
-      {
-        "product": "Бронежилет Tactical Extreme TE Plate Carrier LC. Khaki",
+        "product": "Сумка M-Tac Sling Pistol Bag Elite Hex",
         "price_uah": 2420
       },
       {
-        "product": "UARM Плитоноска RPC без плит",
-        "price_uah": 6036
+        "product": "Сумка M-Tac Sphaera Hex Hardsling Bag Large Elite з липучкою",
+        "price_uah": 2880
       },
       {
-        "product": "UARM Плитоноска RPC без плит",
-        "price_uah": 6192
+        "product": "Тактична сумка Propper Tactical Duffle",
+        "price_uah": 3400
       },
       {
-        "product": "UARM Плитоноска FPC",
-        "price_uah": 10116
+        "product": "Сумка планшет M-Tac Laser Cut Hex",
+        "price_uah": 3460
       },
       {
-        "product": "UARM Плитоноска FPC",
-        "price_uah": 10578
+        "product": "Сумка з кобурою A-Line A40",
+        "price_uah": 4060
       },
       {
-        "product": "UARM Плитоноска FRPC без плит M",
-        "price_uah": 10654
+        "product": "Медична сумка NAR USMC CLS Combat Trauma Bag",
+        "price_uah": 7000
       },
       {
-        "product": "UARM Плитоноска FRPC",
-        "price_uah": 10860
+        "product": "Медична сумка NAR Squad Responder Bag",
+        "price_uah": 9200
       },
       {
-        "product": "UARM Плитоноска FRPC без плит M",
-        "price_uah": 11232
+        "product": "Снайперська сумка Eberlestock Sniper Sled Drag Bag",
+        "price_uah": 15600
       },
       {
-        "product": "UARM Плитоноска FRPC без плит L",
-        "price_uah": 11464
+        "product": "Снайперська сумка Eberlestock Sniper Sled Drag Bag 57'",
+        "price_uah": 16400
       },
       {
-        "product": "UARM Плитоноска FRPC без плит M",
-        "price_uah": 11502
+        "product": "Транспортна сумка Eberlestock B4 Atlas Duffel",
+        "price_uah": 17600
       },
       {
-        "product": "UARM Плитоноска FRPC без плит XL",
-        "price_uah": 12707
-      },
-      {
-        "product": "Бронежилет U-Win зі швидким скиданням із камербандами під балістичні пакети. Мультикам",
-        "price_uah": 19480
-      },
-      {
-        "product": "Бронежилет Укртак з плитами і бічним захистом. One size. Мультикам",
-        "price_uah": 43100
+        "product": "Транспортна сумка Eberlestock B3 Hercules Duffel",
+        "price_uah": 19600
       }
     ]
   },
   {
     "website": "Global Ballisticks",
-    "price_uah_min": 2690,
-    "price_uah_max": 42990,
-    "products_qty": 56,
+    "price_uah_min": 300,
+    "price_uah_max": 28990,
+    "products_qty": 40,
     "social_network": "https://www.instagram.com/globalballistics/",
     "tel_vodafone": "+380662533086",
     "tel_kyivstar": "+380984377908",
     "details": [
       {
-        "product": "Плитоноска з верхнім і боковим швидким скидом Ares gen. 2",
-        "price_uah": 2690
+        "product": "Сумка скидання магазинів. Олива.",
+        "price_uah": 300
       },
       {
-        "product": "Плитоноска з верхнім і боковим швидким скидом Ares gen. 2. Піксель ММ14.",
-        "price_uah": 2690
-      },
-      {
-        "product": "Плитоноска з верхнім і боковим швидким скидом Ares gen. 2. Олива.",
-        "price_uah": 2690
+        "product": "Сумка скидання магазинів. Чорного кольору.",
+        "price_uah": 300
       },
       {
         "product": "Плитоноска ARES gen.2 МУЛЬТИКАМ З 3-ма ПІДСУМКАМИ під магазини",
@@ -810,55 +811,7 @@
         "price_uah": 3690
       },
       {
-        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з швидким боковим та верхнім скиданням (без плит і підсумків) ОЛИВА",
-        "price_uah": 3990
-      },
-      {
-        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 чорного кольору з швидким боковим та верхнім скиданням (без плит і підсумків)",
-        "price_uah": 3990
-      },
-      {
-        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 піксель з швидким боковим та верхнім скиданням (без плит і підсумків)",
-        "price_uah": 4190
-      },
-      {
-        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з швидким боковим та верхнім скиданням мультикам (без плит і підсумків)",
-        "price_uah": 4190
-      },
-      {
-        "product": "Тактичний жилет - плитоноска Warmor Gen.3 Pro з швидким боковим та верхнім скиданням мультикам (без плит і підсумків)",
-        "price_uah": 4390
-      },
-      {
-        "product": "Тактичний жилет - плитоноска Warmor Gen.3 Pro піксель з швидким боковим та верхнім скиданням (без плит і підсумків)",
-        "price_uah": 4390
-      },
-      {
-        "product": "Плитоноска ARES gen.2 МУЛЬТИКАМ в МАХ комплектації",
-        "price_uah": 4740
-      },
-      {
-        "product": "Плитоноска ARES gen.2 МУЛЬТИКАМ в МАХ комплектації",
-        "price_uah": 4740
-      },
-      {
-        "product": "Тактична плитоноска Warmor Gen.4 піксель зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
-        "price_uah": 4990
-      },
-      {
-        "product": "Тактична плитоноска Warmor Gen.4 мультикам зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
-        "price_uah": 4990
-      },
-      {
-        "product": "Тактична плитоноска Warmor Gen.4 олива зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
-        "price_uah": 4990
-      },
-      {
         "product": "Тактична плитоноска Warmor Gen.4 чорна зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
-        "price_uah": 4990
-      },
-      {
-        "product": "Тактична плитоноска Warmor Gen.4 СИНЬОГО кольору зі збільшеною площею захисту і швидким боковим та верхнім скиданням  (без плит)",
         "price_uah": 4990
       },
       {
@@ -902,7 +855,7 @@
         "price_uah": 5990
       },
       {
-        "product": "Плитоноска жіноча Warmor Gen.3 FL (for Ladies). З підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит).",
+        "product": "Плитоноска жіноча Warmor Gen.3 FL (for Ladies). З підсумками під магазини АК і швидким боковим та верхнім скиданням (без плит). Мультикам.",
         "price_uah": 6190
       },
       {
@@ -930,11 +883,11 @@
         "price_uah": 7490
       },
       {
-        "product": "Посилена плитоноска Warmor Gen.4 Max з оптимальним набором підсумків",
+        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит)",
         "price_uah": 7990
       },
       {
-        "product": "Тактичний жилет - плитоноска (чехол) Warmor Gen.3 з підсумками під магазини і швидким боковим та верхнім скиданням мультикам (без плит)",
+        "product": "Посилена плитоноска Warmor Gen.4 Max з оптимальним набором підсумків",
         "price_uah": 7990
       },
       {
@@ -954,16 +907,12 @@
         "price_uah": 16500
       },
       {
-        "product": "Бронежилет 6-го класу. Мультикам. Вага 6.2 кг.",
-        "price_uah": 16900
-      },
-      {
-        "product": "Бронежилет 6-го класу. Піксель (ММ14). Вага 6.2 кг.",
-        "price_uah": 16900
-      },
-      {
         "product": "Посилена плитоноска Warmor Gen.4 c оптимальним набором підсумків і захистом плечей і шиї",
         "price_uah": 17490
+      },
+      {
+        "product": "Бронежилет Gen.4.: полегшені керамічні пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.4 з 4 підсумками АК",
+        "price_uah": 18490
       },
       {
         "product": "Кевларовий бронежилет в максимальній комплектації: полегшені керамічні пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.3 Max мультикам",
@@ -971,10 +920,6 @@
       },
       {
         "product": "Кевларовий бронежилет в максимальній комплектації: полегшені керамічні пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.3 Max піксель",
-        "price_uah": 18490
-      },
-      {
-        "product": "Бронежилет Gen.4.: полегшені керамічні пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.4 з 4 підсумками АК",
         "price_uah": 18490
       },
       {
@@ -986,8 +931,16 @@
         "price_uah": 20490
       },
       {
+        "product": "Базовий набір індивідуального захисту: шолом FAST + плитоноска з набором підсумків + комплект плит 6 кл. ДСТУ. Мультикам.",
+        "price_uah": 27990
+      },
+      {
         "product": "Базовий набір індивідуального захисту: шолом + плитоноска з набором підсумків + комплект плит 6 кл. ДСТУ",
         "price_uah": 27990
+      },
+      {
+        "product": "Бронежилет Gen.4.: м'який захист по 1 класу + полегшені пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.4 з 4 підсумками АК",
+        "price_uah": 28990
       },
       {
         "product": "Бронежилет в максимальній комплектації мультикам: плитоноска Warmor gen.3 Max + балістичний захист боків, паху, плечей, шиї  + полегшені керамічні пластини 6 класу захисту ДСТУ",
@@ -996,176 +949,232 @@
       {
         "product": "Бронежилет в максимальній комплектації піксель: плитоноска Warmor gen.3 Max + балістичний захист боків, паху, плечей, шиї  + полегшені керамічні пластини 6 класу захисту ДСТУ",
         "price_uah": 28990
-      },
-      {
-        "product": "Бронежилет Gen.4.: м'який захист по 1 класу + полегшені пластини 6 класу захисту (ДСТУ) + плитоноска Warmor gen.4 з 4 підсумками АК",
-        "price_uah": 28990
-      },
-      {
-        "product": "Плитоноска Warmor Gen. 3 в максимальній комплектації:  балістичний захист шиї, плеч, боковин, живота, паху, поясу і ніг",
-        "price_uah": 33490
-      },
-      {
-        "product": "Бронежилет в максимальній комплектації: полегшені керамічні пластини 6 класу захисту ДСТУ + плитоноска Warmor gen.3 Max + балістичний захист шиї, плеч, боковин, живота, паху, поясу і ніг",
-        "price_uah": 42990
       }
     ]
   },
   {
-    "website": "Specprom-kr",
-    "price_uah_min": 2990,
-    "price_uah_max": 19900,
-    "products_qty": 32,
-    "social_network": "https://www.instagram.com/specprom_kr/",
+    "website": "Tactical Systems",
+    "price_uah_min": 333,
+    "price_uah_max": 31150,
+    "products_qty": 27,
+    "social_network": "https://www.instagram.com/tactical_systems_ukraine/",
     "tel_vodafone": "",
-    "tel_kyivstar": "",
+    "tel_kyivstar": "+380675336474",
     "details": [
       {
-        "product": "Плитоноска Ares gen.2 МУЛЬТИКАМ",
-        "price_uah": 2990
+        "product": "Сумка Eberlestock ультралегка A2ST Green",
+        "price_uah": 333
       },
       {
-        "product": "Плитоноска Ares gen.2 ОЛИВА",
-        "price_uah": 2990
+        "product": "Сумка медична мала Red Rock Small Medic Pouch",
+        "price_uah": 610
       },
       {
-        "product": "Плитоноска Ares gen.2 ПИКСЕЛЬ",
-        "price_uah": 2990
+        "product": "Сумка поясна A-line універсальна A31 чорна",
+        "price_uah": 875
       },
       {
-        "product": "Плитоноска Ares gen.2 Олива. 3 подсумка АК.",
-        "price_uah": 3390
+        "product": "Сумка для пістолета A-Line А-14",
+        "price_uah": 875
       },
       {
-        "product": "Плитоноска WARMOR с системой быстрого сброса ОЛИВА",
-        "price_uah": 3990
+        "product": "Сумка медична велика Red Rock Large Medic Pouch",
+        "price_uah": 1015
       },
       {
-        "product": "Плитоноска WARMOR с системой быстрого сброса ЧЕРНАЯ",
-        "price_uah": 3990
+        "product": "Сумка для пістолета A-Line А-32",
+        "price_uah": 1020
       },
       {
-        "product": "Плитоноска WARMOR Gen.3 Pro с сиcтемой быстрого сброса МУЛЬТИКАМ",
-        "price_uah": 4390
+        "product": "Сумка через плече Red Rock Sidekick Sling Bag",
+        "price_uah": 1615
       },
       {
-        "product": "Плитоноска WARMOR Gen.3 Pro с сиcтемой быстрого сброса ПИКСЕЛЬ",
-        "price_uah": 4390
+        "product": "Сумка Eberlestock Spike Camp Duffel",
+        "price_uah": 1667
       },
       {
-        "product": "Плитоноска WARMOR Gen.3 Pro с сиcтемой быстрого сброса СИНЯЯ",
-        "price_uah": 4390
+        "product": "Сумка через плече Red Rock Hipster Sling Bag ACU",
+        "price_uah": 2020
       },
       {
-        "product": "Плитоноска розвантаження на 9 магазинів МУЛЬТИКАМ",
-        "price_uah": 4390
+        "product": "Сумка Eberlestock ультралегка Bird Bag",
+        "price_uah": 2088
       },
       {
-        "product": "Плитоноска Ares Gen.2 Мультикам. 3 подсумка АК.",
-        "price_uah": 4490
+        "product": "Сумка GK Pro Taskforce II 75 см чорна",
+        "price_uah": 3010
       },
       {
-        "product": "Плитоноска Ares Gen.2 Пиксель ММ14. 3 подсумка АК.",
-        "price_uah": 4490
+        "product": "Сумка Deployment Waist Bag Red Rock Outdoor Gear",
+        "price_uah": 3385
       },
       {
-        "product": "Плитоноска WARMOR с системой быстрого сброса с подсумками ОЛИВА",
-        "price_uah": 4590
+        "product": "Сумка тактична Red Rock Outdoor Gear NAV Bag кол. Coyote",
+        "price_uah": 5645
       },
       {
-        "product": "Плитоноска WARMOR с системой быстрого сброса с подсумками ЧЕРНАЯ",
-        "price_uah": 4590
+        "product": "Сумка Red Rock Outdoor Gear Operations Duffle Bag",
+        "price_uah": 5645
       },
       {
-        "product": "Плитоноска WARMOR gen.4 СИНЕГО ЦВЕТА",
-        "price_uah": 4900
+        "product": "Сумка Red Rock Outdoor Gear NAV Bag",
+        "price_uah": 5645
       },
       {
-        "product": "Плитоноска WARMOR Gen.3 Pro Мультикам. Сиcтема быстрого сброса. 3 подсумка.",
-        "price_uah": 5350
+        "product": "Куртка Carinthia G-Loft LIG 3.0 Jacket сіра",
+        "price_uah": 5844
       },
       {
-        "product": "Плитоноска WARMOR Gen.3 Pro Пиксель ММ14. Сиcтема быстрого сброса. 3 подсумка.",
-        "price_uah": 5350
+        "product": "Куртка Carinthia G-Loft LIG 3.0 Jacket оливкова",
+        "price_uah": 5844
       },
       {
-        "product": "Плитоноска 'YAKEDA' с сиcтемой быстрого сброса МУЛЬТИКАМ",
-        "price_uah": 5400
+        "product": "Сумка Чохол до караб. мод. 'Explorer Tactical'",
+        "price_uah": 6385
       },
       {
-        "product": "Плитоноска Ares gen.2 МУЛЬТИКАМ С ПОДСУМКАМИ",
-        "price_uah": 5490
+        "product": "Сумка Red Rock Outdoor Gear Traveler Duffle Bag",
+        "price_uah": 6775
       },
       {
-        "product": "Плитоноска Ares gen.2 Олива С ПОДСУМКАМИ",
-        "price_uah": 5490
+        "product": "Протигаз фільтрувальний ПФ-ОМ-NBC в комплекті",
+        "price_uah": 6800
       },
       {
-        "product": "Плитоноска Ares gen.2 ПИКСЕЛЬ С ПОДСУМКАМИ",
-        "price_uah": 5490
+        "product": "Сумка GK Pro Patrol Bag чорна",
+        "price_uah": 7545
       },
       {
-        "product": "Плитоноска WARMOR gen.4 Мультикам. 4 подсумка.",
-        "price_uah": 5900
+        "product": "Сумка Garm Transport Bag 120L піщана",
+        "price_uah": 8515
       },
       {
-        "product": "Плитоноска WARMOR gen.4 Пиксель. 4 подсумка.",
-        "price_uah": 5900
+        "product": "Сумка NFM Bag Equip Gyda 90L",
+        "price_uah": 13960
       },
       {
-        "product": "Плитоноска WARMOR gen.4 Олива. 4 подсумка.",
-        "price_uah": 5900
+        "product": "Сумка дорожня Bang-Bang Range",
+        "price_uah": 14450
       },
       {
-        "product": "Плитоноска WARMOR gen.4 Черная. 4 подсумка.",
-        "price_uah": 5900
+        "product": "Штани чоловічі Carinthia PRG чорні",
+        "price_uah": 18515
       },
       {
-        "product": "Плитоноска WARMOR с системой быстрого сброса ОЛИВА с подсумками",
-        "price_uah": 6900
+        "product": "Сумка дорожня Atlas Duffell",
+        "price_uah": 28245
       },
       {
-        "product": "Плитоноска Warmor Gen.3 Pro Max Черный. Система быстрого сброса. 7 подсумок.",
-        "price_uah": 6900
-      },
-      {
-        "product": "Плитоноска Warmor Gen.3 Pro Max Мультикам. Система быстрого сброса. 7 подсумок.",
-        "price_uah": 7490
-      },
-      {
-        "product": "Плитоноска Warmor Gen.3 Pro Max Пиксель ММ14. Система быстрого сброса. 7 подсумок.",
-        "price_uah": 7490
-      },
-      {
-        "product": "Плитоноска Warmor Gen.4 Max. Мультикам. 9 подсумков.",
-        "price_uah": 8900
-      },
-      {
-        "product": "Бронежилет Warmor Gen.4 с защитой и плитами: мягкая защита по 1 кл. ДСТУ + облегченные керамические пластины 6 класса защиты ГОСТ + плитоноска Warmor Gen.4 с подсумками АК",
-        "price_uah": 19900
-      },
-      {
-        "product": "Бронежилет Warmor Gen.4 с плитами: облегченные керамические пластины 6 класса защиты ГОСТ + плитоноска Warmor Gen.4 с подсумками АК",
-        "price_uah": 19900
+        "product": "Сумка дорожня Hercules Duffel",
+        "price_uah": 31150
       }
     ]
   },
   {
     "website": "Molli",
-    "price_uah_min": 3400,
-    "price_uah_max": 9639,
-    "products_qty": 11,
+    "price_uah_min": 350,
+    "price_uah_max": 9495,
+    "products_qty": 31,
     "social_network": "https://www.instagram.com/molli.u.a?igshid=NmZiMzY2Mjc%3D",
     "tel_vodafone": "+380994603556",
     "tel_kyivstar": "+380962019665",
     "details": [
       {
+        "product": "Підсумок піксель для скидання магазинів АК МОЛЛІ PS-006",
+        "price_uah": 350
+      },
+      {
+        "product": "Підсумок Multicam для скидання магазинів АК МОЛЛІ PS-011",
+        "price_uah": 380
+      },
+      {
+        "product": "Підсумок Хакі для скидання магазинів АК МОЛЛІ PS-034",
+        "price_uah": 380
+      },
+      {
+        "product": "Підсумок під два магазини АК піксель закритого типу МОЛЛІ PS-019",
+        "price_uah": 430
+      },
+      {
+        "product": "Підсумок під два магазини АК Multicam (Мультикам) закритого типу МОЛЛІ PS-020",
+        "price_uah": 430
+      },
+      {
+        "product": "Підсумок для скидання магазинів AK сітка Піксель МОЛЛІ PS-056",
+        "price_uah": 470
+      },
+      {
+        "product": "Підсумок для скидання магазинів AK сітка Multicam МОЛЛІ PS-058",
+        "price_uah": 470
+      },
+      {
+        "product": "Тактична сумка Cobra Чорна",
+        "price_uah": 484
+      },
+      {
+        "product": "Тактична сумка Gunner Sling Olive",
+        "price_uah": 516
+      },
+      {
+        "product": "Сумка Gunner Sling 2.0 Олива",
+        "price_uah": 548
+      },
+      {
+        "product": "Сумка Adapt Multicam",
+        "price_uah": 669
+      },
+      {
+        "product": "Сумка COB Sling Multicam",
+        "price_uah": 721
+      },
+      {
+        "product": "Підсумок напашник тактичний Multicam (Мультикам) МОЛЛІ PS-017",
+        "price_uah": 840
+      },
+      {
+        "product": "Підсумок напашник тактичний піксель МОЛЛІ PS-018",
+        "price_uah": 840
+      },
+      {
+        "product": "Підсумок напашник тактичний хакі МОЛЛІ PS-030",
+        "price_uah": 840
+      },
+      {
+        "product": "Тактична сумка поясна бананка Піксель МОЛЛІ BN-01",
+        "price_uah": 940
+      },
+      {
+        "product": "Тактична сумка поясна бананка Чорна МОЛЛІ BN-02",
+        "price_uah": 940
+      },
+      {
+        "product": "Тактична сумка поясна бананка Мультикам МОЛЛІ BN-03",
+        "price_uah": 940
+      },
+      {
+        "product": "Тактична сумка поясна бананка Хакі МОЛЛІ BN-04",
+        "price_uah": 940
+      },
+      {
+        "product": "Підсумок під аптечку NOVA Піксель МОЛЛІ PS-055",
+        "price_uah": 960
+      },
+      {
+        "product": "Підсумок під аптечку NOVA Multicam МОЛЛІ PS-047",
+        "price_uah": 960
+      },
+      {
+        "product": "Тактична сумка (Баул) Carrier Чорний 100 л.",
+        "price_uah": 2329
+      },
+      {
         "product": "Комплект балістичних пакетів 300х150 мм 1-го класу захисту (ДСТУ 8782:2018) МОЛЛІ BP-003",
         "price_uah": 3400
       },
       {
-        "product": "Плитоноска зі швидким скиданням чорна (PLATE CARRIER) МОЛЛІ PL-012",
-        "price_uah": 4200
+        "product": "Тактичний комплект РПС Мультикам МОЛЛІ KMPL-008",
+        "price_uah": 3790
       },
       {
         "product": "Плитоноска NOVA з подвійним скиданням піксель (PLATE CARRIER) МОЛЛІ PL-009",
@@ -1176,377 +1185,644 @@
         "price_uah": 4600
       },
       {
-        "product": "Плитоноска з подвійним скиданням піксель (PLATE CARRIER) МОЛЛІ PL-008",
-        "price_uah": 4900
+        "product": "Тактичний комплект War Belt (Варбелт) Піксель МОЛЛІ KMPL-006",
+        "price_uah": 4981
       },
       {
-        "product": "Тактичний комплект амуніції 'Базовий' Мультикам МОЛЛІ KMPL-003",
-        "price_uah": 6316
+        "product": "Тактичний комплект War Belt (Варбелт) Мультикам МОЛЛІ KMPL-007",
+        "price_uah": 5007
       },
       {
         "product": "Плитоноска МІЦЬ з балістичним захистом, MultiCam (PLATE CARRIER) МОЛЛІ PZ-006",
         "price_uah": 6800
       },
       {
-        "product": "Плитоноска з балістичним захистом, піксель (PLATE CARRIER) МОЛЛІ PZ-008",
-        "price_uah": 7055
-      },
-      {
         "product": "Плитоноска NOVA з балістичним захистом, піксель (PLATE CARRIER) МОЛЛІ PZ-009",
-        "price_uah": 7480
+        "price_uah": 7800
       },
       {
         "product": "Тактичний комплект амуніції 'Стандарт' Піксель МОЛЛІ KMPL-001",
         "price_uah": 9495
-      },
-      {
-        "product": "Тактичний комплект амуніції 'Стандарт' Мультикам МОЛЛІ KMPL-002",
-        "price_uah": 9639
       }
     ]
   },
   {
-    "website": "Stvol",
-    "price_uah_min": 3600,
-    "price_uah_max": 11360,
-    "products_qty": 5,
-    "social_network": "https://www.instagram.com/stvol_ua/",
-    "tel_vodafone": "+380504177677",
-    "tel_kyivstar": "",
-    "details": [
-      {
-        "product": "Плитоноска Gunner Condor (coyote brown)",
-        "price_uah": 3600
-      },
-      {
-        "product": "Плитоноска  Phalanx Condor (slate)",
-        "price_uah": 3600
-      },
-      {
-        "product": "Плитоноска Phalanx Condor (coyote brown)",
-        "price_uah": 3600
-      },
-      {
-        "product": "Плитоноска  Cyclone Condor (coyote brown)",
-        "price_uah": 10080
-      },
-      {
-        "product": "Плитоноска  Cyclone Condor (multicam)",
-        "price_uah": 11360
-      }
-    ]
-  },
-  {
-    "website": "Maroder",
-    "price_uah_min": 3833,
-    "price_uah_max": 7714,
-    "products_qty": 6,
-    "social_network": "https://www.instagram.com/mrd_tactical/",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380685571337",
-    "details": [
-      {
-        "product": "Плитоноска EMR QR Multicam",
-        "price_uah": 3833
-      },
-      {
-        "product": "Плитоноска EMR QR GEN 3 Multicam",
-        "price_uah": 4932
-      },
-      {
-        "product": "Плитоноска StrandHogg Plate Carrier Ranger Green. Emersongear",
-        "price_uah": 6846
-      },
-      {
-        "product": "Плитоноска Easy Plate Carrier A-TACS LE. OPS",
-        "price_uah": 6980
-      },
-      {
-        "product": "Плитоноска Easy Plate Carrier A-TACS AU. OPS",
-        "price_uah": 6980
-      },
-      {
-        "product": "Плитоноска LBT6094A Style Plate Carrier Multicam. Emersongear",
-        "price_uah": 7714
-      }
-    ]
-  },
-  {
-    "website": "Militarist",
-    "price_uah_min": 4732,
-    "price_uah_max": 9204,
-    "products_qty": 40,
-    "social_network": "http://instagram.com/tm_militarist",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380678296207",
-    "details": [
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Black",
-        "price_uah": 4732
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II MM14",
-        "price_uah": 4732
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Coyote",
-        "price_uah": 5044
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Black",
-        "price_uah": 5044
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS MM14",
-        "price_uah": 5044
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Coyote",
-        "price_uah": 5200
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Ranger Green",
-        "price_uah": 5200
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Black",
-        "price_uah": 5460
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Coyote",
-        "price_uah": 5460
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II MM14",
-        "price_uah": 5460
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Ranger Green",
-        "price_uah": 5460
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Ranger Green",
-        "price_uah": 5564
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Coyote",
-        "price_uah": 5564
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS MM14",
-        "price_uah": 5564
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Black",
-        "price_uah": 5564
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Ranger Green",
-        "price_uah": 5590
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Black",
-        "price_uah": 5980
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II MM14",
-        "price_uah": 5980
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Coyote",
-        "price_uah": 6500
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Ranger Green",
-        "price_uah": 6500
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Coyote",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Black",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Ranger Green",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL MM14",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Black",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL MM14",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Coyote",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Ranger Green",
-        "price_uah": 6552
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Black",
-        "price_uah": 7072
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Coyote",
-        "price_uah": 7072
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Ranger Green",
-        "price_uah": 7072
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II MM14",
-        "price_uah": 7072
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Multicam",
-        "price_uah": 7540
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS Gen.II Multicam",
-        "price_uah": 7540
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Multicam",
-        "price_uah": 7800
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS Gen.II Multicam",
-        "price_uah": 7800
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Gen.II Multicam",
-        "price_uah": 8840
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Gen.II Multicam",
-        "price_uah": 8840
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass QRS XL Multicam",
-        "price_uah": 9204
-      },
-      {
-        "product": "M-Tac плитоноска Cuirass FAST QRS XL Multicam",
-        "price_uah": 9204
-      }
-    ]
-  },
-  {
-    "website": "Velmet",
-    "price_uah_min": 4997,
-    "price_uah_max": 19800,
+    "website": "Sturm",
+    "price_uah_min": 350,
+    "price_uah_max": 800,
     "products_qty": 2,
-    "social_network": "https://www.instagram.com/velmet.ua/",
-    "tel_vodafone": "+380993738778",
-    "tel_kyivstar": "+380673738778",
+    "social_network": "https://www.facebook.com/sturmmag/",
+    "tel_vodafone": "+380667590005",
+    "tel_kyivstar": "+380671723639",
     "details": [
       {
-        "product": "Плитоноска Plate Carrier Perun 5-20 MaWka ®",
-        "price_uah": 4997
+        "product": "Сумка для скидання магазинів",
+        "price_uah": 350
       },
       {
-        "product": "Плитоноска Perun-6 SOF LC MaWka",
-        "price_uah": 19800
+        "product": "Сумка для скидання магазинів",
+        "price_uah": 800
       }
     ]
   },
   {
-    "website": "Ukrarmor",
-    "price_uah_min": 6450,
-    "price_uah_max": 20350,
-    "products_qty": 8,
-    "social_network": "https://www.instagram.com/ukrarmor/",
+    "website": "Grad Gear",
+    "price_uah_min": 420,
+    "price_uah_max": 12000,
+    "products_qty": 15,
+    "social_network": "https://www.instagram.com/grad.gear/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380681437535",
+    "details": [
+      {
+        "product": "Сумка скидання магазинів Multicam",
+        "price_uah": 420
+      },
+      {
+        "product": "Сумка скидання магазинів MM14",
+        "price_uah": 420
+      },
+      {
+        "product": "Сумка скидання магазинів Coyote",
+        "price_uah": 420
+      },
+      {
+        "product": "Сумка скидання магазинів Olive",
+        "price_uah": 420
+      },
+      {
+        "product": "Сумка скидання магазинів Black",
+        "price_uah": 420
+      },
+      {
+        "product": "Сумка скидання магазинів Original multicam USA",
+        "price_uah": 550
+      },
+      {
+        "product": "Плитоноска 6094 QRS V2 Multicam",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска 6094 QRS V2 MM14",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска 6094 QRS V2 Coyote",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска 6094 QRS V2 Olive",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска 6094 QRS V2 Black",
+        "price_uah": 5400
+      },
+      {
+        "product": "Плитоноска 6094 QRS Original multicam USA",
+        "price_uah": 6800
+      },
+      {
+        "product": "Плитоноска 6094 QRS V2 Original multicam USA",
+        "price_uah": 6800
+      },
+      {
+        "product": "Плитоноска AVS Original multicam USA",
+        "price_uah": 12000
+      },
+      {
+        "product": "Плитоноска AVS Coyote",
+        "price_uah": 12000
+      }
+    ]
+  },
+  {
+    "website": "Killa",
+    "price_uah_min": 455,
+    "price_uah_max": 1593,
+    "products_qty": 17,
+    "social_network": "https://www.instagram.com/killa_voentorg",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380967980043",
+    "details": [
+      {
+        "product": "Сумка для скидання магазинів, Black, Український виробник",
+        "price_uah": 455
+      },
+      {
+        "product": "Сумка для скидання магазинів Olive",
+        "price_uah": 536
+      },
+      {
+        "product": "Сумка для скидання магазинів Coyote",
+        "price_uah": 536
+      },
+      {
+        "product": "Сумка для скидання магазинів камуфляжна Multicam",
+        "price_uah": 536
+      },
+      {
+        "product": "Сумка для скидання магазинів камуфляжна Flecktarn",
+        "price_uah": 536
+      },
+      {
+        "product": "Сумка для скидання магазинів камуфляжна ММ-14 піксель ЗСУ",
+        "price_uah": 536
+      },
+      {
+        "product": "Сумка скидання магазинів MFH Dump Pouch Woodland",
+        "price_uah": 557
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite MM14",
+        "price_uah": 1323
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Black",
+        "price_uah": 1323
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Coyote",
+        "price_uah": 1323
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Ranger Green",
+        "price_uah": 1323
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Black",
+        "price_uah": 1345
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Ranger Green",
+        "price_uah": 1345
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Coyote",
+        "price_uah": 1361
+      },
+      {
+        "product": "Сумка скидання магизинів Helikon-Tex Competition Dump Pouch® Shadow Grey",
+        "price_uah": 1523
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Multicam",
+        "price_uah": 1549
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Multicam",
+        "price_uah": 1593
+      }
+    ]
+  },
+  {
+    "website": "Ibis",
+    "price_uah_min": 504,
+    "price_uah_max": 4050,
+    "products_qty": 20,
+    "social_network": "https://www.instagram.com/ibis_shooting/",
     "tel_vodafone": "",
     "tel_kyivstar": "",
     "details": [
       {
-        "product": "Плитоноска покращена (PRO). Система швидкого скидання. Мультикам",
-        "price_uah": 6450
+        "product": "Підсумок Tasmanian Tiger Dump Pouch Light Olive",
+        "price_uah": 504
       },
       {
-        "product": "Плитоноска IBV (аналог IOTV). Збільшена площа захисту. Колір Піксель (мм-14). L/XL",
-        "price_uah": 6900
+        "product": "Підсумок Tasmanian Tiger Dump Pouch. Black",
+        "price_uah": 504
       },
       {
-        "product": "Плитоноска 5.11 TacTec®. Shtorm",
-        "price_uah": 9380
+        "product": "Підсумок Tasmanian Tiger Dump Pouch. Olive",
+        "price_uah": 504
       },
       {
-        "product": "Бронежилет 4-го класу. Вага 7 кг. Комплект: 2 легкі сталеві бронеплити та плитоноска. Піксель (мм-14)",
-        "price_uah": 12350
+        "product": "Cумка скидання Combat Suricat. Піксель",
+        "price_uah": 600
       },
       {
-        "product": "Бронежилет 5-го класу. Вага 8.6 кг. Комплект: 2 сталеві бронеплити та плитоноска. Мультикам",
-        "price_uah": 14050
+        "product": "Cумка скидання Combat Suricat. Мультикам",
+        "price_uah": 750
       },
       {
-        "product": "Бронежилет 3-го класу. Вага 3.8 кг. Комплект: 2 бронеплити та плитоноска. Піксель (мм-14)",
-        "price_uah": 17850
+        "product": "Підсумок BLACKHAWK. Folding Dump Pouch. Койот",
+        "price_uah": 798
       },
       {
-        "product": "Бронежилет 3-го класу (надлегкий). Вага 3.2 кг. Комплект: 2 бронеплити та плитоноска. Мультикам",
-        "price_uah": 19850
+        "product": "Підсумок для скидання магазинів Defcon 5. Foldable Dump Pouch. Чорний",
+        "price_uah": 903
       },
       {
-        "product": "Бронежилет 6-го класу. Вага 6.2 кг. Керамічні бронеплити 2.8 кг (алюміній оксид). Піксель (мм-14)",
-        "price_uah": 20350
+        "product": "Підсумок для скидання магазинів Defcon 5. Foldable Dump Pouch. Камуфляж",
+        "price_uah": 903
+      },
+      {
+        "product": "Підсумок Defcon 5 для скидання магазинів. Олива",
+        "price_uah": 903
+      },
+      {
+        "product": "Підсумок Tasmanian Tiger Dump Pouch MC Multicam",
+        "price_uah": 966
+      },
+      {
+        "product": "Підсумок Condor Micro Dump. Чорний",
+        "price_uah": 1040
+      },
+      {
+        "product": "Підсумок Condor Micro Dump. Койот",
+        "price_uah": 1040
+      },
+      {
+        "product": "Підсумок Condor Micro Dump. Олива",
+        "price_uah": 1040
+      },
+      {
+        "product": "Підсумок Defcon5 для скидання магазинів. Multiland",
+        "price_uah": 1080
+      },
+      {
+        "product": "Підсумок для скидання магазинів BLACKHAWK! ц: пісочний",
+        "price_uah": 1280
+      },
+      {
+        "product": "Підсумок BLACKHAWK. Roll-Up Dump Pouch. Чорний",
+        "price_uah": 1280
+      },
+      {
+        "product": "Підсумок Condor для скидання магазинів Колір - Мультикам",
+        "price_uah": 1320
+      },
+      {
+        "product": "Ваги Prologic Avenger Scale 110lb 50kg",
+        "price_uah": 1640
+      },
+      {
+        "product": "Рюкзак Алебарда ALB-17L тактичний. Койот",
+        "price_uah": 3645
+      },
+      {
+        "product": "Рюкзак Алебарда ALB-17L тактичний. Мультикам",
+        "price_uah": 4050
       }
     ]
   },
   {
     "website": "Sts",
-    "price_uah_min": 7000,
-    "price_uah_max": 9000,
-    "products_qty": 4,
+    "price_uah_min": 530,
+    "price_uah_max": 680,
+    "products_qty": 7,
     "social_network": "https://www.instagram.com/stsgear/",
     "tel_vodafone": "",
     "tel_kyivstar": "+38674457255",
     "details": [
       {
-        "product": "Плитоноска Броненосець Minimus coyote M",
-        "price_uah": 7000
+        "product": "Сумка скидання магазинів ССМ",
+        "price_uah": 530
       },
       {
-        "product": "Плитоноска Броненосець Minimus coyote L",
-        "price_uah": 7500
+        "product": "Сумка скидання магазинів ССМ",
+        "price_uah": 530
       },
       {
-        "product": "Плитоноска Броненосець Minimus MULTICAM® ORIGINAL M",
-        "price_uah": 8500
+        "product": "Сумка скидання магазинів ССМ",
+        "price_uah": 530
       },
       {
-        "product": "Плитоноска Броненосець Minimus MULTICAM® ORIGINAL XL",
-        "price_uah": 9000
+        "product": "Сумка скидання магазинів ССМ",
+        "price_uah": 530
+      },
+      {
+        "product": "Сумка скидання магазинів ССМ",
+        "price_uah": 530
+      },
+      {
+        "product": "Сумка скидання MDP Coyote",
+        "price_uah": 680
+      },
+      {
+        "product": "Сумка скидання MDP Multicam",
+        "price_uah": 680
+      }
+    ]
+  },
+  {
+    "website": "Kamber",
+    "price_uah_min": 586,
+    "price_uah_max": 5358,
+    "products_qty": 8,
+    "social_network": "https://www.instagram.com/kamber_tactical/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380684262823",
+    "details": [
+      {
+        "product": "Сумка для нош BS",
+        "price_uah": 586
+      },
+      {
+        "product": "Сумка для набоїв KRB",
+        "price_uah": 806
+      },
+      {
+        "product": "Сумка скиду BM-6M",
+        "price_uah": 1139
+      },
+      {
+        "product": "Сумка для гідросистеми GP5",
+        "price_uah": 1923
+      },
+      {
+        "product": "Поясна сумка B2",
+        "price_uah": 2143
+      },
+      {
+        "product": "Сумка на спину до плитоноски SBP",
+        "price_uah": 2341
+      },
+      {
+        "product": "Cумка на спину до плитоноски подвійна SGP",
+        "price_uah": 2597
+      },
+      {
+        "product": "Сумка медика DBM",
+        "price_uah": 5358
+      }
+    ]
+  },
+  {
+    "website": "Ukrarmor",
+    "price_uah_min": 600,
+    "price_uah_max": 690,
+    "products_qty": 2,
+    "social_network": "https://www.instagram.com/ukrarmor/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "",
+    "details": [
+      {
+        "product": "Сумка скидання магазинів. Піксель (мм-14)",
+        "price_uah": 600
+      },
+      {
+        "product": "Сумка для скидання магазинів 2.0. Компактна. Кріпиться на MOLLE. Мультикам",
+        "price_uah": 690
+      }
+    ]
+  },
+  {
+    "website": "Tactical Gear",
+    "price_uah_min": 644,
+    "price_uah_max": 1892,
+    "products_qty": 3,
+    "social_network": "https://www.instagram.com/tacticalgear.ua/",
+    "tel_vodafone": "+380959010002",
+    "tel_kyivstar": "+380979010002",
+    "details": [
+      {
+        "product": "Підсумок скручений для скидання магазинів молле Condor Roll - Up Utility Pouch MA36",
+        "price_uah": 644
+      },
+      {
+        "product": "Підсумок для бінокля Pentagon Binocs General Pouch K17097",
+        "price_uah": 860
+      },
+      {
+        "product": "Тактична сумка Condor E&E Bag 157",
+        "price_uah": 1892
+      }
+    ]
+  },
+  {
+    "website": "Tur Gear",
+    "price_uah_min": 795,
+    "price_uah_max": 925,
+    "products_qty": 2,
+    "social_network": "https://www.instagram.com/turgear/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "",
+    "details": [
+      {
+        "product": "Сумка скиду койот",
+        "price_uah": 795
+      },
+      {
+        "product": "Сумка скиду",
+        "price_uah": 925
+      }
+    ]
+  },
+  {
+    "website": "AlphaBravo",
+    "price_uah_min": 800,
+    "price_uah_max": 800,
+    "products_qty": 1,
+    "social_network": "",
+    "tel_vodafone": "+380663080308",
+    "tel_kyivstar": "+380973380338",
+    "details": [
+      {
+        "product": "Підсумок для скидання магазинів Velmet Coyot",
+        "price_uah": 800
+      }
+    ]
+  },
+  {
+    "website": "Real Defence",
+    "price_uah_min": 825,
+    "price_uah_max": 1100,
+    "products_qty": 3,
+    "social_network": "https://instagram.com/real.defence/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380673879659",
+    "details": [
+      {
+        "product": "Сумка скидання порожніх магазинів",
+        "price_uah": 825
+      },
+      {
+        "product": "Сумка скидання порожніх магазинів, MULTICAM USA",
+        "price_uah": 1100
+      },
+      {
+        "product": "Сумка скидання порожніх магазинів сітка, MULTICAM USA",
+        "price_uah": 1100
+      }
+    ]
+  },
+  {
+    "website": "Militarka",
+    "price_uah_min": 900,
+    "price_uah_max": 1575,
+    "products_qty": 15,
+    "social_network": "https://www.instagram.com/militarka_ua/",
+    "tel_vodafone": "+380666163133",
+    "tel_kyivstar": "+380673011848",
+    "details": [
+      {
+        "product": "Мілітарка™ сумка для скидання магазинів ММ-14",
+        "price_uah": 900
+      },
+      {
+        "product": "Мілітарка™ сумка для скидання магазинів Multicam",
+        "price_uah": 900
+      },
+      {
+        "product": "Мілітарка™ сумка для скидання магазинів олива",
+        "price_uah": 900
+      },
+      {
+        "product": "Мілітарка™ сумка для скидання магазинів чорна",
+        "price_uah": 900
+      },
+      {
+        "product": "Мілітарка™ сумка для скидання магазинів койот",
+        "price_uah": 900
+      },
+      {
+        "product": "Сумка для скидання магазинів GEN. 2 чорна",
+        "price_uah": 1150
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite олива",
+        "price_uah": 1350
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite койот",
+        "price_uah": 1350
+      },
+      {
+        "product": "M-Tac сумка для скидання магазинів Elite Black",
+        "price_uah": 1350
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite coyote",
+        "price_uah": 1350
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Black",
+        "price_uah": 1350
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Ranger Green",
+        "price_uah": 1350
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite ММ-14",
+        "price_uah": 1350
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite multicam",
+        "price_uah": 1540
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite multicam",
+        "price_uah": 1575
+      }
+    ]
+  },
+  {
+    "website": "Utactic",
+    "price_uah_min": 900,
+    "price_uah_max": 900,
+    "products_qty": 1,
+    "social_network": "https://www.instagram.com/utactic_com/",
+    "tel_vodafone": "+380991143045",
+    "tel_kyivstar": "+380688631570",
+    "details": [
+      {
+        "product": "Сумка скидання магазинів UTactic",
+        "price_uah": 900
+      }
+    ]
+  },
+  {
+    "website": "UKRTAC",
+    "price_uah_min": 910,
+    "price_uah_max": 1300,
+    "products_qty": 5,
+    "social_network": "https://www.instagram.com/ukrtac/",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380980383800",
+    "details": [
+      {
+        "product": "Сумка скидання магазинів UKRTAC Олива темна",
+        "price_uah": 910
+      },
+      {
+        "product": "Сумка скидання магазинів UKRTAC Чорний",
+        "price_uah": 910
+      },
+      {
+        "product": "Сумка скидання магазинів UKRTAC Піксель",
+        "price_uah": 1150
+      },
+      {
+        "product": "Сумка скидання магазинів UKRTAC Койот",
+        "price_uah": 1300
+      },
+      {
+        "product": "Сумка скидання магазинів UKRTAC Мультикам",
+        "price_uah": 1300
       }
     ]
   },
   {
     "website": "Ataka",
-    "price_uah_min": 7560,
-    "price_uah_max": 10000,
-    "products_qty": 2,
+    "price_uah_min": 1140,
+    "price_uah_max": 1140,
+    "products_qty": 1,
     "social_network": "https://www.facebook.com/ATAKA.kiev.ua/",
     "tel_vodafone": "+380955587673",
     "tel_kyivstar": "+380679305772",
     "details": [
       {
-        "product": "А.Т.А.К.А. Плитоноска ЛЮТИЙ V2 ПОВНИЙ КОМПЛЕКТ SOF MULTICAM",
-        "price_uah": 7560
+        "product": "А.Т.А.К.А. Сумка скидання магазинів МК2 SOF Multicam ",
+        "price_uah": 1140
+      }
+    ]
+  },
+  {
+    "website": "Militarist",
+    "price_uah_min": 1248,
+    "price_uah_max": 1503,
+    "products_qty": 9,
+    "social_network": "http://instagram.com/tm_militarist",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380678296207",
+    "details": [
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Black",
+        "price_uah": 1248
       },
       {
-        "product": "А.Т.А.К.А. ПЛИТОНОСКА PLATE CARRIER 'АРХАНГЕЛ EVO L ' SOF MULTICAM ",
-        "price_uah": 10000
+        "product": "M-Tac сумка скидання магазинів Lite Elite Ranger Green",
+        "price_uah": 1248
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Coyote",
+        "price_uah": 1248
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite MM14",
+        "price_uah": 1248
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Black",
+        "price_uah": 1269
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Ranger Green",
+        "price_uah": 1269
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Coyote",
+        "price_uah": 1284
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Multicam",
+        "price_uah": 1461
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Multicam",
+        "price_uah": 1503
       }
     ]
   }
