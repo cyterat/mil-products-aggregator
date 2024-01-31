@@ -363,11 +363,109 @@ websites = [
         tel_vodafone="+380662533086",
         tel_kyivstar="+380984377908"
         ), 
+    WebsiteScraper(
+        name="Grad Gear",
+        base_url="https://gradgear.com.ua/katalog/search/filter/page={page}/?q={query}",
+        search_query_separator="+",
+        product_container_class="catalog-grid__item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="catalogCard-title").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="catalogCard-price").text.strip()).group(0).replace(" ",""),
+            'stock_status': container.find(class_="catalogCard-price") != None
+            },
+        social_network="https://www.instagram.com/grad.gear/",
+        tel_vodafone="",
+        tel_kyivstar="+380681437535"
+        ), 
+    WebsiteScraper(
+        name="Tactical Systems",
+        base_url="https://tactical-systems.com.ua/catalog/search/filter/page={page}/?q={query}",
+        search_query_separator="+",
+        product_container_class="catalog-grid__item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="catalogCard-title").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="catalogCard-price").text.strip()).group(0).replace(" ",""),
+            'stock_status': not container.find(class_="catalogCard-price __light")
+            },
+        social_network="https://www.instagram.com/tactical_systems_ukraine/",
+        tel_vodafone="",
+        tel_kyivstar="+380675336474"
+        ), 
+    WebsiteScraper(
+        name="Tur Gear",
+        base_url="https://turgear.com.ua/page/{page}/?post_type=product&s={query}",
+        search_query_separator="%20",
+        product_container_class="nm-shop-loop-product-wrap",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="woocommerce-loop-product__title").text.strip(),
+            'price': re.search(r"\b\d*", container.find(class_="price").text.strip().split()[-1].replace(" ","")).group(0),
+            'stock_status': container.find(class_="nm-shop-loop-actions") != None
+            },
+        social_network="https://www.instagram.com/turgear/",
+        tel_vodafone="",
+        tel_kyivstar=""
+        ), 
+    WebsiteScraper(
+        name="UKRTAC",
+        base_url="https://ukrtac.com/page/{page}/?s={query}&post_type=product&product_cat=0",
+        search_query_separator="+",
+        product_container_class="product-grid-item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="wd-entities-title").text.strip(),
+            'price': container.find(class_="price").text.strip().split()[-2],
+            'stock_status': container.find(class_="hover-content-inner") != None and not container.find(class_="widget-product-wrap")
+            },
+        social_network="https://www.instagram.com/ukrtac/",
+        tel_vodafone="",
+        tel_kyivstar="+380980383800"
+        ), 
+    WebsiteScraper(
+        name="Real Defence",
+        base_url="https://real-def.com/all-products/page-{page}?keyword={query}",
+        search_query_separator="+",
+        product_container_class="product_item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="product_preview__name").text.strip(),
+            'price': container.find(class_="fn_price").text.strip().replace(" ",""),
+            'stock_status': "Придбати" in container.find(class_="product_preview__order").text
+            },
+        social_network="https://instagram.com/real.defence/",
+        tel_vodafone="",
+        tel_kyivstar="+380673879659"
+        ), 
+    WebsiteScraper(
+        name="AlphaBravo",
+        base_url="https://alphabravo.com.ua/all-products/page-{page}?keyword={query}",
+        search_query_separator="+",
+        product_container_class="product_item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="product_preview__name").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="fn_price").text.strip()).group(0).replace(" ",""),
+            'stock_status': not container.find(class_="product_preview__button product_preview__button--buy alpha_btn fn_is_stock hidden-xs-up")
+            },
+        social_network="",
+        tel_vodafone="+380663080308",
+        tel_kyivstar="+380973380338"
+        ), 
+    WebsiteScraper(
+        name="Avis Gear",
+        base_url="https://avisgear.com/page/{page}/?s={query}&post_type=product",
+        search_query_separator="+",
+        product_container_class="product-grid-item",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="wd-entities-title").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip().replace(","," ")).group(0).replace(" ",""),
+            'stock_status': not container.find(class_="product_preview__button product_preview__button--buy alpha_btn fn_is_stock hidden-xs-up")
+            },
+        social_network="https://instagram.com/avis_gear/",
+        tel_vodafone="",
+        tel_kyivstar=""
+        ), 
     ]
 
 
 # Dummy product name
-product_name = "флісова шапка"
+product_name = "сумка скидання"
 
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
@@ -386,25 +484,26 @@ for entry in sorted_result:
 # THIS CODE SEGMENT WRITES SCRIPT OUTPUT INTO A JSON FILE
 #########################################################
 
-# # Create path
-# output_file_path = os.path.join(os.getcwd(),"data","output.json")
+# Create path
+output_file_path = os.path.join(os.getcwd(),"data","output.json")
 
-# # Write to JSON file
-# with open(output_file_path, 'w', encoding='utf-8') as output_file:
-#     json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
+# Write to JSON file
+with open(output_file_path, 'w', encoding='utf-8') as output_file:
+    json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
 
-# print(f"Data written to {output_file_path}")
+print(f"Data written to {output_file_path}")
 
-# # Print elapsed time
-# check_time = time.time() - start_time
-# print(f"\nEllapsed time: {check_time:.0f} seconds")
+# Print elapsed time
+check_time = time.time() - start_time
+print(f"\nEllapsed time: {check_time:.0f} seconds")
 
 #########################################################
 # THIS CODE SEGMENT DISPLAYS SCRIPT OUTPUT IN A TERMINAL 
 #########################################################
 
+# Store total number of matching products on each website
 total_products_qty = sum([website["products_qty"] for website in sorted_result])
-print("Знайдено товарів:", total_products_qty)
+print("Products found:", total_products_qty)
 print("")
 
 for website in sorted_result:
