@@ -1,6 +1,7 @@
 import requests
 import time
 import random
+from difflib import SequenceMatcher
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
@@ -120,6 +121,19 @@ class WebsiteScraper:
         union_size = len(set1.union(set2))
         similarity_coefficient = intersection_size / union_size if union_size != 0 else 0
         return similarity_coefficient
+    
+    def prod_name_similarity_check(self, str1, str2):
+        """
+        Calculate the similarity ratio between two strings using SequenceMatcher.
+
+        Parameters:
+        - str1: str, the first string
+        - str2: str, the second string
+
+        Returns:
+        - float, the similarity ratio
+        """
+        return SequenceMatcher(None, str1, str2).ratio()
 
     def detect_duplicate_content(self, current_page_content):
         """
@@ -135,12 +149,13 @@ class WebsiteScraper:
         self.previous_page_content = current_page_content
         return similarity >= 0.99  # Adjust the similarity threshold as needed
 
-    def extract_information(self, soup):
+    def extract_information(self, soup, search_query):
         """
         Extract product information from the parsed HTML.
 
         Parameters:
         - soup: BeautifulSoup object, the parsed HTML
+        - search_query: str, the search query
 
         Returns:
         - list of Product objects, the extracted product information
@@ -154,12 +169,15 @@ class WebsiteScraper:
 
                 if product_info is not None and product_info.get('stock_status', False):
                     if 'name' in product_info and 'price' in product_info:
-                        product_name = product_info['name'].replace('"', "'")
-                        products.append(Product(
-                            name=product_name,
-                            price=product_info['price'],
-                            stock_status=True
-                        ))
+                        # Check similarity between product name and search query
+                        name_similarity = self.prod_name_similarity_check(product_info['name'], search_query)
+                        if name_similarity >= 0.4:
+                            product_name = product_info['name'].replace('"', "'")
+                            products.append(Product(
+                                name=product_name,
+                                price=product_info['price'],
+                                stock_status=True
+                            ))
 
             except AttributeError:
                 pass
@@ -205,7 +223,7 @@ class WebsiteScraper:
                 break
 
             try:
-                products_on_page = self.extract_information(soup)
+                products_on_page = self.extract_information(soup, product)
 
                 if not products_on_page:
                     break
