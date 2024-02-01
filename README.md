@@ -5,7 +5,7 @@
 
 Data scraping and aggregation script for military gear from various Ukrainian online stores.
 
-Will retrieve discount price (if available) and exclude out-of-stock products.
+Retrieves discount price (if available) and excludes out-of-stock products.
 
 ## Script can retrieve product information from __28__ online stores
 
