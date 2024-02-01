@@ -57,7 +57,7 @@ _Note: only end lines are included in the screenshot_
 
 ## ✅ Implemented asynchronous scraping
 
-__🚀 Nearly 6x faster scraping!__
+__🚀 Nearly 6x faster!__
 
 Before:
 
