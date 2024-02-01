@@ -2,9 +2,15 @@ import json
 import re
 import os
 import time
+import asyncio
 from websitescraper import WebsiteScraper
 
-def aggregate_data(websites, product_name, include_details=True):
+async def async_scrape(website, product_name):
+    print(f"\nScraping data from {website.name}...")
+    products = await asyncio.to_thread(website.scrape, product_name)
+    return website, products
+
+async def aggregate_data(websites, product_name, include_details=True):
     """
     Aggregate data from multiple websites based on a given product.
 
@@ -18,20 +24,23 @@ def aggregate_data(websites, product_name, include_details=True):
     """
     aggregated_data = []
 
-    for website in websites:
-        print(f"\nScraping data from {website.name}...\n")
-        products = website.scrape(product_name)
+    # Create a list of coroutines for asynchronous execution
+    tasks = [async_scrape(website, product_name) for website in websites]
 
+    # Gather and wait for results
+    results = await asyncio.gather(*tasks)
+
+    for website, products in results:
         if products:
             # Extract relevant information from products
             try:
                 prices = [int(product.price) for product in products]
             except ValueError:
-                print("Converison of price to integer was unsuccessful. Storing as a string...") 
+                print("Conversion of price to integer was unsuccessful. Storing as a string...")
                 prices = [product.price for product in products]
             except Exception as e:
                 print("Unexpected error: ", e)
-                
+
             price_uah_min = min(prices)
             price_uah_max = max(prices)
             products_qty = len(products)
@@ -51,18 +60,17 @@ def aggregate_data(websites, product_name, include_details=True):
             if include_details:
                 # Store price as a string if the conversion to integer was unsuccessful
                 try:
-                    website_data["details"] = [{"product": product.name,"price_uah": int(product.price)} for product in products]
-                except ValueError: 
-                    website_data["details"] = [{"product": product.name,"price_uah": product.price} for product in products]
+                    website_data["details"] = [{"product": product.name, "price_uah": int(product.price)} for product in products]
+                except ValueError:
+                    website_data["details"] = [{"product": product.name, "price_uah": product.price} for product in products]
                 except Exception as e:
                     print("Unexpected error : ", e)
-                
+
             # Append the website's data to the aggregated data list
             aggregated_data.append(website_data)
 
-        print("-" * 40)  # Separator between websites
-
     return aggregated_data
+
 
 # Start the timer
 start_time = time.time()
@@ -470,8 +478,8 @@ product_name = "сумка скидання"
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
     
-# Aggregate data
-result = aggregate_data(websites, fmt_product_name, include_details=True)
+# Aggregate data asynchronously
+result = asyncio.run(aggregate_data(websites, fmt_product_name, include_details=True))
 
 # Sorting the list of dictionaries based on 'price_uah_min'
 sorted_result = sorted(result, key=lambda x: x['price_uah_min'], reverse=False)  # Set reverse=True for descending order
@@ -491,7 +499,7 @@ output_file_path = os.path.join(os.getcwd(),"data","output.json")
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
     json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
 
-print(f"Data written to {output_file_path}")
+print(f"\nData written to {output_file_path}")
 
 # Print elapsed time
 check_time = time.time() - start_time
