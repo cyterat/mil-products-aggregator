@@ -5,9 +5,11 @@
 
 Data scraping and aggregation script for military gear from various Ukrainian online stores.
 
-***
+Will retrieve discount price (if available) and exclude out-of-stock products.
 
-Currently supported online stores:
+## Script can retrieve product information from __28__ online stores
+
+Currently supported:
 [Ataka](https://attack.kiev.ua), [Abrams](https://abrams.com.ua), [Hofner](https://hofner.com.ua), [Ibis](https://ibis.net.ua),
 [Kamber](https://kamber.com.ua), [Killa](https://killa.com.ua), [Maroder](https://maroder.com.ua), [Militarist](https://militarist.ua),
 [Militarka](https://militarka.com.ua), [Molli](https://molliua.com), [Prof1Group](https://prof1group.ua), [Punisher](https://punisher.com.ua),
@@ -16,8 +18,6 @@ Currently supported online stores:
 [Global Ballisticks](https://globalballistics.com.ua), [Grad Gear](https://gradgear.com.ua), [Tactical Systems](https://tactical-systems.com.ua),
 [Tur Gear](https://turgear.com.ua/), [UKRTAC](https://ukrtac.com/en/), [Real Defence](https://real-def.com), [AlphaBravo](https://alphabravo.com.ua),
 [Avis Gear](https://avisgear.com)
-
-***
 
 ## Script output
 
@@ -55,9 +55,23 @@ _Note: only end lines are included in the screenshot_
 
 ***
 
+## ✅ Implemented asynchronous scraping
+
+__🚀 Nearly 6x faster scraping!__
+
+Before:
+
+![terminal-output-example](data/time-no-async.png)
+
+After:
+
+![terminal-output-example](data/time-async.png)
+
+***
+
 ## Future ideas
 
 - Add more websites
 - Include websites and products urls in `output.json`
 - Include more phone number fields in `output.json`
-- Implement async to reduce the overall scraping time
+- ~~Implement async to reduce the overall scraping time~~
