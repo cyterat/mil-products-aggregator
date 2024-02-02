@@ -11,7 +11,7 @@ from fake_useragent import UserAgent
 log_file_path = os.path.join('logs', 'websitescraper.log')
 
 # Set up logging
-logging.basicConfig(filename=log_file_path, level=logging.INFO, encoding='utf-8')
+logging.basicConfig(filename=log_file_path, level=logging.INFO, encoding='utf-8', filemode='w')
 
 class Product:
     def __init__(self, name, price, stock_status):
