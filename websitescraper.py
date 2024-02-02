@@ -55,7 +55,7 @@ class WebsiteScraper:
 
     def build_url(self, page, query):
         """
-        Build the complete URL with placeholders replaced.
+        Build a complete URL with filled in placeholders.
 
         Parameters:
         - page: int, the page number
