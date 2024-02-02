@@ -114,7 +114,13 @@ def display_scraped_data(sorted_result):
     for website in sorted_result:
         print(website["website"])
         print(">", f"К-сть: {website["products_qty"]} шт.")
-        print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
+        
+        # Display single price when max and min prices are the same
+        if website["price_uah_min"] == website["price_uah_max"]:
+            print(">", f"Ціна: {website["price_uah_min"]:,} грн.")
+        else:
+            print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
+        
         print("-"*25)
 
 
