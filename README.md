@@ -54,8 +54,6 @@ Search term: __"сумка скидання"__ (dump pouch)
 
 ![terminal-output-example](data/mil-products-scrapinf-cli-example-new.png)
 
-***
-
 ## Implemented features
 
 ### ☑ __asynchronous scraping__
