@@ -50,9 +50,9 @@ Search term: __"сумка скидання"__ (dump pouch)
 
 Search term: __"сумка скидання"__ (dump pouch)
 
-<sub>_Note: only end lines are included in the screenshot_</sub>
+<sub>_Note: not all output is visible in the screenshot_</sub>
 
-![terminal-output-example](data/mil-products-scrapinf-cli-example-new.png)
+![terminal-output-example](data/mil-products-scraper-cli-example.png)
 
 ## Implemented features
 
@@ -89,7 +89,7 @@ Script logs are now stored in the respective '__script_name.log__' file within '
       
       -v, --verbose         display data after scraping
 
-<sub>_Example of the CLI use_</sub>
+<sub>_Note: not all output is visible in the screenshot of the CLI use_</sub>
 
 ![cli-example](data/mil-products-scraper-cli-interface-example.png)
 
