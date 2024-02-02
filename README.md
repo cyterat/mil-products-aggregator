@@ -43,6 +43,7 @@ Example of the format of a single scraped website in `output.json`:
 Search term: __"сумка скидання"__ (dump pouch)
 
 <sub>_Note: only end lines are included in the screenshot_</sub>
+
 ![json-output-example](data/mil-products-scraper-json-example.png)
 
 ### Terminal output example
@@ -50,6 +51,7 @@ Search term: __"сумка скидання"__ (dump pouch)
 Search term: __"сумка скидання"__ (dump pouch)
 
 <sub>_Note: only end lines are included in the screenshot_</sub>
+
 ![terminal-output-example](data/mil-products-scrapinf-cli-example-new.png)
 
 ***
