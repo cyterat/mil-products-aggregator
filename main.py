@@ -6,6 +6,7 @@ import asyncio
 import logging
 from websitescraper import WebsiteScraper
 
+
 # Create logs path
 log_file_path = os.path.join('logs', 'main.log')
 
@@ -17,6 +18,7 @@ async def async_scrape(website, product_name):
     print(f"Scraping data from {website.name}...")
     products = await asyncio.to_thread(website.scrape, product_name)
     return website, products
+
 
 async def aggregate_data(websites, product_name, include_details=True):
     """
@@ -78,6 +80,41 @@ async def aggregate_data(websites, product_name, include_details=True):
             aggregated_data.append(website_data)
 
     return aggregated_data
+
+
+def export_to_json(sorted_result):
+    """This function writes script output into
+    a JSON file
+
+    Args:
+        sorted_result (list): list of dictionaries
+    """
+    # Create path
+    output_file_path = os.path.join(os.getcwd(),"data","output.json")
+
+    # Write to JSON file
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
+
+    print(f"\nData written to {output_file_path}")
+    
+
+def display_scraped_data(sorted_result):
+    """This function displays scraped data
+
+    Args:
+        sorted_result (list): list of dictionaries
+    """
+    # Store total number of matching products on each website
+    total_products_qty = sum([website["products_qty"] for website in sorted_result])
+    print("\nProducts found:", total_products_qty)
+    print("")
+
+    for website in sorted_result:
+        print(website["website"])
+        print(">", f"К-сть: {website["products_qty"]} шт.")
+        print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
+        print("-"*25)
 
 
 # Start the timer
@@ -480,49 +517,14 @@ websites = [
     ]
 
 
-def export_to_json(sorted_result):
-    """This function writes script output into
-    a JSON file
-
-    Args:
-        sorted_result (list): list of dictionaries
-    """
-    # Create path
-    output_file_path = os.path.join(os.getcwd(),"data","output.json")
-
-    # Write to JSON file
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
-        json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
-
-    print(f"\nData written to {output_file_path}")
-    
-
-def display_scraped_data(sorted_result):
-    """This function displays scraped data
-
-    Args:
-        sorted_result (list): list of dictionaries
-    """
-    # Store total number of matching products on each website
-    total_products_qty = sum([website["products_qty"] for website in sorted_result])
-    print("\nProducts found:", total_products_qty)
-    print("")
-
-    for website in sorted_result:
-        print(website["website"])
-        print(">", f"К-сть: {website["products_qty"]} шт.")
-        print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
-        print("-"*25)
-
-
 # Dummy product name
 product_name = "сумка скидання"
 
 # JSON export (disabled by default)
-EXPORT = False
+EXPORT_DATA = False
 
 # Scraped data display
-DISPLAY = True
+DISPLAY_DATA = True
 
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
@@ -537,10 +539,10 @@ sorted_result = sorted(result, key=lambda x: x['price_uah_min'], reverse=False) 
 for entry in sorted_result:
     entry['details'] = sorted(entry['details'], key=lambda x: x['price_uah'], reverse=False)  # Set reverse=True for descending order
 
-if EXPORT:
+if EXPORT_DATA:
     export_to_json(sorted_result)
     
-if DISPLAY:
+if DISPLAY_DATA:
     display_scraped_data(sorted_result)
     
 # Print elapsed time
