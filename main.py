@@ -4,6 +4,7 @@ import os
 import time
 import asyncio
 import logging
+import argparse
 from websitescraper import WebsiteScraper
 
 
@@ -15,7 +16,7 @@ logging.basicConfig(filename=log_file_path, level=logging.INFO, encoding='utf-8'
 
 
 async def async_scrape(website, product_name):
-    print(f"Scraping data from {website.name}...")
+    # print(f"Scraping data from {website.name}...")
     products = await asyncio.to_thread(website.scrape, product_name)
     return website, products
 
@@ -516,35 +517,47 @@ websites = [
         ), 
     ]
 
+def main():
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(description="Scrape websites for product information.")
+    parser.add_argument("-n","--name", type=str, help="Name of the product to scrape. Use underscore instead of space between words: сумка_скидання")
+    parser.add_argument("-j", "--json", help="Write output to JSON file in 'data' folder", action="store_true")  # Disabled by default if not passed
+    parser.add_argument("-v", "--verbose", help="Display data after scraping", action="store_true")  # Disabled by default if not passed
 
-# Dummy product name
-product_name = "сумка скидання"
+    args = parser.parse_args()
 
-# JSON export (disabled by default)
-EXPORT_DATA = False
-
-# Scraped data display
-DISPLAY_DATA = True
-
-# Replace multiple consecutive whitespaces with a single one
-fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
+    if not args.name:
+        print("Error: Please provide a product name using the --name argument.")
+        return
+    elif not args.verbose and not args.json:
+        print("Error: Conflicting flags. Script will not produce any output without --quiet or --json.")
+        return
     
-# Aggregate data asynchronously
-result = asyncio.run(aggregate_data(websites, fmt_product_name, include_details=True))
+    # Replace multiple whitespace with a single one
+    fmt_product_name = args.name.replace('_',' ').lower()
+        
+    # Aggregate data asynchronously
+    result = asyncio.run(aggregate_data(websites, fmt_product_name, include_details=True))
 
-# Sorting the list of dictionaries based on 'price_uah_min'
-sorted_result = sorted(result, key=lambda x: x['price_uah_min'], reverse=False)  # Set reverse=True for descending order
+    # Sorting the list of dictionaries based on 'price_uah_min'
+    sorted_result = sorted(result, key=lambda x: x['price_uah_min'], reverse=False)  # Set reverse=True for descending order
 
-# Sorting the 'details' list within each dictionary based on 'price_uah'
-for entry in sorted_result:
-    entry['details'] = sorted(entry['details'], key=lambda x: x['price_uah'], reverse=False)  # Set reverse=True for descending order
-
-if EXPORT_DATA:
-    export_to_json(sorted_result)
+    # Sorting the 'details' list within each dictionary based on 'price_uah'
+    for entry in sorted_result:
+        entry['details'] = sorted(entry['details'], key=lambda x: x['price_uah'], reverse=False)  # Set reverse=True for descending order
     
-if DISPLAY_DATA:
-    display_scraped_data(sorted_result)
-    
-# Print elapsed time
-check_time = time.time() - start_time
-print(f"\nEllapsed time: {check_time:.0f} seconds")
+    if args.json:
+        export_to_json(sorted_result)
+     
+    if args.verbose:
+        display_scraped_data(sorted_result)
+        
+    # Print elapsed time
+    check_time = time.time() - start_time
+    print(f"\nEllapsed time: {check_time:.0f} seconds")
+
+
+if __name__ == "__main__":
+    # Start the timer
+    start_time = time.time()
+    main()
