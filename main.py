@@ -3,10 +3,18 @@ import re
 import os
 import time
 import asyncio
+import logging
 from websitescraper import WebsiteScraper
 
+# Create logs path
+log_file_path = os.path.join('logs', 'main.log')
+
+# Set up logging
+logging.basicConfig(filename=log_file_path, level=logging.INFO, encoding='utf-8')
+
+
 async def async_scrape(website, product_name):
-    print(f"\nScraping data from {website.name}...")
+    print(f"Scraping data from {website.name}...")
     products = await asyncio.to_thread(website.scrape, product_name)
     return website, products
 
@@ -36,10 +44,10 @@ async def aggregate_data(websites, product_name, include_details=True):
             try:
                 prices = [int(product.price) for product in products]
             except ValueError:
-                print("Conversion of price to integer was unsuccessful. Storing as a string...")
+                logging.warning("Conversion of price to integer was unsuccessful. Storing as a string...")
                 prices = [product.price for product in products]
             except Exception as e:
-                print("Unexpected error: ", e)
+                logging.error("Unexpected error: ", e)
 
             price_uah_min = min(prices)
             price_uah_max = max(prices)
@@ -64,7 +72,7 @@ async def aggregate_data(websites, product_name, include_details=True):
                 except ValueError:
                     website_data["details"] = [{"product": product.name, "price_uah": product.price} for product in products]
                 except Exception as e:
-                    print("Unexpected error : ", e)
+                    logging.error("Unexpected error : ", e)
 
             # Append the website's data to the aggregated data list
             aggregated_data.append(website_data)
@@ -472,8 +480,49 @@ websites = [
     ]
 
 
+def export_to_json(sorted_result):
+    """This function writes script output into
+    a JSON file
+
+    Args:
+        sorted_result (list): list of dictionaries
+    """
+    # Create path
+    output_file_path = os.path.join(os.getcwd(),"data","output.json")
+
+    # Write to JSON file
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
+
+    print(f"\nData written to {output_file_path}")
+    
+
+def display_scraped_data(sorted_result):
+    """This function displays scraped data
+
+    Args:
+        sorted_result (list): list of dictionaries
+    """
+    # Store total number of matching products on each website
+    total_products_qty = sum([website["products_qty"] for website in sorted_result])
+    print("\nProducts found:", total_products_qty)
+    print("")
+
+    for website in sorted_result:
+        print(website["website"])
+        print(">", f"К-сть: {website["products_qty"]} шт.")
+        print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
+        print("-"*25)
+
+
 # Dummy product name
 product_name = "сумка скидання"
+
+# JSON export (disabled by default)
+EXPORT = False
+
+# Scraped data display
+DISPLAY = True
 
 # Replace multiple consecutive whitespaces with a single one
 fmt_product_name = re.sub(r'\s+', ' ', product_name).lower()
@@ -488,34 +537,12 @@ sorted_result = sorted(result, key=lambda x: x['price_uah_min'], reverse=False) 
 for entry in sorted_result:
     entry['details'] = sorted(entry['details'], key=lambda x: x['price_uah'], reverse=False)  # Set reverse=True for descending order
 
-#########################################################
-# THIS CODE SEGMENT WRITES SCRIPT OUTPUT INTO A JSON FILE
-#########################################################
-
-# Create path
-output_file_path = os.path.join(os.getcwd(),"data","output.json")
-
-# Write to JSON file
-with open(output_file_path, 'w', encoding='utf-8') as output_file:
-    json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
-
-print(f"\nData written to {output_file_path}")
-
+if EXPORT:
+    export_to_json(sorted_result)
+    
+if DISPLAY:
+    display_scraped_data(sorted_result)
+    
 # Print elapsed time
 check_time = time.time() - start_time
 print(f"\nEllapsed time: {check_time:.0f} seconds")
-
-#########################################################
-# THIS CODE SEGMENT DISPLAYS SCRIPT OUTPUT IN A TERMINAL 
-#########################################################
-
-# Store total number of matching products on each website
-total_products_qty = sum([website["products_qty"] for website in sorted_result])
-print("Products found:", total_products_qty)
-print("")
-
-for website in sorted_result:
-    print(website["website"])
-    print(">", f"К-сть: {website["products_qty"]} шт.")
-    print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
-    print("-"*25)

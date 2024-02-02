@@ -1,10 +1,17 @@
 import requests
 import time
 import random
+import logging
+import os
 from difflib import SequenceMatcher
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
+# Create logs path
+log_file_path = os.path.join('logs', 'websitescraper.log')
+
+# Set up logging
+logging.basicConfig(filename=log_file_path, level=logging.INFO, encoding='utf-8')
 
 class Product:
     def __init__(self, name, price, stock_status):
@@ -77,8 +84,10 @@ class WebsiteScraper:
 
         if response.status_code == 200:
             return response.content
+        if response.status_code == 404:
+            return None
         else:
-            print(f"Received an unexpected status code: {response.status_code}")
+            logging.warning(f"Received an unexpected status code: {response.status_code}")
             return None
 
     def parse_html(self, content):
@@ -183,12 +192,12 @@ class WebsiteScraper:
                 pass
 
             except Exception as e:
-                print(f"Error extracting information: {e}")
+                logging.error(f"Error extracting information: {e}")
 
         if not products:
-            print("No products found on this page.")
+            logging.info("No products found on this page.")
 
-        print("Finished extraction.")
+        logging.info("Finished extraction.")
         return products
 
     def scrape(self, product):
@@ -209,17 +218,17 @@ class WebsiteScraper:
             url = self.build_url(page, query)
             content = self.fetch_data(url)
 
-            if not content or content is None:
-                print(f"No content received from {url}")
+            if not content or content is None:  
+                logging.warning(f"No content received from {url}")
                 break
 
             soup = self.parse_html(content)
-            print(f"Scraping data from {url}...")
+            logging.info(f"Scraping data from {url}...")
 
             current_page_content = self.get_page_content(soup)
 
             if self.detect_duplicate_content(current_page_content):
-                print("Detected duplicate content. Stopping scraping.")
+                logging.warning("Detected duplicate content. Stopping scraping.")
                 break
 
             try:
@@ -229,16 +238,14 @@ class WebsiteScraper:
                     break
 
             except Exception as e:
-                print(f"Error extracting information: {e}")
+                logging.error(f"Error extracting information: {e}")
 
             else:
                 aggregated_products.extend(products_on_page)
 
             sleep_duration = random.uniform(1, 3)
-            print(f"Sleeping for {sleep_duration:.2f} seconds...\n")
             time.sleep(sleep_duration)
 
             page += 1
-
-        print(f"Scraped {len(aggregated_products)} products.")
+            
         return aggregated_products
