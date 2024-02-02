@@ -36,26 +36,27 @@ Example of the format of a single scraped website in `output.json`:
 - __tel_kyivstar__: str,
 - __details__:
   - __product__: str, __price_uah__: int
-  - __product__: str, __price_uah__: int
   - . . .
 
 ### JSON file example
 
 Search term: __"сумка скидання"__ (dump pouch)
 
+<sub>_Note: only end lines are included in the screenshot_</sub>
 ![json-output-example](data/mil-products-scraper-json-example.png)
 
 ### Terminal output example
 
 Search term: __"сумка скидання"__ (dump pouch)
 
-_Note: only end lines are included in the screenshot_
-
-![terminal-output-example](data/mil-products-scrapinf-cli-example.png)
+<sub>_Note: only end lines are included in the screenshot_</sub>
+![terminal-output-example](data/mil-products-scrapinf-cli-example-new.png)
 
 ***
 
-## ✅ Implemented asynchronous scraping
+## Implemented features
+
+### ☑ __asynchronous scraping__
 
 __🚀 Nearly 6x faster!__
 
@@ -69,9 +70,14 @@ After:
 
 ***
 
+### ☑ __logging__
+
+Script logs are now stored in the respective '__script_name.log__' file within '__logs__' folder
+
 ## Future ideas
 
 - Add more websites
 - Include websites and products urls in `output.json`
 - Include more phone number fields in `output.json`
 - ~~Implement async to reduce the overall scraping time~~
+- ~~Implement logging to improve maintainability~~
