@@ -64,17 +64,32 @@ __🚀 Nearly 6x faster!__
 
 Before:
 
-![terminal-output-example](data/time-no-async.png)
+![no-async-terminal-output-example](data/time-no-async.png)
 
 After:
 
-![terminal-output-example](data/time-async.png)
+![async-terminal-output-example](data/time-async.png)
 
 ***
 
 ### ☑ __logging__
 
 Script logs are now stored in the respective '__script_name.log__' file within '__logs__' folder
+***
+
+### ☑ __command-line interface__
+
+    usage: main.py [-h] [-n NAME] [-j] [-v]
+
+    options:
+      -h, --help            show this help message and exit
+      -n NAME, --name NAME  Name of the product to scrape. Use underscore instead of space between words: сумка_скидання
+      -j, --json            Write output to JSON file in 'data' folder
+      -v, --verbose         Display data after scraping
+
+<sub>_Example of the CLI use_</sub>
+
+![cli-example](data/mil-products-scraper-cli-interface-example.png)
 
 ## Future ideas
 
@@ -83,3 +98,4 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 - Include more phone number fields in `output.json`
 - ~~Implement async to reduce the overall scraping time~~
 - ~~Implement logging to improve maintainability~~
+- ~~Develop a CLI for the script~~
