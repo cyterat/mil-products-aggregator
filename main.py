@@ -121,7 +121,7 @@ def display_scraped_data(sorted_result):
         else:
             print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
         
-        print("-"*25)
+        print("")
 
 
 # Start the timer
@@ -560,7 +560,7 @@ def main():
         
     # Print elapsed time
     check_time = time.time() - start_time
-    print(f"\nEllapsed time: {check_time:.0f} seconds")
+    print(f"Ellapsed time: {check_time:.0f} seconds")
 
 
 if __name__ == "__main__":
