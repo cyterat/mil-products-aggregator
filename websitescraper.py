@@ -114,6 +114,7 @@ class WebsiteScraper:
         """
         product_names = [product.text for product in soup.find_all(class_=self.product_container_class)]
         return set(product_names)
+    
 
     def match_query(self, query, product_name):
         """
@@ -133,18 +134,23 @@ class WebsiteScraper:
         # Check if all words from the query are present in the product name
         return all(word in product_name for word in query)
     
-    def prod_name_similarity_check(self, str1, str2):
+    
+    def similarity_check(self, set1, set2):
         """
-        Calculate the similarity ratio between two strings using SequenceMatcher.
+        Calculate the Jaccard similarity coefficient between two sets.
 
         Parameters:
-        - str1: str, the first string
-        - str2: str, the second string
+        - set1: set, the first set
+        - set2: set, the second set
 
         Returns:
-        - float, the similarity ratio
+        - float, the Jaccard similarity coefficient
         """
-        return SequenceMatcher(None, str1, str2).ratio()
+        intersection_size = len(set1.intersection(set2))
+        union_size = len(set1.union(set2))
+        similarity_coefficient = intersection_size / union_size if union_size != 0 else 0
+        return similarity_coefficient
+
 
     def detect_duplicate_content(self, current_page_content):
         """
