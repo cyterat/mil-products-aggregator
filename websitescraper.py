@@ -115,21 +115,23 @@ class WebsiteScraper:
         product_names = [product.text for product in soup.find_all(class_=self.product_container_class)]
         return set(product_names)
 
-    def similarity_check(self, set1, set2):
+    def match_query(self, query, product_name):
         """
-        Calculate the Jaccard similarity coefficient between two sets.
+        Check if a given product name matches a search query.
 
-        Parameters:
-        - set1: set, the first set
-        - set2: set, the second set
+        Args:
+            query (str): The search query to match against.
+            product_name (str): The product name to check for a match.
 
         Returns:
-        - float, the Jaccard similarity coefficient
+            bool: True if all words from the query are present in the product name, False otherwise.
         """
-        intersection_size = len(set1.intersection(set2))
-        union_size = len(set1.union(set2))
-        similarity_coefficient = intersection_size / union_size if union_size != 0 else 0
-        return similarity_coefficient
+        # Split both strings
+        query = query.lower().split()
+        product_name = product_name.lower().split()
+
+        # Check if all words from the query are present in the product name
+        return all(word in product_name for word in query)
     
     def prod_name_similarity_check(self, str1, str2):
         """
@@ -179,8 +181,8 @@ class WebsiteScraper:
                 if product_info is not None and product_info.get('stock_status', False):
                     if 'name' in product_info and 'price' in product_info:
                         # Check similarity between product name and search query
-                        name_similarity = self.prod_name_similarity_check(product_info['name'], search_query)
-                        if name_similarity >= 0.4:
+                        check_names = self.match_query(search_query, product_info['name'])
+                        if check_names:
                             product_name = product_info['name'].replace('"', "'")
                             products.append(Product(
                                 name=product_name,
