@@ -96,8 +96,8 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 ## Future ideas
 
 - Add more websites
-- Include websites and products urls in `output.json`
-- Include more phone number fields in `output.json`
+- ~~Include searched product page url in `WebsiteScraper`~~
+- Include more phone number fields in `WebsiteScraper`
 - ~~Implement async to reduce the overall scraping time~~
 - ~~Implement logging to improve maintainability~~
 - ~~Develop a CLI for the script~~
