@@ -1,13 +1,17 @@
 # 🛒 Military Products Aggregator
 
 [![Python - 3.12.0](https://img.shields.io/badge/Python-3.12.0-f4d159)](https://www.python.org/downloads/release/python-3120/)
-[![excel](https://img.shields.io/badge/excel-buy_mil_equipment-1D6F42)](data/buy-mil-equipment.xlsx)
+[![excel](https://img.shields.io/badge/Excel-online_stores_information-1D6F42)](data/buy-mil-equipment.xlsx)
+[![telegram](https://img.shields.io/badge/Telegram-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
 
-Data scraping and aggregation script for military gear from various Ukrainian online stores.
+## Telegram Bot
 
-Retrieves discount price (if available) and excludes out-of-stock products.
+<center>
+<img src="data/telegram-bot/medium-telegram-bot-image.png" width="300">
+<img src="data/telegram-bot/telegram-bot-qr.jpg" width="214.25">
+</center>
 
-## Script can retrieve product information from __27__ online stores
+[@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) can retrieve a sorted list of prices for the in-stock military clothing, gear, etc. from __27__ online stores.
 
 Currently supported:
 [Ataka](https://attack.kiev.ua), [Abrams](https://abrams.com.ua), [Hofner](https://hofner.com.ua), [Ibis](https://ibis.net.ua),
@@ -19,9 +23,15 @@ Currently supported:
 [Tur Gear](https://turgear.com.ua/), [UKRTAC](https://ukrtac.com/en/), [Real Defence](https://real-def.com), [AlphaBravo](https://alphabravo.com.ua),
 [Avis Gear](https://avisgear.com)
 
-## Script output
+The telegram bot has been_built on top of a `main.py` script. More information about it below.
 
-### JSON file format
+## Script
+
+The `main.py` script can be used separately from the telegram bot. It is a data scraping and aggregation script for military gear from various Ukrainian online stores. Retrieves discount price (if available) and excludes out-of-stock products.
+
+### Output
+
+#### JSON file format
 
 _Note: the `main.py` script produces a JSON list of dictionaries where each dictionary represents a scraped website._
 
@@ -39,7 +49,7 @@ Example of the format of a single scraped website in `output.json`:
   - __product__: str, __price_uah__: int
   - . . .
 
-### JSON file example
+#### JSON file example
 
 Search term: __"сумка скидання"__ (dump pouch)
 
@@ -47,7 +57,7 @@ Search term: __"сумка скидання"__ (dump pouch)
 
 ![json-output-example](data/mil-products-scraper-json-example.png)
 
-### Terminal output example
+#### Terminal output example
 
 Search term: __"сумка скидання"__ (dump pouch)
 
@@ -74,6 +84,7 @@ After:
 ### ☑ __logging__
 
 Script logs are now stored in the respective '__script_name.log__' file within '__logs__' folder
+
 ***
 
 ### ☑ __command-line interface__
@@ -94,28 +105,42 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 
 ![cli-example](data/mil-products-scraper-cli-interface-example.png)
 
+***
+
+### ☑ __telegram bot__
+
+⚡ The telegram bot has been built on top of a `main.py` script.<br>
+[@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
+
+<sub>_Note: not all output is visible in the screenshots_</sub>
+
+<img src="data/telegram-bot/telegram-bot-showcase-1.png" width="306">
+<img src="data/telegram-bot/telegram-bot-showcase-2.png" width="400">
+
+<img src="data/telegram-bot/telegram-bot-showcase-3.png" width="400">
+
 ## Future ideas
 
 🔥 High priority:
 
 - Add more websites
 
-- ~~Implement async to reduce the overall scraping time~~
+- ~~Implement async to reduce the overall scraping time~~ ✅
 
-- ~~Implement logging to improve maintainability~~
+- ~~Implement logging to improve maintainability~~ ✅
 
-- ~~Develop a CLI for the script~~
+- ~~Develop a CLI for the script~~ ✅
 
 <br>
 
 🌟 Medium priority:
 
-- Create a Telegram Bot
+- ~~Create a Telegram Bot~~ ✅
 
 <br>
 
 ✨ Low priority:
 
-- ~~Include searched product page url in `WebsiteScraper`~~
+- ~~Include searched product page url in `WebsiteScraper`~~ ✅
 
 - Include more phone number fields in `WebsiteScraper`
