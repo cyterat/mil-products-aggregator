@@ -391,7 +391,7 @@ websites = [
         tel_kyivstar="+380979010002"
         ), 
     WebsiteScraper(
-        name="Ukrarmor",
+        name="Ukr Armor",
         base_url="https://ukrarmor.com.ua/search?page={page}&search={query}",
         search_query_url="https://ukrarmor.com.ua/search?search={query}",
         search_query_separator="+",
@@ -406,7 +406,7 @@ websites = [
         tel_kyivstar=""
         ), 
     WebsiteScraper(
-        name="Utactic",
+        name="UTactic",
         base_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
         search_query_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
         search_query_separator="+",
@@ -498,7 +498,7 @@ websites = [
     WebsiteScraper(
         name="UKRTAC",
         base_url="https://ukrtac.com/page/{page}/?s={query}&post_type=product&product_cat=0",
-        search_query_url="https://ukrtac.com/page/?s={query}&post_type=product&product_cat=0",
+        search_query_url="https://ukrtac.com/?s={query}&post_type=product&product_cat=0",
         search_query_separator="+",
         product_container_class="product-grid-item",
         extract_info_functions=lambda container: {
