@@ -29,13 +29,14 @@ class Product:
 
 
 class WebsiteScraper:
-    def __init__(self, name, base_url, search_query_separator, product_container_class, extract_info_functions, social_network, tel_vodafone, tel_kyivstar):
+    def __init__(self, name, base_url, search_query_url, search_query_separator, product_container_class, extract_info_functions, social_network, tel_vodafone, tel_kyivstar):
         """
         Represents a website scraper with specific parameters.
 
         Parameters:
         - name: str, the name of the website
         - base_url: str, the base URL template for scraping
+        - search_query_url: str, the search query URL template
         - search_query_separator: str, separator for search queries in the URL
         - product_container_class: str, class name of the HTML container for product information
         - extract_info_functions: function, function to extract information from a product container
@@ -45,6 +46,7 @@ class WebsiteScraper:
         """
         self.name = name
         self.base_url = base_url
+        self.search_query_url = search_query_url
         self.search_query_separator = search_query_separator
         self.product_container_class = product_container_class
         self.extract_info_functions = extract_info_functions
@@ -114,7 +116,6 @@ class WebsiteScraper:
         """
         product_names = [product.text for product in soup.find_all(class_=self.product_container_class)]
         return set(product_names)
-    
 
     def match_query(self, query, product_name):
         """
@@ -133,8 +134,7 @@ class WebsiteScraper:
 
         # Check if all words from the query are present in the product name
         return all(word in product_name for word in query)
-    
-    
+
     def similarity_check(self, set1, set2):
         """
         Calculate the Jaccard similarity coefficient between two sets.
@@ -150,7 +150,6 @@ class WebsiteScraper:
         union_size = len(set1.union(set2))
         similarity_coefficient = intersection_size / union_size if union_size != 0 else 0
         return similarity_coefficient
-
 
     def detect_duplicate_content(self, current_page_content):
         """
@@ -208,6 +207,18 @@ class WebsiteScraper:
         logging.info("Finished extraction.")
         return products
 
+    def generate_search_query_url(self, query):
+        """
+        Generate the search query URL.
+
+        Parameters:
+        - query: str, the search query
+
+        Returns:
+        - str, the generated search query URL
+        """
+        return self.search_query_url.format(query=query)
+
     def scrape(self, product):
         """
         Main scraping function that iterates over pages and extracts information.
@@ -226,7 +237,7 @@ class WebsiteScraper:
             url = self.build_url(page, query)
             content = self.fetch_data(url)
 
-            if not content or content is None:  
+            if not content or content is None:
                 logging.warning(f"No content received from {url}")
                 break
 
@@ -255,5 +266,5 @@ class WebsiteScraper:
             time.sleep(sleep_duration)
 
             page += 1
-            
+
         return aggregated_products
