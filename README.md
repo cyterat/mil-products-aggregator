@@ -105,9 +105,13 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 
 - ~~Develop a CLI for the script~~
 
+<br>
+
 🌟 Medium priority:
 
 - Create a Telegram Bot
+
+<br>
 
 ✨ Low priority:
 
