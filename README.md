@@ -95,9 +95,22 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 
 ## Future ideas
 
+🔥 High priority:
+
 - Add more websites
-- ~~Include searched product page url in `WebsiteScraper`~~
-- Include more phone number fields in `WebsiteScraper`
+
 - ~~Implement async to reduce the overall scraping time~~
+
 - ~~Implement logging to improve maintainability~~
+
 - ~~Develop a CLI for the script~~
+
+🌟 Medium priority:
+
+- Create a Telegram Bot
+
+✨ Low priority:
+
+- ~~Include searched product page url in `WebsiteScraper`~~
+
+- Include more phone number fields in `WebsiteScraper`
