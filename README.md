@@ -14,7 +14,7 @@ Currently supported:
 [Kamber](https://kamber.com.ua), [Maroder](https://maroder.com.ua), [Militarist](https://militarist.ua),
 [Militarka](https://militarka.com.ua), [Molli](https://molliua.com), [Prof1Group](https://prof1group.ua), [Punisher](https://punisher.com.ua),
 [Specprom-kr](https://specprom-kr.com.ua), [Sts](https://sts-gear.com), [Sturm](https://sturm.com.ua), [Stvol](https://stvol.ua),
-[Tactical Gear](https://tacticalgear.ua), [Ukrarmor](https://ukrarmor.com.ua), [Utactic](https://utactic.com), [Velmet](https://velmet.ua),
+[Tactical Gear](https://tacticalgear.ua), [Ukr Armor](https://ukrarmor.com.ua), [UTactic](https://utactic.com), [Velmet](https://velmet.ua),
 [Global Ballisticks](https://globalballistics.com.ua), [Grad Gear](https://gradgear.com.ua), [Tactical Systems](https://tactical-systems.com.ua),
 [Tur Gear](https://turgear.com.ua/), [UKRTAC](https://ukrtac.com/en/), [Real Defence](https://real-def.com), [AlphaBravo](https://alphabravo.com.ua),
 [Avis Gear](https://avisgear.com)
