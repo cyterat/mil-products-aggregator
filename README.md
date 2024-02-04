@@ -28,6 +28,7 @@ _Note: the `main.py` script produces a JSON list of dictionaries where each dict
 Example of the format of a single scraped website in `output.json`:
 
 - __website__: str,
+- __search_query_url__: str,
 - __price_uah_min__: int,
 - __price_uah_max__: int,
 - __products_qty__: int,
