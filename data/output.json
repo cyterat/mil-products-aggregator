@@ -1,41 +1,7 @@
 [
   {
-    "website": "Punisher",
-    "price_uah_min": 240,
-    "price_uah_max": 1800,
-    "products_qty": 6,
-    "social_network": "https://www.instagram.com/punisher.com.ua/",
-    "tel_vodafone": "+380500587070",
-    "tel_kyivstar": "+380970587000",
-    "details": [
-      {
-        "product": "Кнопка скидання магазинів FMA AKMR для AK",
-        "price_uah": 240
-      },
-      {
-        "product": "Сумка 281Z Україніка",
-        "price_uah": 280
-      },
-      {
-        "product": "Сумка Punisher для скидання магазинів",
-        "price_uah": 1100
-      },
-      {
-        "product": "Сумка скидання магазинів M-Tac Lite Elite",
-        "price_uah": 1320
-      },
-      {
-        "product": "Сумка скидання магазинів M-Tac Elite",
-        "price_uah": 1420
-      },
-      {
-        "product": "Сумка скидання магазинів Hoffmann Equipment",
-        "price_uah": 1800
-      }
-    ]
-  },
-  {
     "website": "Global Ballisticks",
+    "search_query_url": "https://globalballistics.com.ua/ua/all-products?keyword=сумка+скидання",
     "price_uah_min": 300,
     "price_uah_max": 300,
     "products_qty": 2,
@@ -55,6 +21,7 @@
   },
   {
     "website": "Sturm",
+    "search_query_url": "https://sturm.com.ua/search/?search=сумка%20скидання",
     "price_uah_min": 350,
     "price_uah_max": 800,
     "products_qty": 2,
@@ -73,22 +40,8 @@
     ]
   },
   {
-    "website": "Molli",
-    "price_uah_min": 380,
-    "price_uah_max": 380,
-    "products_qty": 1,
-    "social_network": "https://www.instagram.com/molli.u.a?igshid=NmZiMzY2Mjc%3D",
-    "tel_vodafone": "+380994603556",
-    "tel_kyivstar": "+380962019665",
-    "details": [
-      {
-        "product": "Підсумок Хакі для скидання магазинів АК МОЛЛІ PS-034",
-        "price_uah": 380
-      }
-    ]
-  },
-  {
     "website": "Grad Gear",
+    "search_query_url": "https://gradgear.com.ua/katalog/search/filter/?q=сумка+скидання",
     "price_uah_min": 420,
     "price_uah_max": 550,
     "products_qty": 6,
@@ -124,6 +77,7 @@
   },
   {
     "website": "Sts",
+    "search_query_url": "https://sts-gear.com/ua/site_search/?search_term=сумка+скидання",
     "price_uah_min": 530,
     "price_uah_max": 680,
     "products_qty": 7,
@@ -162,135 +116,11 @@
     ]
   },
   {
-    "website": "Killa",
-    "price_uah_min": 536,
-    "price_uah_max": 1593,
-    "products_qty": 14,
-    "social_network": "https://www.instagram.com/killa_voentorg",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380967980043",
-    "details": [
-      {
-        "product": "Сумка для скидання магазинів Olive",
-        "price_uah": 536
-      },
-      {
-        "product": "Сумка для скидання магазинів Coyote",
-        "price_uah": 536
-      },
-      {
-        "product": "Сумка для скидання магазинів камуфляжна Multicam",
-        "price_uah": 536
-      },
-      {
-        "product": "Сумка для скидання магазинів камуфляжна Flecktarn",
-        "price_uah": 536
-      },
-      {
-        "product": "Сумка скидання магазинів MFH Dump Pouch Woodland",
-        "price_uah": 557
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite MM14",
-        "price_uah": 1323
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Black",
-        "price_uah": 1323
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Coyote",
-        "price_uah": 1323
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Ranger Green",
-        "price_uah": 1323
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Black",
-        "price_uah": 1345
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Ranger Green",
-        "price_uah": 1345
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Coyote",
-        "price_uah": 1361
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Multicam",
-        "price_uah": 1549
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Multicam",
-        "price_uah": 1593
-      }
-    ]
-  },
-  {
-    "website": "Kamber",
-    "price_uah_min": 586,
-    "price_uah_max": 5358,
-    "products_qty": 5,
-    "social_network": "https://www.instagram.com/kamber_tactical/",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380684262823",
-    "details": [
-      {
-        "product": "Сумка для нош BS",
-        "price_uah": 586
-      },
-      {
-        "product": "Сумка для набоїв KRB",
-        "price_uah": 806
-      },
-      {
-        "product": "Сумка скиду BM-6M",
-        "price_uah": 1139
-      },
-      {
-        "product": "Поясна сумка B2",
-        "price_uah": 2143
-      },
-      {
-        "product": "Сумка медика DBM",
-        "price_uah": 5358
-      }
-    ]
-  },
-  {
-    "website": "Ibis",
-    "price_uah_min": 600,
-    "price_uah_max": 1080,
-    "products_qty": 4,
-    "social_network": "https://www.instagram.com/ibis_shooting/",
-    "tel_vodafone": "",
-    "tel_kyivstar": "",
-    "details": [
-      {
-        "product": "Cумка скидання Combat Suricat. Піксель",
-        "price_uah": 600
-      },
-      {
-        "product": "Cумка скидання Combat Suricat. Мультикам",
-        "price_uah": 750
-      },
-      {
-        "product": "Підсумок Defcon 5 для скидання магазинів. Олива",
-        "price_uah": 903
-      },
-      {
-        "product": "Підсумок Defcon5 для скидання магазинів. Multiland",
-        "price_uah": 1080
-      }
-    ]
-  },
-  {
     "website": "Ukrarmor",
+    "search_query_url": "https://ukrarmor.com.ua/search?search=сумка+скидання",
     "price_uah_min": 600,
-    "price_uah_max": 600,
-    "products_qty": 1,
+    "price_uah_max": 690,
+    "products_qty": 2,
     "social_network": "https://www.instagram.com/ukrarmor/",
     "tel_vodafone": "",
     "tel_kyivstar": "",
@@ -298,67 +128,19 @@
       {
         "product": "Сумка скидання магазинів. Піксель (мм-14)",
         "price_uah": 600
-      }
-    ]
-  },
-  {
-    "website": "Prof1Group",
-    "price_uah_min": 744,
-    "price_uah_max": 840,
-    "products_qty": 2,
-    "social_network": "https://www.instagram.com/prof1group.ua/",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380676595979",
-    "details": [
-      {
-        "product": "Підсумок для скидання магазинів 'BASE' Coyote Brown",
-        "price_uah": 744
       },
       {
-        "product": "Підсумок для скидання магазинів 'BASE' MTP/MCU camo",
-        "price_uah": 840
-      }
-    ]
-  },
-  {
-    "website": "Tur Gear",
-    "price_uah_min": 795,
-    "price_uah_max": 925,
-    "products_qty": 2,
-    "social_network": "https://www.instagram.com/turgear/",
-    "tel_vodafone": "",
-    "tel_kyivstar": "",
-    "details": [
-      {
-        "product": "Сумка скиду койот",
-        "price_uah": 795
-      },
-      {
-        "product": "Сумка скиду",
-        "price_uah": 925
-      }
-    ]
-  },
-  {
-    "website": "AlphaBravo",
-    "price_uah_min": 800,
-    "price_uah_max": 800,
-    "products_qty": 1,
-    "social_network": "",
-    "tel_vodafone": "+380663080308",
-    "tel_kyivstar": "+380973380338",
-    "details": [
-      {
-        "product": "Підсумок для скидання магазинів Velmet Coyot",
-        "price_uah": 800
+        "product": "Сумка для скидання магазинів 2.0. Компактна. Кріпиться на MOLLE. Мультикам",
+        "price_uah": 690
       }
     ]
   },
   {
     "website": "Real Defence",
+    "search_query_url": "https://real-def.com/all-products/?keyword=сумка+скидання",
     "price_uah_min": 825,
     "price_uah_max": 1100,
-    "products_qty": 2,
+    "products_qty": 3,
     "social_network": "https://instagram.com/real.defence/",
     "tel_vodafone": "",
     "tel_kyivstar": "+380673879659",
@@ -370,11 +152,16 @@
       {
         "product": "Сумка скидання порожніх магазинів, MULTICAM USA",
         "price_uah": 1100
+      },
+      {
+        "product": "Сумка скидання порожніх магазинів сітка, MULTICAM USA",
+        "price_uah": 1100
       }
     ]
   },
   {
     "website": "Militarka",
+    "search_query_url": "https://militarka.com.ua/ua/catalogsearch/result/?q=сумка+скидання",
     "price_uah_min": 900,
     "price_uah_max": 1575,
     "products_qty": 15,
@@ -446,6 +233,7 @@
   },
   {
     "website": "Utactic",
+    "search_query_url": "https://utactic.com/module/iqitsearch/searchiqit?s=сумка+скидання",
     "price_uah_min": 900,
     "price_uah_max": 900,
     "products_qty": 1,
@@ -461,6 +249,7 @@
   },
   {
     "website": "UKRTAC",
+    "search_query_url": "https://ukrtac.com/page/?s=сумка+скидання&post_type=product&product_cat=0",
     "price_uah_min": 910,
     "price_uah_max": 1300,
     "products_qty": 5,
@@ -481,17 +270,62 @@
         "price_uah": 1150
       },
       {
-        "product": "Сумка скидання магазинів UKRTAC Койот",
+        "product": "Сумка скидання магазинів UKRTAC Мультикам",
         "price_uah": 1300
       },
       {
-        "product": "Сумка скидання магазинів UKRTAC Мультикам",
+        "product": "Сумка скидання магазинів UKRTAC Койот",
         "price_uah": 1300
       }
     ]
   },
   {
+    "website": "Punisher",
+    "search_query_url": "https://punisher.com.ua/magazin/search/filter/?q=сумка+скидання",
+    "price_uah_min": 1100,
+    "price_uah_max": 1800,
+    "products_qty": 4,
+    "social_network": "https://www.instagram.com/punisher.com.ua/",
+    "tel_vodafone": "+380500587070",
+    "tel_kyivstar": "+380970587000",
+    "details": [
+      {
+        "product": "Сумка Punisher для скидання магазинів",
+        "price_uah": 1100
+      },
+      {
+        "product": "Сумка скидання магазинів M-Tac Lite Elite",
+        "price_uah": 1320
+      },
+      {
+        "product": "Сумка скидання магазинів M-Tac Elite",
+        "price_uah": 1420
+      },
+      {
+        "product": "Сумка скидання магазинів Hoffmann Equipment",
+        "price_uah": 1800
+      }
+    ]
+  },
+  {
+    "website": "Ataka",
+    "search_query_url": "https://attack.kiev.ua/search?search=сумка%20скидання",
+    "price_uah_min": 1140,
+    "price_uah_max": 1140,
+    "products_qty": 1,
+    "social_network": "https://www.facebook.com/ATAKA.kiev.ua/",
+    "tel_vodafone": "+380955587673",
+    "tel_kyivstar": "+380679305772",
+    "details": [
+      {
+        "product": "А.Т.А.К.А. Сумка скидання магазинів МК2 SOF Multicam ",
+        "price_uah": 1140
+      }
+    ]
+  },
+  {
     "website": "Militarist",
+    "search_query_url": "https://militarist.ua/ua/search/?q=сумка+скидання",
     "price_uah_min": 1248,
     "price_uah_max": 1503,
     "products_qty": 9,
