@@ -59,6 +59,7 @@ async def aggregate_data(websites, product_name, include_details=True):
             # Create the website's data dictionary without details if include_details is False
             website_data = {
                 "website": website.name,
+                "search_query_url": website.generate_search_query_url(product_name).replace(" ", website.search_query_separator),
                 "price_uah_min": price_uah_min,
                 "price_uah_max": price_uah_max,
                 "products_qty": products_qty,
@@ -108,18 +109,23 @@ def display_scraped_data(sorted_result):
     """
     # Store total number of matching products on each website
     total_products_qty = sum([website["products_qty"] for website in sorted_result])
-    print("\nProducts found:", total_products_qty)
+    print("\nЗнайдено товарів:", total_products_qty)
     print("")
 
     for website in sorted_result:
-        print(website["website"])
-        print(">", f"К-сть: {website["products_qty"]} шт.")
+        # Online store name
+        print(f"<b>{website['website']}</b>")
+        # Number of found products
+        print("◽", f"К-сть: {website["products_qty"]} шт.")
         
         # Display single price when max and min prices are the same
         if website["price_uah_min"] == website["price_uah_max"]:
-            print(">", f"Ціна: {website["price_uah_min"]:,} грн.")
+            print("◽", f"Ціна: {website["price_uah_min"]:,} грн.")
         else:
-            print(">", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
+            print("◽", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
+        
+        # Products page link
+        print(f"<a href='{website['search_query_url']}'>перейти→</a>")
         
         print("")
 
@@ -132,6 +138,7 @@ websites = [
     WebsiteScraper(
         name="Ataka",
         base_url="https://attack.kiev.ua/search/page-{page}?search={query}",
+        search_query_url="https://attack.kiev.ua/search?search={query}",
         search_query_separator="%20",
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
@@ -146,6 +153,7 @@ websites = [
     WebsiteScraper(
         name="Abrams",
         base_url="https://abrams.com.ua/ua/search/?search={query}&page={page}",
+        search_query_url="https://abrams.com.ua/ua/search/?search={query}",
         search_query_separator="%20",
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
@@ -160,6 +168,7 @@ websites = [
     WebsiteScraper(
         name="Hofner",
         base_url="https://hofner.com.ua/index.php?route=product/search&search={query}&page={page}",
+        search_query_url="https://hofner.com.ua/index.php?route=product/search&search={query}",
         search_query_separator="%20",
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
@@ -174,6 +183,7 @@ websites = [
     WebsiteScraper(
         name="Ibis",
         base_url="https://ibis.net.ua/ua/search/?searchstring={query}&page={page}",
+        search_query_url="https://ibis.net.ua/ua/search/?searchstring={query}",
         search_query_separator="+",
         product_container_class="product_brief_table",
         extract_info_functions=lambda container: {
@@ -188,6 +198,7 @@ websites = [
     WebsiteScraper(
         name="Kamber",
         base_url="https://kamber.com.ua/katalog/search/filter/page={page}/?q={query}",
+        search_query_url="https://kamber.com.ua/katalog/search/filter/?q={query}",
         search_query_separator="+",
         product_container_class="catalog-grid__item",
         extract_info_functions=lambda container: {
@@ -199,23 +210,25 @@ websites = [
         tel_vodafone="",
         tel_kyivstar="+380684262823"
         ),
-    WebsiteScraper(
-        name="Killa",
-        base_url="https://killa.com.ua/uk/index.php?route=product/isearch&search={query}&page={page}",
-        search_query_separator="%20",
-        product_container_class="product-layout",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="product-thumb").find("h4").find("a").text.strip(),
-            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip()).group(0).replace(' ',''),
-            'stock_status': "немає в наявності" not in container.find(class_="caption").find(class_="status").text.lower()
-            },
-        social_network="https://www.instagram.com/killa_voentorg",
-        tel_vodafone="",
-        tel_kyivstar="+380967980043"
-        ),
+    # WebsiteScraper(
+    #     name="Killa",
+    #     base_url="https://killa.com.ua/uk/index.php?route=product/isearch&search={query}&page={page}",
+    #     search_query_url="https://killa.com.ua/uk/index.php?route=product/isearch&search={query}",
+    #     search_query_separator="%20",
+    #     product_container_class="product-layout",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="product-thumb").find("h4").find("a").text.strip(),
+    #         'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip()).group(0).replace(' ',''),
+    #         'stock_status': "немає в наявності" not in container.find(class_="caption").find(class_="status").text.lower()
+    #         },
+    #     social_network="https://www.instagram.com/killa_voentorg",
+    #     tel_vodafone="",
+    #     tel_kyivstar="+380967980043"
+    #     ),
     WebsiteScraper(
         name="Maroder",
         base_url="https://maroder.com.ua/uk/page/{page}/?post_type=product&s={query}",
+        search_query_url="https://maroder.com.ua/uk/?post_type=product&s={query}",
         search_query_separator="+",
         product_container_class="product-item",
         extract_info_functions=lambda container: {
@@ -230,6 +243,7 @@ websites = [
     WebsiteScraper(
         name="Militarist",
         base_url="https://militarist.ua/ua/search/?q={query}&s=&PAGEN_2={page}",
+        search_query_url="https://militarist.ua/ua/search/?q={query}",
         search_query_separator="+",
         product_container_class="card_product",
         extract_info_functions=lambda container: {
@@ -244,6 +258,7 @@ websites = [
     WebsiteScraper(
         name="Militarka",
         base_url="https://militarka.com.ua/ua/catalogsearch/result/?q={query}&p={page}",
+        search_query_url="https://militarka.com.ua/ua/catalogsearch/result/?q={query}",
         search_query_separator="+",
         product_container_class="product-item-info",
         extract_info_functions=lambda container: {
@@ -258,6 +273,7 @@ websites = [
     WebsiteScraper(
         name="Molli",
         base_url="https://molliua.com/katalog/search/filter/page={page}/?q={query}",
+        search_query_url="https://molliua.com/katalog/search/filter/?q={query}",
         search_query_separator="+",
         product_container_class="catalog-grid__item",
         extract_info_functions=lambda container: {
@@ -272,6 +288,7 @@ websites = [
     WebsiteScraper(
         name="Prof1Group",
         base_url="https://prof1group.ua/search?text={query}&page={page}",
+        search_query_url="https://prof1group.ua/search?text={query}",
         search_query_separator="+",
         product_container_class="product-card-col",
         extract_info_functions=lambda container: {
@@ -286,6 +303,7 @@ websites = [
     WebsiteScraper(
         name="Punisher",
         base_url="https://punisher.com.ua/magazin/search/filter/page={page}/?q={query}",
+        search_query_url="https://punisher.com.ua/magazin/search/filter/?q={query}",
         search_query_separator="+",
         product_container_class="catalog-grid__item",
         extract_info_functions=lambda container: {
@@ -300,6 +318,7 @@ websites = [
     WebsiteScraper(
         name="Specprom-kr",
         base_url="https://specprom-kr.com.ua/index.php?route=product/search&search={query}&page={page}",
+        search_query_url="https://specprom-kr.com.ua/index.php?route=product/search&search={query}",
         search_query_separator="%20",
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
@@ -314,6 +333,7 @@ websites = [
     WebsiteScraper(
         name="Sts",
         base_url="https://sts-gear.com/ua/site_search/page_{page}?search_term={query}",
+        search_query_url="https://sts-gear.com/ua/site_search/?search_term={query}",
         search_query_separator="+",
         product_container_class="cs-online-edit cs-product-gallery__item js-productad",
         extract_info_functions=lambda container: {
@@ -328,6 +348,7 @@ websites = [
     WebsiteScraper(
         name="Sturm",
         base_url="https://sturm.com.ua/search/?search={query}&page={page}",
+        search_query_url="https://sturm.com.ua/search/?search={query}",
         search_query_separator="%20",
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
@@ -342,6 +363,7 @@ websites = [
     WebsiteScraper(
         name="Stvol",
         base_url="https://stvol.ua/search?page={page}&query={query}",
+        search_query_url="https://stvol.ua/search?query={query}",
         search_query_separator="+",
         product_container_class="product-card product-card--theme-catalog",
         extract_info_functions=lambda container: {
@@ -356,6 +378,7 @@ websites = [
     WebsiteScraper(
         name="Tactical Gear",
         base_url="https://tacticalgear.ua/products?keyword={query}&page={page}",
+        search_query_url="https://tacticalgear.ua/products?keyword={query}",
         search_query_separator="+",
         product_container_class="item product sku b1c-good",
         extract_info_functions=lambda container: {
@@ -370,6 +393,7 @@ websites = [
     WebsiteScraper(
         name="Ukrarmor",
         base_url="https://ukrarmor.com.ua/search?page={page}&search={query}",
+        search_query_url="https://ukrarmor.com.ua/search?search={query}",
         search_query_separator="+",
         product_container_class="product-card product-card--default",
         extract_info_functions=lambda container: {
@@ -384,6 +408,7 @@ websites = [
     WebsiteScraper(
         name="Utactic",
         base_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
+        search_query_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
         search_query_separator="+",
         product_container_class="js-product-miniature-wrapper",
         extract_info_functions=lambda container: {
@@ -398,6 +423,7 @@ websites = [
     WebsiteScraper(
         name="Velmet",
         base_url="https://velmet.ua/index.php?route=product/search&search={query}&page={page}",
+        search_query_url="https://velmet.ua/index.php?route=product/search&search={query}",
         search_query_separator="",
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
@@ -412,6 +438,7 @@ websites = [
     WebsiteScraper(
         name="Global Ballisticks",
         base_url="https://globalballistics.com.ua/ua/all-products/page-{page}?keyword={query}",
+        search_query_url="https://globalballistics.com.ua/ua/all-products?keyword={query}",
         search_query_separator="+",
         product_container_class="product_item",
         extract_info_functions=lambda container: {
@@ -426,6 +453,7 @@ websites = [
     WebsiteScraper(
         name="Grad Gear",
         base_url="https://gradgear.com.ua/katalog/search/filter/page={page}/?q={query}",
+        search_query_url="https://gradgear.com.ua/katalog/search/filter/?q={query}",
         search_query_separator="+",
         product_container_class="catalog-grid__item",
         extract_info_functions=lambda container: {
@@ -440,6 +468,7 @@ websites = [
     WebsiteScraper(
         name="Tactical Systems",
         base_url="https://tactical-systems.com.ua/catalog/search/filter/page={page}/?q={query}",
+        search_query_url="https://tactical-systems.com.ua/catalog/search/filter/?q={query}",
         search_query_separator="+",
         product_container_class="catalog-grid__item",
         extract_info_functions=lambda container: {
@@ -454,6 +483,7 @@ websites = [
     WebsiteScraper(
         name="Tur Gear",
         base_url="https://turgear.com.ua/page/{page}/?post_type=product&s={query}",
+        search_query_url="https://turgear.com.ua/page/?post_type=product&s={query}",
         search_query_separator="%20",
         product_container_class="nm-shop-loop-product-wrap",
         extract_info_functions=lambda container: {
@@ -468,6 +498,7 @@ websites = [
     WebsiteScraper(
         name="UKRTAC",
         base_url="https://ukrtac.com/page/{page}/?s={query}&post_type=product&product_cat=0",
+        search_query_url="https://ukrtac.com/page/?s={query}&post_type=product&product_cat=0",
         search_query_separator="+",
         product_container_class="product-grid-item",
         extract_info_functions=lambda container: {
@@ -482,6 +513,7 @@ websites = [
     WebsiteScraper(
         name="Real Defence",
         base_url="https://real-def.com/all-products/page-{page}?keyword={query}",
+        search_query_url="https://real-def.com/all-products/?keyword={query}",
         search_query_separator="+",
         product_container_class="product_item",
         extract_info_functions=lambda container: {
@@ -496,6 +528,7 @@ websites = [
     WebsiteScraper(
         name="AlphaBravo",
         base_url="https://alphabravo.com.ua/all-products/page-{page}?keyword={query}",
+        search_query_url="https://alphabravo.com.ua/all-products/?keyword={query}",
         search_query_separator="+",
         product_container_class="product_item",
         extract_info_functions=lambda container: {
@@ -510,6 +543,7 @@ websites = [
     WebsiteScraper(
         name="Avis Gear",
         base_url="https://avisgear.com/page/{page}/?s={query}&post_type=product",
+        search_query_url="https://avisgear.com/page/?s={query}&post_type=product",
         search_query_separator="+",
         product_container_class="product-grid-item",
         extract_info_functions=lambda container: {
@@ -541,7 +575,10 @@ def main():
     
     # Replace multiple whitespace with a single one
     fmt_product_name = args.name.replace('_',' ').lower()
-        
+    
+    # Start the timer
+    start_time = time.time()
+    
     # Aggregate data asynchronously
     result = asyncio.run(aggregate_data(websites, fmt_product_name, include_details=True))
 
@@ -560,10 +597,8 @@ def main():
         
     # Print elapsed time
     check_time = time.time() - start_time
-    print(f"Ellapsed time: {check_time:.0f} seconds")
+    print("⏱", f"Час пошуку: {check_time:.0f} сек.")
 
 
 if __name__ == "__main__":
-    # Start the timer
-    start_time = time.time()
     main()
