@@ -1,83 +1,97 @@
-import subprocess
+import asyncio
 import re
-
+import os
+from dotenv import load_dotenv
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram import Chat
 
-# Telegram bot token
-TOKEN = "6199764187:AAEtT1Ubg7gGHqhvhWySO0LggoGVktLfPdg"
-BOT_USERNAME = "@find_mil_gear_ua_bot"
+# Load secret .env file
+load_dotenv()
 
-# Commands
+# Telegram bot token
+TOKEN = os.getenv('TOKEN')
+BOT_USERNAME = '@find_mil_gear_ua_bot'
+
+# Define a User class to store user-specific data
+class User:
+    def __init__(self, chat_id):
+        self.chat_id = chat_id
+        self.searching = False
+        self.search_result = ""
+
+# Command to handle the /start command
 async def start(update, context):
     await update.message.reply_text(
         "<b>Надішли назву товару для пошуку</b>\nНаприклад: <i>сумка скидання</i>",
         parse_mode='html'
+    )
+
+# Function to handle the response after searching for a product
+async def handle_response(user, text):
+    if text != '':
+        processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ', '_')
+        print(f"Searching for {processed}")
+
+        # Run the scraper subprocess to get the search result
+        result = await asyncio.create_subprocess_exec(
+            "python", "scraper.py", "-v", "-n", processed,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE
         )
 
-# Responses
-def handle_response(text):
-    
-    if text != '':
-        # Replace multiple consecutive whitespaces with a single one and then apply some other transformations
-        processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ','_')
-        print(f"Searсhing for {processed}")
-        
-        # Store the result
-        result = subprocess.run(
-            ["python", "scraper.py", "-v", "-n", processed],
-            capture_output=True,
-            text=True,
-            encoding="utf-8"
-            )
-        # Return terminal output
-        return result.stdout
-    
-    
+        stdout, stderr = await result.communicate()
+        user.search_result = stdout.decode('utf-8')
+        user.searching = False
+
+# Function to handle incoming messages
 async def handle_message(update, context):
     message_type = update.message.chat.type
     text = update.message.text
+    chat_id = update.message.chat_id
 
-    # Bot within a group will respond only when mentioned, i.e. @find_mil_gear_ua_bot сумка скидання
+    # Retrieve or create a User object for the current chat_id
+    user = context.user_data.get(chat_id)
+    if not user:
+        user = User(chat_id)
+        context.user_data[chat_id] = user
+
+    # Check the message type and respond accordingly
     if message_type in (Chat.GROUP, Chat.SUPERGROUP, Chat.CHANNEL):
         if BOT_USERNAME in text:
             print('\nGroup chat bot use')
             print(f"User ({update.message.chat.id}) in {message_type}")
-            await update.message.reply_text("🚀 Пошук...")
+            await update.message.reply_text("🔥 Пошук...")
             new_text = text.replace(BOT_USERNAME, '').strip()
-            response = handle_response(new_text)
+            user.searching = True
+            await asyncio.gather(handle_response(user, new_text))
         else:
             return
     elif message_type == Chat.PRIVATE:
         print('\nPrivate chat bot use')
         print(f"User ({update.message.chat.id}) in {message_type}")
-        await update.message.reply_text("🚀 Пошук...")
-        # Leave only this and delete the rest of loop to respond to every message
-        # even when not mentioned with @
-        response = handle_response(text)
+        await update.message.reply_text("🔥 Пошук...")
+        user.searching = True
+        await asyncio.gather(handle_response(user, text))
     else:
         print("Unsupported message type:", message_type)
-    
-    await update.message.reply_text(response, disable_web_page_preview=True, parse_mode='html')
-    
-    
+
+    # If the search is completed, send the search result
+    if not user.searching:
+        await update.message.reply_text(user.search_result, disable_web_page_preview=True, parse_mode='html')
+
+# Function to handle errors
 async def error(update, context):
     print(f"Update {update} caused error {context.error}")
 
-
+# Main block to run the bot
 if __name__ == "__main__":
     print('▢ Starting bot...')
     app = Application.builder().token(TOKEN).build()
-    
-    # Commands
+
+    # Add handlers for the /start command, incoming text messages, and errors
     app.add_handler(CommandHandler("start", start))
-    
-    # Messages
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
-    
-    # Errors 
     app.add_error_handler(error)
-    
-    # Check for updates
+
     print('▣ Polling...')
     app.run_polling(poll_interval=3)  # seconds
