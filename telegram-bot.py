@@ -6,7 +6,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
 # Telegram bot token
 TOKEN = "6199764187:AAEtT1Ubg7gGHqhvhWySO0LggoGVktLfPdg"
-BOT_USERNAME = "@search_military_gear_ua_bot"
+BOT_USERNAME = "@find_mil_gear_ua_bot"
 
 # Commands
 async def start(update, context):
@@ -24,8 +24,12 @@ def handle_response(text):
         print(f"Searсhing for {processed}")
         
         # Store the result
-        result = subprocess.run(["python", "main.py", "-v", "-n", processed], capture_output=True, text=True, encoding="utf-8")
-        
+        result = subprocess.run(
+            ["python", "main.py", "-v", "-n", processed],
+            capture_output=True,
+            text=True,
+            encoding="utf-8"
+            )
         # Return terminal output
         return result.stdout
     
@@ -34,18 +38,19 @@ async def handle_message(update, context):
     message_type = update.message.chat.type
     text = update.message.text
     
-    await update.message.reply_text("🚀 Пошук...")
-    
     print(f"User ({update.message.chat.id}) in {message_type}: '{text}'")
 
-    # Bot within a group will response only when mentioned, i.e. @sample_bot Hello
-    if message_type == 'group':
+    # Bot within a group will respond only when mentioned, i.e. @find_mil_gear_ua_bot сумка скидання
+    if message_type == 'group' or 'supergroup':
+        print('In-group usage')
         if BOT_USERNAME in text:
+            await update.message.reply_text("🚀 Пошук...")
             new_text = text.replace(BOT_USERNAME, '').strip()
             response = handle_response(new_text)
         else:
             return
     else:
+        await update.message.reply_text("🚀 Пошук...")
         # Leave only this and delete the rest of loop to respond to every message
         # even when not mentioned with @
         response = handle_response(text)
