@@ -50,7 +50,8 @@ The script produces a JSON list of dictionaries where each dictionary represents
 
 Search term: __"сумка скидання"__ (dump pouch)
 
-<sub>_Note: not all output is visible in the screenshot_</sub>
+<sub>_Note: not all output is visible in the screenshot_</sub><br>
+<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
 ![terminal-output-example](data/mil-products-scraper-cli-example.png)
 
@@ -84,9 +85,13 @@ __🚀 Nearly 6x faster!__
 
 Before:
 
+<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
+
 ![no-async-terminal-output-example](data/time-no-async.png)
 
 After:
+
+<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
 ![async-terminal-output-example](data/time-async.png)
 
@@ -112,7 +117,8 @@ Script logs are now stored in the respective '__script_name.log__' file within '
       
       -v, --verbose         display data after scraping
 
-<sub>_Note: not all output is visible in the screenshot of the CLI use_</sub>
+<sub>_Note: not all output is visible in the screenshot of the CLI use_</sub><br>
+<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
 ![cli-example](data/mil-products-scraper-cli-interface-example.png)
 
