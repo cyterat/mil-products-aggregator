@@ -4,9 +4,9 @@
 [![excel](https://img.shields.io/badge/Excel-online_stores_information-1D6F42)](data/buy-mil-equipment.xlsx)
 [![telegram](https://img.shields.io/badge/Telegram-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
 
-<img src="data/telegram-bot/telegram-bot-qr.jpg" width="205" align="left">
+## 1. Telegram Bot
 
-## Telegram Bot
+<img src="data/telegram-bot/telegram-bot-qr.jpg" width="150" align="left" margin="20px">
 
 [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) can retrieve a sorted list of prices for the in-stock military clothing, gear, etc. from __27__ online stores.
 
@@ -20,17 +20,33 @@ Currently supported:
 [Tur Gear](https://turgear.com.ua/), [UKRTAC](https://ukrtac.com/en/), [Real Defence](https://real-def.com), [AlphaBravo](https://alphabravo.com.ua),
 [Avis Gear](https://avisgear.com)
 
-The telegram bot has been_built on top of a `main.py` script. More information about it below.
+The telegram bot has been_built on top of a `main.py` script. More information about it below
 
-## Script
+<br clear="left">
+
+### 1.1 Ordinary chat example
+
+<sub>_Note: not all output is visible in the screenshots_</sub>
+
+<img src="data/telegram-bot/telegram-bot-showcase.jpg" align="left"><br clear="left">
+
+### 1.2 Group chat
+
+<img src="data/telegram-bot/telegram-bot-group-1.png" align="left"><br clear="left">
+
+❗ _NOTE: IT NEEDS ADMIN RIGHTS TO WORK IN GROUP CHATS_
+
+<img src="data/telegram-bot/telegram-bot-group-2.png" width>
+
+## 2. Script
 
 The `main.py` script can be used separately from the telegram bot. It is a data scraping and aggregation script for military gear from various Ukrainian online stores. Retrieves discount price (if available) and excludes out-of-stock products.
 
 The script produces a JSON list of dictionaries where each dictionary represents a scraped website.
 
-### Output
+### 2.1 Output
 
-#### Terminal output example
+#### 2.1.1 Terminal output example
 
 Search term: __"сумка скидання"__ (dump pouch)
 
@@ -38,7 +54,7 @@ Search term: __"сумка скидання"__ (dump pouch)
 
 ![terminal-output-example](data/mil-products-scraper-cli-example.png)
 
-#### JSON file
+#### 2.1.2 JSON file
 
 Search term: __"сумка скидання"__ (dump pouch)
 
@@ -60,10 +76,9 @@ Example of the format of a single scraped website in `output.json`:
   - __product__: str, __price_uah__: int
   - . . .
 
+## 3. Implemented features
 
-## Implemented features
-
-### ☑ __asynchronous scraping__
+### 3.1 ☑ __asynchronous scraping__
 
 __🚀 Nearly 6x faster!__
 
@@ -77,13 +92,13 @@ After:
 
 ***
 
-### ☑ __logging__
+### 3.2 ☑ __logging__
 
 Script logs are now stored in the respective '__script_name.log__' file within '__logs__' folder
 
 ***
 
-### ☑ __command-line interface__
+### 3.3 ☑ __command-line interface__
 
     usage: main.py [-h] [-n NAME] [-j] [-v]
 
@@ -103,19 +118,11 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 
 ***
 
-### ☑ __telegram bot__
+### 3.4 ☑ __telegram bot__
 
-⚡ The telegram bot has been built on top of a `main.py` script.<br>
-[@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
+⚡ The telegram bot [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) has been built on top of a `main.py` script.
 
-<sub>_Note: not all output is visible in the screenshots_</sub>
-
-<img src="data/telegram-bot/telegram-bot-showcase-1.png" width="306">
-<img src="data/telegram-bot/telegram-bot-showcase-2.png" width="400">
-
-<img src="data/telegram-bot/telegram-bot-showcase-3.png" width="400">
-
-## Future ideas
+## 4. Future ideas
 
 🔥 High priority:
 
