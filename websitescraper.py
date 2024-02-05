@@ -3,7 +3,6 @@ import time
 import random
 import logging
 import os
-from difflib import SequenceMatcher
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
