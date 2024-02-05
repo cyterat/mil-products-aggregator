@@ -86,7 +86,7 @@ async def error(update, context):
 # Main block to run the bot
 if __name__ == "__main__":
     print('▢ Starting bot...')
-    app = Application.builder().token(TOKEN).build()
+    app = Application.builder().token(TOKEN).concurrent_updates(True).build()
 
     # Add handlers for the /start command, incoming text messages, and errors
     app.add_handler(CommandHandler("start", start))
