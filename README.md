@@ -4,9 +4,9 @@
 [![excel](https://img.shields.io/badge/Excel-online_stores_information-1D6F42)](data/buy-mil-equipment.xlsx)
 [![telegram](https://img.shields.io/badge/Telegram-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
 
-<img src="data/telegram-bot/medium-telegram-bot-image.png" width="285" align="left"><img src="data/telegram-bot/telegram-bot-qr.jpg" width="205" align="left">
-
 ## Telegram Bot
+
+<img src="data/telegram-bot/medium-telegram-bot-image.png" width="285"><img src="data/telegram-bot/telegram-bot-qr.jpg" width="205">
 
 [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) can retrieve a sorted list of prices for the in-stock military clothing, gear, etc. from __27__ online stores.
 
