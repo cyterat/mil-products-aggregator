@@ -42,7 +42,7 @@ async def handle_message(update, context):
 
     # Bot within a group will respond only when mentioned, i.e. @find_mil_gear_ua_bot сумка скидання
     if message_type == 'group' or 'supergroup':
-        print('In-group usage')
+        print('In-group bot use')
         if BOT_USERNAME in text:
             await update.message.reply_text("🚀 Пошук...")
             new_text = text.replace(BOT_USERNAME, '').strip()
