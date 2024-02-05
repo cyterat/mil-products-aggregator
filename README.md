@@ -4,7 +4,7 @@
 [![excel](https://img.shields.io/badge/Excel-online_stores_information-1D6F42)](data/buy-mil-equipment.xlsx)
 [![telegram](https://img.shields.io/badge/Telegram-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
 
-<img src="data/telegram-bot/medium-telegram-bot-image.png" width="310" align="left"><img src="data/telegram-bot/telegram-bot-qr.jpg" width="225" align="left">
+<img src="data/telegram-bot/telegram-bot-qr.jpg" width="205" align="left">
 
 ## Telegram Bot
 
