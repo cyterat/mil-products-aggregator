@@ -2,7 +2,7 @@ import subprocess
 import re
 
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
-
+from telegram import Chat
 
 # Telegram bot token
 TOKEN = "6199764187:AAEtT1Ubg7gGHqhvhWySO0LggoGVktLfPdg"
@@ -37,25 +37,26 @@ def handle_response(text):
 async def handle_message(update, context):
     message_type = update.message.chat.type
     text = update.message.text
-    
-    print(f"User ({update.message.chat.id}) in {message_type}: '{text}'")
 
     # Bot within a group will respond only when mentioned, i.e. @find_mil_gear_ua_bot сумка скидання
-    if message_type == 'group' or 'supergroup':
-        print('In-group bot use')
+    if message_type in (Chat.GROUP, Chat.SUPERGROUP, Chat.CHANNEL):
         if BOT_USERNAME in text:
+            print('\nGroup chat bot use')
+            print(f"User ({update.message.chat.id}) in {message_type}")
             await update.message.reply_text("🚀 Пошук...")
             new_text = text.replace(BOT_USERNAME, '').strip()
             response = handle_response(new_text)
         else:
             return
-    else:
+    elif message_type == Chat.PRIVATE:
+        print('\nPrivate chat bot use')
+        print(f"User ({update.message.chat.id}) in {message_type}")
         await update.message.reply_text("🚀 Пошук...")
         # Leave only this and delete the rest of loop to respond to every message
         # even when not mentioned with @
         response = handle_response(text)
-        
-    print('Bot:', response)
+    else:
+        print("Unsupported message type:", message_type)
     
     await update.message.reply_text(response, disable_web_page_preview=True, parse_mode='html')
     
@@ -65,7 +66,7 @@ async def error(update, context):
 
 
 if __name__ == "__main__":
-    print('Starting bot...')
+    print('▢ Starting bot...')
     app = Application.builder().token(TOKEN).build()
     
     # Commands
@@ -78,5 +79,5 @@ if __name__ == "__main__":
     app.add_error_handler(error)
     
     # Check for updates
-    print('Polling...')
+    print('▣ Polling...')
     app.run_polling(poll_interval=3)  # seconds
