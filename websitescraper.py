@@ -3,6 +3,7 @@ import time
 import random
 import logging
 import os
+
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
@@ -260,9 +261,6 @@ class WebsiteScraper:
 
             else:
                 aggregated_products.extend(products_on_page)
-
-            sleep_duration = random.uniform(1, 3)
-            time.sleep(sleep_duration)
 
             page += 1
 
