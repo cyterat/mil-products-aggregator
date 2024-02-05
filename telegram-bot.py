@@ -25,7 +25,7 @@ def handle_response(text):
         
         # Store the result
         result = subprocess.run(
-            ["python", "main.py", "-v", "-n", processed],
+            ["python", "scraper.py", "-v", "-n", processed],
             capture_output=True,
             text=True,
             encoding="utf-8"

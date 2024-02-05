@@ -20,7 +20,7 @@ Currently supported:
 [Tur Gear](https://turgear.com.ua/), [UKRTAC](https://ukrtac.com/en/), [Real Defence](https://real-def.com), [AlphaBravo](https://alphabravo.com.ua),
 [Avis Gear](https://avisgear.com)
 
-The telegram bot has been_built on top of a `main.py` script. More information about it below
+The telegram bot has been_built on top of a `scraper.py` script. More information about it below
 
 <br clear="left">
 
@@ -40,7 +40,7 @@ The telegram bot has been_built on top of a `main.py` script. More information a
 
 ## 2. Script
 
-The `main.py` script can be used separately from the telegram bot. It is a data scraping and aggregation script for military gear from various Ukrainian online stores. Retrieves discount price (if available) and excludes out-of-stock products.
+The `scraper.py` script can be used separately from the telegram bot. It is a data scraping and aggregation script for military gear from various Ukrainian online stores. Retrieves discount price (if available) and excludes out-of-stock products.
 
 The script produces a JSON list of dictionaries where each dictionary represents a scraped website.
 
@@ -100,7 +100,7 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 
 ### 3.3 ☑ __command-line interface__
 
-    usage: main.py [-h] [-n NAME] [-j] [-v]
+    usage: scraper.py [-h] [-n NAME] [-j] [-v]
 
     options:
       -h, --help            show this help message and exit
@@ -120,7 +120,7 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 
 ### 3.4 ☑ __telegram bot__
 
-⚡ The telegram bot [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) has been built on top of a `main.py` script.
+⚡ The telegram bot [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) has been built on top of a `scraper.py` script.
 
 ## 4. Future ideas
 
