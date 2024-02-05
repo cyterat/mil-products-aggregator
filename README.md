@@ -4,12 +4,9 @@
 [![excel](https://img.shields.io/badge/Excel-online_stores_information-1D6F42)](data/buy-mil-equipment.xlsx)
 [![telegram](https://img.shields.io/badge/Telegram-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
 
-## Telegram Bot
+<img src="data/telegram-bot/medium-telegram-bot-image.png" width="310" align="left"><img src="data/telegram-bot/telegram-bot-qr.jpg" width="225" align="left">
 
-<center>
-<img src="data/telegram-bot/medium-telegram-bot-image.png" width="300">
-<img src="data/telegram-bot/telegram-bot-qr.jpg" width="214.25">
-</center>
+## Telegram Bot
 
 [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) can retrieve a sorted list of prices for the in-stock military clothing, gear, etc. from __27__ online stores.
 
@@ -29,11 +26,25 @@ The telegram bot has been_built on top of a `main.py` script. More information a
 
 The `main.py` script can be used separately from the telegram bot. It is a data scraping and aggregation script for military gear from various Ukrainian online stores. Retrieves discount price (if available) and excludes out-of-stock products.
 
+The script produces a JSON list of dictionaries where each dictionary represents a scraped website.
+
 ### Output
 
-#### JSON file format
+#### Terminal output example
 
-_Note: the `main.py` script produces a JSON list of dictionaries where each dictionary represents a scraped website._
+Search term: __"сумка скидання"__ (dump pouch)
+
+<sub>_Note: not all output is visible in the screenshot_</sub>
+
+![terminal-output-example](data/mil-products-scraper-cli-example.png)
+
+#### JSON file
+
+Search term: __"сумка скидання"__ (dump pouch)
+
+<sub>_Note: only end lines are included in the screenshot_</sub>
+
+![json-output-example](data/mil-products-scraper-json-example.png)
 
 Example of the format of a single scraped website in `output.json`:
 
@@ -49,21 +60,6 @@ Example of the format of a single scraped website in `output.json`:
   - __product__: str, __price_uah__: int
   - . . .
 
-#### JSON file example
-
-Search term: __"сумка скидання"__ (dump pouch)
-
-<sub>_Note: only end lines are included in the screenshot_</sub>
-
-![json-output-example](data/mil-products-scraper-json-example.png)
-
-#### Terminal output example
-
-Search term: __"сумка скидання"__ (dump pouch)
-
-<sub>_Note: not all output is visible in the screenshot_</sub>
-
-![terminal-output-example](data/mil-products-scraper-cli-example.png)
 
 ## Implemented features
 
