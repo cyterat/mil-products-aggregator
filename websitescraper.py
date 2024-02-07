@@ -1,7 +1,6 @@
 import requests
 import logging
 import os
-import re
 
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
@@ -10,7 +9,7 @@ from fake_useragent import UserAgent
 log_file_path = os.path.join('logs', 'websitescraper.log')
 
 # Set up logging
-logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
+logging.basicConfig(filename=log_file_path, level=logging.INFO, encoding='utf-8', filemode='w')
 
 class Product:
     def __init__(self, name, price, stock_status):
@@ -127,15 +126,12 @@ class WebsiteScraper:
         Returns:
             bool: True if all words from the query are present in the product name, False otherwise.
         """
-        # Use regular expression to extract words
-        query_words = re.findall(r'\b\w+\b', query.lower())
-        logging.info(f"Match query: {query_words}")
-        
-        product_words = re.findall(r'\b\w+\b', product_name.lower().replace('-', ' '))
-        logging.info(f"Match product name: {product_words}")
+        # Split both strings
+        query = query.lower().split()
+        product_name = product_name.lower().replace('-',' ').split()
 
-        # Check if all query words are present in the product name
-        return all(word in product_words for word in query_words)
+        # Check if all words from the query are present in the product name
+        return all(word in product_name for word in query)
 
     def similarity_check(self, set1, set2):
         """
