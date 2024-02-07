@@ -22,14 +22,14 @@ class User:
 # Command to handle the /start command
 async def start(update, context):
     await update.message.reply_text(
-        "<b>Надішли назву товару для пошуку</b>\nНаприклад: <i>сумка скидання</i>",
+        "<b>Надішли назву товару для пошуку</b>\nНаприклад: <i>мультитул leatherman</i>",
         parse_mode='html'
     )
 
 # Function to handle the response after searching for a product
 async def handle_response(user, text):
-    if text != '':
-        processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ', '_')
+    if (text != '') and (text.isspace()==False) and (len(text)!=1):
+        processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ', '_').replace('-', '_')
         print(f"Searching for {processed}")
 
         # Run the scraper subprocess to get the search result
@@ -60,7 +60,11 @@ async def handle_message(update, context):
         if BOT_USERNAME in text:
             print('\nGroup chat bot use')
             print(f"User ({update.message.chat.id}) in {message_type}")
-            await update.message.reply_text("🔥 Пошук...")
+            
+            await update.message.reply_text(
+                "🐾 <b>Пошук...</b>\n<i>Час очікування: ~1 хв</i>",
+                parse_mode='html'
+                )
             new_text = text.replace(BOT_USERNAME, '').strip()
             user.searching = True
             await asyncio.gather(handle_response(user, new_text))
@@ -69,7 +73,11 @@ async def handle_message(update, context):
     elif message_type == Chat.PRIVATE:
         print('\nPrivate chat bot use')
         print(f"User ({update.message.chat.id}) in {message_type}")
-        await update.message.reply_text("🔥 Пошук...")
+        
+        await update.message.reply_text(
+            "🐾 <b>Пошук...</b>\n<i>Час очікування: ~1 хв</i>",
+            parse_mode='html'
+            )
         user.searching = True
         await asyncio.gather(handle_response(user, text))
     else:
@@ -77,7 +85,11 @@ async def handle_message(update, context):
 
     # If the search is completed, send the search result
     if not user.searching:
-        await update.message.reply_text(user.search_result, disable_web_page_preview=True, parse_mode='html')
+        await update.message.reply_text(
+            user.search_result, 
+            disable_web_page_preview=True, 
+            parse_mode='html'
+            )
 
 # Function to handle errors
 async def error(update, context):
