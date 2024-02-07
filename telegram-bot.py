@@ -4,7 +4,6 @@ import os
 from dotenv import load_dotenv
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram import Chat
-from telegram.error import BadRequest
 
 # Load secret .env file
 load_dotenv()
@@ -20,7 +19,6 @@ class User:
         self.searching = False
         self.search_result = ""
 
-
 # Command to handle the /start command
 async def start(update, context):
     await update.message.reply_text(
@@ -28,11 +26,10 @@ async def start(update, context):
         parse_mode='html'
     )
 
-
 # Function to handle the response after searching for a product
 async def handle_response(user, text):
     if (text != '') and (text.isspace()==False) and (len(text)!=1):
-        processed = '_'.join(text.strip().lower().replace('-', '_').split())
+        processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ', '_').replace('-', '_')
         print(f"Searching for {processed}")
 
         # Run the scraper subprocess to get the search result
@@ -45,7 +42,6 @@ async def handle_response(user, text):
         stdout, stderr = await result.communicate()
         user.search_result = stdout.decode('utf-8')
         user.searching = False
-
 
 # Function to handle incoming messages
 async def handle_message(update, context):
@@ -66,7 +62,7 @@ async def handle_message(update, context):
             print(f"User ({update.message.chat.id}) in {message_type}")
             
             await update.message.reply_text(
-                "🐾 <b>Пошук...</b>\n<i>Час очікування ~1 хв</i>",
+                "🐾 <b>Пошук...</b>\n<i>Час очікування: ~1 хв</i>",
                 parse_mode='html'
                 )
             new_text = text.replace(BOT_USERNAME, '').strip()
@@ -79,7 +75,7 @@ async def handle_message(update, context):
         print(f"User ({update.message.chat.id}) in {message_type}")
         
         await update.message.reply_text(
-            "🐾 <b>Пошук...</b>\n<i>Час очікування ~1 хв</i>",
+            "🐾 <b>Пошук...</b>\n<i>Час очікування: ~1 хв</i>",
             parse_mode='html'
             )
         user.searching = True
@@ -95,15 +91,9 @@ async def handle_message(update, context):
             parse_mode='html'
             )
 
-
 # Function to handle errors
 async def error(update, context):
-    error = context.error
-    if isinstance(error, BadRequest) and error.message == "Forbidden: bot was blocked by the user":
-        print(f"The user {update.effective_chat.id} has blocked the bot")
-    else:
-        print(f"{update} caused error {context.error}")
-        
+    print(f"Update {update} caused error {context.error}")
 
 # Main block to run the bot
 if __name__ == "__main__":
