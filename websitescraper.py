@@ -128,7 +128,7 @@ class WebsiteScraper:
         """
         # Split both strings
         query = query.lower().split()
-        product_name = product_name.lower().split()
+        product_name = product_name.lower().replace('-',' ').split()
 
         # Check if all words from the query are present in the product name
         return all(word in product_name for word in query)
