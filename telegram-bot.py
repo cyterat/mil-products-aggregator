@@ -3,7 +3,7 @@ import re
 import os
 from dotenv import load_dotenv
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
-from telegram import Chat
+from telegram import Chat, BadRequest
 
 # Load secret .env file
 load_dotenv()
@@ -93,7 +93,11 @@ async def handle_message(update, context):
 
 # Function to handle errors
 async def error(update, context):
-    print(f"Update {update} caused error {context.error}")
+    error = context.error
+    if isinstance(error, BadRequest) and error.message == "Forbidden: bot was blocked by the user":
+        print(f"The user {update.effective_chat.id} has blocked the bot")
+    else:
+        print(f"{update} caused error {context.error}")
 
 # Main block to run the bot
 if __name__ == "__main__":
