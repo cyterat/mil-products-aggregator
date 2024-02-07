@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram import Chat
+from telegram.error import BadRequest
 
 # Load secret .env file
 load_dotenv()
@@ -19,12 +20,14 @@ class User:
         self.searching = False
         self.search_result = ""
 
+
 # Command to handle the /start command
 async def start(update, context):
     await update.message.reply_text(
         "<b>Надішли назву товару для пошуку</b>\nНаприклад: <i>мультитул leatherman</i>",
         parse_mode='html'
     )
+
 
 # Function to handle the response after searching for a product
 async def handle_response(user, text):
@@ -42,6 +45,7 @@ async def handle_response(user, text):
         stdout, stderr = await result.communicate()
         user.search_result = stdout.decode('utf-8')
         user.searching = False
+
 
 # Function to handle incoming messages
 async def handle_message(update, context):
@@ -91,9 +95,15 @@ async def handle_message(update, context):
             parse_mode='html'
             )
 
+
 # Function to handle errors
 async def error(update, context):
-    print(f"Update {update} caused error {context.error}")
+    error = context.error
+    if isinstance(error, BadRequest) and error.message == "Forbidden: bot was blocked by the user":
+        print(f"The user {update.effective_chat.id}")
+    else:
+        print(f"{update} caused error {context.error}")
+        
 
 # Main block to run the bot
 if __name__ == "__main__":
