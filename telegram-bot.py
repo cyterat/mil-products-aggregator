@@ -32,7 +32,7 @@ async def start(update, context):
 # Function to handle the response after searching for a product
 async def handle_response(user, text):
     if (text != '') and (text.isspace()==False) and (len(text)!=1):
-        processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ', '_').replace('-', '_')
+        processed = '_'.join(text.strip().lower().replace('-', '_').split())
         print(f"Searching for {processed}")
 
         # Run the scraper subprocess to get the search result
@@ -66,7 +66,7 @@ async def handle_message(update, context):
             print(f"User ({update.message.chat.id}) in {message_type}")
             
             await update.message.reply_text(
-                "🐾 <b>Пошук...</b>\n<i>Час очікування: ~1 хв</i>",
+                "🐾 <b>Пошук...</b>\n<i>Час очікування ~1 хв</i>",
                 parse_mode='html'
                 )
             new_text = text.replace(BOT_USERNAME, '').strip()
@@ -79,7 +79,7 @@ async def handle_message(update, context):
         print(f"User ({update.message.chat.id}) in {message_type}")
         
         await update.message.reply_text(
-            "🐾 <b>Пошук...</b>\n<i>Час очікування: ~1 хв</i>",
+            "🐾 <b>Пошук...</b>\n<i>Час очікування ~1 хв</i>",
             parse_mode='html'
             )
         user.searching = True
@@ -100,7 +100,7 @@ async def handle_message(update, context):
 async def error(update, context):
     error = context.error
     if isinstance(error, BadRequest) and error.message == "Forbidden: bot was blocked by the user":
-        print(f"The user {update.effective_chat.id}")
+        print(f"The user {update.effective_chat.id} has blocked the bot")
     else:
         print(f"{update} caused error {context.error}")
         
