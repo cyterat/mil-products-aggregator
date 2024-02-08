@@ -2,6 +2,7 @@ import requests
 import logging
 import os
 
+import regex
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
@@ -10,6 +11,9 @@ log_file_path = os.path.join('logs', 'websitescraper.log')
 
 # Set up logging
 logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
+
+# Compile the regular expression pattern
+pattern = regex.compile(r'\P{Alnum}+')
 
 class Product:
     def __init__(self, name, price, stock_status):
@@ -128,7 +132,7 @@ class WebsiteScraper:
         """
         # Split both strings
         query = query.lower().split()
-        product_name = product_name.lower().replace('-',' ').split()
+        product_name = pattern.sub(' ', product_name.lower()).strip().split()
 
         # Check if all words from the query are present in the product name
         return all(word in product_name for word in query)
@@ -192,7 +196,8 @@ class WebsiteScraper:
                                 price=product_info['price'],
                                 stock_status=True
                             ))
-
+                    else:
+                        logging.error(f"Either name or price html elements were not specified")
             except AttributeError:
                 pass
 
@@ -202,7 +207,6 @@ class WebsiteScraper:
         if not products:
             logging.info("No products found on this page.")
 
-        logging.info("Finished extraction.")
         return products
 
     def generate_search_query_url(self, query):
