@@ -1,9 +1,13 @@
 import asyncio
 import re
+import string
 import os
+import logging
 from dotenv import load_dotenv
+
+from telegram import Chat
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
-from telegram import Chat, BadRequest
+from telegram.error import BadRequest
 
 # Load secret .env file
 load_dotenv()
@@ -11,6 +15,13 @@ load_dotenv()
 # Telegram bot token
 TOKEN = os.getenv('TOKEN')
 BOT_USERNAME = '@find_mil_gear_ua_bot'
+
+# Create logs path
+log_file_path = os.path.join('logs', 'telegram-bot.log')
+
+# Set up logging
+logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
+
 
 # Define a User class to store user-specific data
 class User:
@@ -32,7 +43,7 @@ async def start(update, context):
 async def handle_response(user, text):
     if (text != '') and (text.isspace()==False) and (len(text)!=1):
         processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ', '_').replace('-', '_')
-        print(f"Searching for {processed}")
+        logging.info(f"Searching for {processed}")
 
         # Run the scraper subprocess to get the search result
         result = await asyncio.create_subprocess_exec(
@@ -61,11 +72,11 @@ async def handle_message(update, context):
     # Check the message type and respond accordingly
     if message_type in (Chat.GROUP, Chat.SUPERGROUP, Chat.CHANNEL):
         if BOT_USERNAME in text:
-            print('\nGroup chat bot use')
-            print(f"User ({update.message.chat.id}) in {message_type}")
+            logging.info('\nGroup chat bot use')
+            logging.info(f"\nUser ({update.message.chat.id}) in {message_type}")
             
             await update.message.reply_text(
-                "🐾 <b>Пошук...</b>\n<i>Час очікування ~1 хв</i>",
+                "🐾 <b>Пошук...</b>\n<i>Процес може тривати ~1 хв</i>",
                 parse_mode='html'
                 )
             new_text = text.replace(BOT_USERNAME, '').strip()
@@ -74,17 +85,17 @@ async def handle_message(update, context):
         else:
             return
     elif message_type == Chat.PRIVATE:
-        print('\nPrivate chat bot use')
-        print(f"User ({update.message.chat.id}) in {message_type}")
+        logging.info('\nPrivate chat bot use')
+        logging.info(f"\nUser ({update.message.chat.id}) in {message_type}")
         
         await update.message.reply_text(
-            "🐾 <b>Пошук...</b>\n<i>Час очікування ~1 хв</i>",
+            "🐾 <b>Пошук...</b>\n<i>Процес може тривати ~1 хв</i>",
             parse_mode='html'
             )
         user.searching = True
         await asyncio.gather(handle_response(user, text))
     else:
-        print("Unsupported message type:", message_type)
+        logging.error("Unsupported message type:", message_type)
 
     # If the search is completed, send the search result
     if not user.searching:
@@ -99,9 +110,9 @@ async def handle_message(update, context):
 async def error(update, context):
     error = context.error
     if isinstance(error, BadRequest) and error.message == "Forbidden: bot was blocked by the user":
-        print(f"The user {update.effective_chat.id} has blocked the bot")
+        logging.warning(f"The user {update.effective_chat.id} has blocked the bot")
     else:
-        print(f"{update} caused error {context.error}")
+        logging.error(f"{update} caused error {context.error}")
 
 
 # Main block to run the bot
