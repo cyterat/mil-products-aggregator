@@ -12,7 +12,7 @@ from web import websites
 log_file_path = os.path.join('logs', 'scraper.log')
 
 # Set up logging
-logging.basicConfig(filename=log_file_path, level=logging.INFO, encoding='utf-8', filemode='w')
+logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
 
 
 async def async_scrape(website, product_name):
