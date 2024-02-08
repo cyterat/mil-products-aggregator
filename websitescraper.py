@@ -10,10 +10,18 @@ from fake_useragent import UserAgent
 log_file_path = os.path.join('logs', 'websitescraper.log')
 
 # Set up logging
-logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
+logging.basicConfig(
+    filename=log_file_path, 
+    level=logging.WARNING, 
+    encoding='utf-8', 
+    filemode='w',
+    format='%(asctime)s\t%(levelname)s\t%(message)s',  # Add timestamps to logs
+    datefmt='%Y-%m-%d %H:%M:%S'  # Specify the format of the timestamps
+    )
 
 # Compile the regular expression pattern
 pattern = regex.compile(r'\P{Alnum}+')
+
 
 class Product:
     def __init__(self, name, price, stock_status):
@@ -57,6 +65,7 @@ class WebsiteScraper:
         self.tel_kyivstar = tel_kyivstar
         self.previous_page_content = set()
 
+
     def build_url(self, page, query):
         """
         Build a complete URL with filled in placeholders.
@@ -69,6 +78,7 @@ class WebsiteScraper:
         - str, the constructed URL
         """
         return self.base_url.format(page=page, query=query)
+
 
     def fetch_data(self, url):
         """
@@ -94,6 +104,7 @@ class WebsiteScraper:
             logging.warning(f"Received an unexpected status code: {response.status_code}")
             return None
 
+
     def parse_html(self, content):
         """
         Parse the HTML content using BeautifulSoup.
@@ -105,6 +116,7 @@ class WebsiteScraper:
         - BeautifulSoup object, the parsed HTML
         """
         return BeautifulSoup(content, "html.parser")
+
 
     def get_page_content(self, soup):
         """
@@ -118,6 +130,7 @@ class WebsiteScraper:
         """
         product_names = [product.text for product in soup.find_all(class_=self.product_container_class)]
         return set(product_names)
+
 
     def match_query(self, query, product_name):
         """
@@ -137,6 +150,7 @@ class WebsiteScraper:
         # Check if all words from the query are present in the product name
         return all(word in product_name for word in query)
 
+
     def similarity_check(self, set1, set2):
         """
         Calculate the Jaccard similarity coefficient between two sets.
@@ -153,6 +167,7 @@ class WebsiteScraper:
         similarity_coefficient = intersection_size / union_size if union_size != 0 else 0
         return similarity_coefficient
 
+
     def detect_duplicate_content(self, current_page_content):
         """
         Compare the content of the current page with the previous page.
@@ -167,13 +182,15 @@ class WebsiteScraper:
         self.previous_page_content = current_page_content
         return similarity >= 0.99  # Adjust the similarity threshold as needed
 
-    def extract_information(self, soup, search_query):
+
+    def extract_information(self, soup, search_query, url):
         """
         Extract product information from the parsed HTML.
 
         Parameters:
         - soup: BeautifulSoup object, the parsed HTML
         - search_query: str, the search query
+        - url: str, the website url used in logger
 
         Returns:
         - list of Product objects, the extracted product information
@@ -202,12 +219,13 @@ class WebsiteScraper:
                 pass
 
             except Exception as e:
-                logging.error(f"Error extracting information: {e}")
+                logging.error(f"Error extracting information: {e}\nURL: {url}")
 
         if not products:
-            logging.info("No products found on this page.")
+            logging.info(f"No products found at {url}")
 
         return products
+
 
     def generate_search_query_url(self, query):
         """
@@ -220,6 +238,7 @@ class WebsiteScraper:
         - str, the generated search query URL
         """
         return self.search_query_url.format(query=query)
+
 
     def scrape(self, product):
         """
@@ -240,20 +259,20 @@ class WebsiteScraper:
             content = self.fetch_data(url)
 
             if not content or content is None:
-                logging.warning(f"No content received from {url}")
+                logging.info(f"No content received from {url}")
                 break
 
             soup = self.parse_html(content)
-            logging.info(f"Scraping data from {url}...")
+            logging.debug(f"Scraping data from {url}...")
 
             current_page_content = self.get_page_content(soup)
 
             if self.detect_duplicate_content(current_page_content):
-                logging.warning("Detected duplicate content. Stopping scraping.")
+                logging.info(f"Detected duplicate content. Stopping scraping {url}")
                 break
 
             try:
-                products_on_page = self.extract_information(soup, product)
+                products_on_page = self.extract_information(soup, product, url)
 
                 if not products_on_page:
                     break
