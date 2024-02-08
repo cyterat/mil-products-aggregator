@@ -20,7 +20,14 @@ BOT_USERNAME = '@find_mil_gear_ua_bot'
 log_file_path = os.path.join('logs', 'telegram-bot.log')
 
 # Set up logging
-logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
+logging.basicConfig(
+    filename=log_file_path, 
+    level=logging.WARNING, 
+    encoding='utf-8', 
+    filemode='w',
+    format='%(asctime)s\t%(levelname)s\t%(message)s',  # Add timestamps to logs
+    datefmt='%Y-%m-%d %H:%M:%S'  # Specify the format of the timestamps
+    )
 
 # Compile the regular expression pattern
 pattern = regex.compile(r'\P{Alnum}+')
@@ -48,7 +55,7 @@ async def start(update, context):
 async def handle_response(user, text):
     if (text != '') and (text.isspace()==False) and (len(text)!=1):
         processed = pattern.sub(' ', text.lower()).strip().translate(table)
-        logging.info(f"Searching for {processed}")
+        logging.debug(f"Searching for {processed}")
 
         # Run the scraper subprocess to get the search result
         result = await asyncio.create_subprocess_exec(
@@ -77,8 +84,8 @@ async def handle_message(update, context):
     # Check the message type and respond accordingly
     if message_type in (Chat.GROUP, Chat.SUPERGROUP, Chat.CHANNEL):
         if BOT_USERNAME in text:
-            logging.info('\nGroup chat bot use')
-            logging.info(f"\nUser ({update.message.chat.id}) in {message_type}")
+            logging.debug('\nGroup chat bot use')
+            logging.debug(f"\nUser ({update.message.chat.id}) in {message_type}")
             
             await update.message.reply_text(
                 "🐾 <b>Пошук...</b>\n<i>Процес може тривати ~1 хв</i>",
@@ -90,8 +97,8 @@ async def handle_message(update, context):
         else:
             return
     elif message_type == Chat.PRIVATE:
-        logging.info('\nPrivate chat bot use')
-        logging.info(f"\nUser ({update.message.chat.id}) in {message_type}")
+        logging.debug('\nPrivate chat bot use')
+        logging.debug(f"\nUser ({update.message.chat.id}) in {message_type}")
         
         await update.message.reply_text(
             "🐾 <b>Пошук...</b>\n<i>Процес може тривати ~1 хв</i>",

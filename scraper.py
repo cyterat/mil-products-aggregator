@@ -5,19 +5,28 @@ import asyncio
 import logging
 import argparse
 
-from web import websites
+from web import websites  # list of WebsiteScraper objects
 
 
 # Create logs path
 log_file_path = os.path.join('logs', 'scraper.log')
 
 # Set up logging
-logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
+logging.basicConfig(
+    filename=log_file_path, 
+    level=logging.WARNING, 
+    encoding='utf-8', 
+    filemode='w',
+    format='%(asctime)s\t%(levelname)s\t%(message)s',  # Add timestamps to logs
+    datefmt='%Y-%m-%d %H:%M:%S'  # Specify the format of the timestamps
+    )
 
 
 async def async_scrape(website, product_name):
-    # print(f"Scraping data from {website.name}...")
+    logging.debug(f"Scraping data from {website.name}...")
+    
     products = await asyncio.to_thread(website.scrape, product_name)
+    
     return website, products
 
 
@@ -126,7 +135,6 @@ def display_scraped_data(sorted_result):
         
         # Products page link
         print(f"<a href='{website['search_query_url']}'>перейти→</a>")
-        
         print("")
 
 
@@ -143,7 +151,7 @@ def main():
         print("Error: Please provide a product name using the --name argument.")
         return
     elif not args.verbose and not args.json:
-        print("Error: Conflicting flags. Script will not produce any output without --quiet or --json.")
+        print("Error: Conflicting flags. Script will not produce any output without --verbose or --json flags.")
         return
     
     # Replace multiple whitespace with a single one
