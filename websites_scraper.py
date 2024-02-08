@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
 # Create logs path
-log_file_path = os.path.join('logs', 'websitescraper.log')
+log_file_path = os.path.join('logs', 'websites_scraper.log')
 
 # Set up logging
 logging.basicConfig(
