@@ -54,15 +54,20 @@ async def aggregate_data(websites, product_name, include_details=True):
         if products:
             # Extract relevant information from products
             try:
-                prices = [int(product.price) for product in products]
+                prices = sorted([int(product.price) for product in products])
+                
+                price_uah_min = prices[0]
+                price_uah_max = prices[-1]
+                
             except ValueError:
-                logging.warning("Conversion of price to integer was unsuccessful. Storing as a string...")
+                logging.error("Conversion of price to integer was unsuccessful. Storing as a string...")
                 prices = [product.price for product in products]
+                logging.error("Got price (-s)", prices[0])
+                
             except Exception as e:
                 logging.error("Unexpected error: ", e)
 
-            price_uah_min = min(prices)
-            price_uah_max = max(prices)
+            
             products_qty = len(products)
 
             # Create the website's data dictionary without details if include_details is False
