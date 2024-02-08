@@ -1,10 +1,10 @@
 import asyncio
-import regex
 import string
 import os
 import logging
 from dotenv import load_dotenv
 
+import regex
 from telegram import Chat
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram.error import BadRequest
@@ -24,7 +24,7 @@ logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf
 
 # Compile the regular expression pattern
 pattern = regex.compile(r'\P{Alnum}+')
-# Create a translation table
+# Create a translation table to replace whitespace (for console command compatability)
 table = str.maketrans(' ', '_', string.ascii_uppercase)
 
 
@@ -122,7 +122,9 @@ async def error(update, context):
 
 # Main block to run the bot
 if __name__ == "__main__":
+    
     print('▢ Starting bot...')
+    # Create the bot
     app = Application.builder().token(TOKEN).concurrent_updates(True).build()
 
     # Add handlers for the /start command, incoming text messages, and errors
@@ -131,4 +133,5 @@ if __name__ == "__main__":
     app.add_error_handler(error)
 
     print('▣ Polling...')
+    # Check for new user messages
     app.run_polling(poll_interval=3)  # seconds
