@@ -1,5 +1,5 @@
 import asyncio
-import re
+import regex
 import string
 import os
 import logging
@@ -22,6 +22,11 @@ log_file_path = os.path.join('logs', 'telegram-bot.log')
 # Set up logging
 logging.basicConfig(filename=log_file_path, level=logging.WARNING, encoding='utf-8', filemode='w')
 
+# Compile the regular expression pattern
+pattern = regex.compile(r'\P{Alnum}+')
+# Create a translation table
+table = str.maketrans(' ', '_', string.ascii_uppercase)
+
 
 # Define a User class to store user-specific data
 class User:
@@ -42,7 +47,7 @@ async def start(update, context):
 # Function to handle the response after searching for a product
 async def handle_response(user, text):
     if (text != '') and (text.isspace()==False) and (len(text)!=1):
-        processed = re.sub(r'\s+', ' ', text).strip().lower().replace(' ', '_').replace('-', '_')
+        processed = pattern.sub(' ', text.lower()).strip().translate(table)
         logging.info(f"Searching for {processed}")
 
         # Run the scraper subprocess to get the search result
