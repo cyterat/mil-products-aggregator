@@ -1,5 +1,5 @@
 import re
-from websitescraper import WebsiteScraper
+from websites_scraper import WebsiteScraper
 
 
 # List of website instances
