@@ -5,7 +5,7 @@ import asyncio
 import logging
 import argparse
 
-from web import websites  # list of WebsiteScraper objects
+from websites_list import websites  # list of WebsiteScraper objects
 
 
 # Create logs path
