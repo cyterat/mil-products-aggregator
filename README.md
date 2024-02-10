@@ -33,7 +33,7 @@ The telegram bot has been_built on top of a `scraper.py` script. More informatio
 
 <img src="data/telegram-bot/telegram-bot-group-1.png" align="left"><br clear="left">
 
-❗ _NOTE: IT NEEDS ADMIN RIGHTS TO WORK IN GROUP CHATS_
+❗ _NOTE: THE BOT NEEDS ADMIN RIGHTS TO WORK IN GROUP CHATS,<br>All other permissions can be disabled as shown below_
 
 <img src="data/telegram-bot/telegram-bot-group-2.png" width>
 
