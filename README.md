@@ -1,8 +1,8 @@
 # 🛒 Military Products Aggregator
 
-[![Python - 3.12.0](https://img.shields.io/badge/Python-3.12.0-f4d159)](https://www.python.org/downloads/release/python-3120/)
-[![excel](https://img.shields.io/badge/Excel-online_stores_information-1D6F42)](data/buy-mil-equipment.xlsx)
-[![telegram](https://img.shields.io/badge/Telegram-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
+[![Python - 3.12.0](https://img.shields.io/badge/Python-3.12.0-FFD43B)](https://www.python.org/downloads/release/python-3120/)
+[![excel](https://img.shields.io/badge/PDF-stores_scraping_information-f40f02)](data/mil-gear-stores-scraping.pdf)
+[![telegram](https://img.shields.io/badge/Telegram_Bot-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
 
 ## 1. Telegram Bot
 
@@ -21,10 +21,9 @@ Currently supported:
 [Avis Gear](https://avisgear.com)
 
 The telegram bot has been_built on top of a `scraper.py` script. More information about it below
-
 <br clear="left">
 
-### 1.1 Ordinary chat example
+### 1.1 Private chat example
 
 <sub>_Note: not all output is visible in the screenshots_</sub>
 
