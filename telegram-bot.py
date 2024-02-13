@@ -120,12 +120,20 @@ async def handle_message(update, context):
 
 # Function to handle errors
 async def error(update, context):
+    # Store error message
     error = context.error
+    
     if isinstance(error, BadRequest) and error.message == "Forbidden: bot was blocked by the user":
         logging.warning(f"The user {update.effective_chat.id} has blocked the bot")
+    elif "Message text is empty" in error.message:
+        logging.info(f"{update} message was empty")
+        await update.message.reply_text(
+            "⚠ <b>Повідомлення повинне містити назву товару для пошуку</b>",
+            parse_mode='html'
+            )
     else:
-        logging.error(f"{update} caused error. {context.error}")
-
+        logging.critical(f"{update} caused an error: {context.error}")
+        
 
 # Main block to run the bot
 if __name__ == "__main__":
