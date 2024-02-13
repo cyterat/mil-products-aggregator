@@ -124,7 +124,7 @@ async def error(update, context):
     if isinstance(error, BadRequest) and error.message == "Forbidden: bot was blocked by the user":
         logging.warning(f"The user {update.effective_chat.id} has blocked the bot")
     else:
-        logging.error(f"{update} caused error {context.error}")
+        logging.error(f"{update} caused error. {context.error}")
 
 
 # Main block to run the bot
