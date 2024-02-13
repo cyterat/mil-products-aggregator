@@ -27,8 +27,8 @@ websites = [
         product_container_class="product-layout",
         extract_info_functions=lambda container: {
             'name': container.find("h4").find("a").text,
-            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip()).group(0).replace(' ',''),
-            'stock_status': "Немає в наявності" not in container.find("div", class_="stock-status").text
+            'price': re.search(r"\b\d*", container.find(class_="price").text.strip()).group(0),
+            'stock_status': any(phrase in container.find(class_="caption").text for phrase in ["Є в наявності", "Закінчується"])
             },
         social_network="https://www.instagram.com/abrams_reserve/",
         tel_vodafone="+380955216148",
@@ -352,13 +352,13 @@ websites = [
     WebsiteScraper(
         name="Tur Gear",
         base_url="https://turgear.com.ua/page/{page}/?post_type=product&s={query}",
-        search_query_url="https://turgear.com.ua/page/?post_type=product&s={query}",
+        search_query_url="https://turgear.com.ua/page/?s={query}&post_type=product",
         search_query_separator="%20",
         product_container_class="nm-shop-loop-product-wrap",
         extract_info_functions=lambda container: {
             'name': container.find(class_="woocommerce-loop-product__title").text.strip(),
             'price': re.search(r"\b\d*", container.find(class_="price").text.strip().split()[-1].replace(" ","")).group(0),
-            'stock_status': container.find(class_="nm-shop-loop-actions") != None
+            'stock_status': "Page not found." not in container.find("h2")
             },
         social_network="https://www.instagram.com/turgear/",
         tel_vodafone="",
