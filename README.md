@@ -11,14 +11,13 @@
 [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) can retrieve a sorted list of prices for the in-stock military clothing, gear, etc. from __27__ online stores.
 
 Currently supported:
-[Ataka](https://attack.kiev.ua), [Abrams](https://abrams.com.ua), [Hofner](https://hofner.com.ua), [Ibis](https://ibis.net.ua),
-[Kamber](https://kamber.com.ua), [Maroder](https://maroder.com.ua), [Militarist](https://militarist.ua),
+[Abrams](https://abrams.com.ua), [AlphaBravo](https://alphabravo.com.ua), [Ataka](https://attack.kiev.ua), [Avis Gear](https://avisgear.com),
+[Balistyka](https://globalballistics.com.ua), [Global Ballisticks](https://globalballistics.com.ua), [Grad Gear](https://gradgear.com.ua),
+[Ibis](https://ibis.net.ua), [Kamber](https://kamber.com.ua), [Killa](https://killa.com.ua), [Militarist](https://militarist.ua),
 [Militarka](https://militarka.com.ua), [Molli](https://molliua.com), [Prof1Group](https://prof1group.ua), [Punisher](https://punisher.com.ua),
-[Specprom-kr](https://specprom-kr.com.ua), [Sts](https://sts-gear.com), [Sturm](https://sturm.com.ua), [Stvol](https://stvol.ua),
-[Tactical Gear](https://tacticalgear.ua), [Ukr Armor](https://ukrarmor.com.ua), [UTactic](https://utactic.com), [Velmet](https://velmet.ua),
-[Global Ballisticks](https://globalballistics.com.ua), [Grad Gear](https://gradgear.com.ua), [Tactical Systems](https://tactical-systems.com.ua),
-[Tur Gear](https://turgear.com.ua/), [UKRTAC](https://ukrtac.com/en/), [Real Defence](https://real-def.com), [AlphaBravo](https://alphabravo.com.ua),
-[Avis Gear](https://avisgear.com)
+[Real Defence](https://real-def.com), [Specprom-kr](https://specprom-kr.com.ua), [Sts](https://sts-gear.com), [Sturm](https://sturm.com.ua),
+[Stvol](https://stvol.ua), [Tactical Gear](https://tacticalgear.ua), [Tactical Systems](https://tactical-systems.com.ua), [Tur Gear](https://turgear.com.ua/),
+[Ukr Armor](https://ukrarmor.com.ua), [UKRTAC](https://ukrtac.com/en/), [UTactic](https://utactic.com), [Velmet](https://velmet.ua),
 
 The telegram bot has been_built on top of a `scraper.py` script. More information about it [here](#2-script)
 <br clear="left">
