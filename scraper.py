@@ -129,6 +129,7 @@ def display_scraped_data(sorted_result):
     for website in sorted_result:
         # Online store name
         print(f"<b>{website['website']}</b>")
+        
         # Number of found products
         print("◽", f"К-сть: {website["products_qty"]} шт.")
         
@@ -153,8 +154,8 @@ def main():
     args = parser.parse_args()
 
     if not args.name:
-        print("Error: Please provide a product name using the --name argument.")
-        return
+        raise ValueError("Please provide a product name using the --name argument.")
+
     elif not args.verbose and not args.json:
         print("Error: Conflicting flags. Script will not produce any output without --verbose or --json flags.")
         return
