@@ -352,13 +352,13 @@ websites = [
     WebsiteScraper(
         name="Tur Gear",
         base_url="https://turgear.com.ua/page/{page}/?post_type=product&s={query}",
-        search_query_url="https://turgear.com.ua/page/?s={query}&post_type=product",
+        search_query_url="https://turgear.com.ua/?s={query}&post_type=product",
         search_query_separator="%20",
         product_container_class="nm-shop-loop-product-wrap",
         extract_info_functions=lambda container: {
             'name': container.find(class_="woocommerce-loop-product__title").text.strip(),
             'price': re.search(r"\b\d*", container.find(class_="price").text.strip().split()[-1].replace(" ","")).group(0),
-            'stock_status': "Page not found." not in container.find("h2")
+            'stock_status': "Товарів, відповідних вашому запиту, не знайдено." not in container.find("h3")
             },
         social_network="https://www.instagram.com/turgear/",
         tel_vodafone="",
