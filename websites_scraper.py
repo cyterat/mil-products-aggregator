@@ -138,7 +138,7 @@ class WebsiteScraper:
 
         Args:
             query (str): The search query to match against.
-            product_name (str): The product name to check for a match.
+            product_name (str): The product name (in online store) to check for a match.
 
         Returns:
             bool: True if all words from the query are present in the product name, False otherwise.
