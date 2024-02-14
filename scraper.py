@@ -13,20 +13,22 @@ log_file_path = os.path.join('logs', 'scraper.log')
 
 # Set up logging
 logging.basicConfig(
-    filename=log_file_path, 
-    level=logging.WARNING, 
-    encoding='utf-8', 
+    filename=log_file_path,
+    level=logging.WARNING,
+    encoding='utf-8',
     filemode='a',
-    format='%(asctime)s\t%(levelname)s\t%(message)s',  # Add timestamps to logs
-    datefmt='%Y-%m-%d %H:%M:%S'  # Specify the format of the timestamps
-    )
+    format='%(asctime)s\t%(levelname)s\t%(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 
 
 async def async_scrape(website, product_name):
+    # Asynchronously scrape data from a website
     logging.debug(f"Scraping data from {website.name}...")
-    
+
+    # Use asyncio.to_thread to run the synchronous scrape method in a separate thread
     products = await asyncio.to_thread(website.scrape, product_name)
-    
+
     return website, products
 
 
@@ -55,19 +57,20 @@ async def aggregate_data(websites, product_name, include_details=True):
             # Extract relevant information from products
             try:
                 prices = sorted([int(product.price) for product in products])
-                
+
                 price_uah_min = prices[0]
                 price_uah_max = prices[-1]
-                
+
             except ValueError:
+                # Log an error if conversion of price to integer was unsuccessful
                 logging.error("Conversion of price to integer was unsuccessful. Storing as a string...")
                 prices = [product.price for product in products]
                 logging.error("Got price (-s)", prices[0])
-                
+
             except Exception as e:
+                # Log unexpected errors
                 logging.error("Unexpected error: ", e)
 
-            
             products_qty = len(products)
 
             # Create the website's data dictionary without details if include_details is False
@@ -90,6 +93,7 @@ async def aggregate_data(websites, product_name, include_details=True):
                 except ValueError:
                     website_data["details"] = [{"product": product.name, "price_uah": product.price} for product in products]
                 except Exception as e:
+                    # Log unexpected errors
                     logging.error("Unexpected error : ", e)
 
             # Append the website's data to the aggregated data list
@@ -105,15 +109,15 @@ def export_to_json(sorted_result):
     Args:
         sorted_result (list): list of dictionaries
     """
-    # Create path
-    output_file_path = os.path.join(os.getcwd(),"data","output.json")
+    # Create path for the output JSON file
+    output_file_path = os.path.join(os.getcwd(), "data", "output.json")
 
     # Write to JSON file
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         json.dump(sorted_result, output_file, indent=2, ensure_ascii=False)
 
     print(f"\nData written to {output_file_path}")
-    
+
 
 def display_scraped_data(sorted_result):
     """This function displays scraped data
@@ -129,16 +133,16 @@ def display_scraped_data(sorted_result):
     for website in sorted_result:
         # Online store name
         print(f"<b>{website['website']}</b>")
-        
+
         # Number of found products
-        print("◽", f"К-сть: {website["products_qty"]} шт.")
-        
+        print("◽", f"К-сть: {website['products_qty']} шт.")
+
         # Display single price when max and min prices are the same
         if website["price_uah_min"] == website["price_uah_max"]:
-            print("◽", f"Ціна: {website["price_uah_min"]:,} грн.")
+            print("◽", f"Ціна: {website['price_uah_min']:,} грн.")
         else:
-            print("◽", f"Ціна: {website["price_uah_min"]:,} -- {website["price_uah_max"]:,} грн.")
-        
+            print("◽", f"Ціна: {website['price_uah_min']:,} -- {website['price_uah_max']:,} грн.")
+
         # Products page link
         print(f"<a href='{website['search_query_url']}'>перейти→</a>")
         print("")
@@ -147,7 +151,7 @@ def display_scraped_data(sorted_result):
 def main():
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description="Scrape websites for product information.")
-    parser.add_argument("-n","--name", type=str, help="Name of the product to scrape. Use underscore instead of space between words: сумка_скидання")
+    parser.add_argument("-n", "--name", type=str, help="Name of the product to scrape. Use underscore instead of space between words: сумка_скидання")
     parser.add_argument("-j", "--json", help="Write output to JSON file in 'data' folder", action="store_true")  # Disabled by default if not passed
     parser.add_argument("-v", "--verbose", help="Display data after scraping", action="store_true")  # Disabled by default if not passed
 
@@ -157,15 +161,16 @@ def main():
         raise ValueError("Please provide a product name using the --name argument.")
 
     elif not args.verbose and not args.json:
+        # Print an error message if conflicting flags are provided
         print("Error: Conflicting flags. Script will not produce any output without --verbose or --json flags.")
         return
-    
+
     # Replace multiple whitespace with a single one
-    fmt_product_name = args.name.replace('_',' ').lower()
-    
+    fmt_product_name = args.name.replace('_', ' ').lower()
+
     # Start the timer
     start_time = time.time()
-    
+
     # Aggregate data asynchronously
     result = asyncio.run(aggregate_data(websites, fmt_product_name, include_details=True))
 
@@ -175,13 +180,15 @@ def main():
     # Sorting the 'details' list within each dictionary based on 'price_uah'
     for entry in sorted_result:
         entry['details'] = sorted(entry['details'], key=lambda x: x['price_uah'], reverse=False)  # Set reverse=True for descending order
-    
+
     if args.json:
+        # Export data to JSON file if the --json flag is provided
         export_to_json(sorted_result)
-     
+
     if args.verbose:
+        # Display scraped data if the --verbose flag is provided
         display_scraped_data(sorted_result)
-        
+
     # Print elapsed time
     check_time = time.time() - start_time
     print("⏱", f"Час пошуку: {check_time:.0f} сек.")

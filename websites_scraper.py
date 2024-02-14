@@ -6,18 +6,19 @@ import regex
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
+
 # Create logs path
 log_file_path = os.path.join('logs', 'websites_scraper.log')
 
 # Set up logging
 logging.basicConfig(
-    filename=log_file_path, 
-    level=logging.WARNING, 
-    encoding='utf-8', 
+    filename=log_file_path,
+    level=logging.WARNING,
+    encoding='utf-8',
     filemode='a',
     format='%(asctime)s\t%(levelname)s\t%(message)s',  # Add timestamps to logs
     datefmt='%Y-%m-%d %H:%M:%S'  # Specify the format of the timestamps
-    )
+)
 
 # Compile the regular expression pattern
 pattern = regex.compile(r'\P{Alnum}+')

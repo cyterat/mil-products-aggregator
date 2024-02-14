@@ -9,6 +9,7 @@ from telegram import Chat
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram.error import BadRequest
 
+
 # Load secret .env file
 load_dotenv()
 
@@ -25,13 +26,13 @@ logging.basicConfig(
     level=logging.WARNING, 
     encoding='utf-8', 
     filemode='a',
-    format='%(asctime)s\t%(levelname)s\t%(message)s',  # Add timestamps to logs
-    datefmt='%Y-%m-%d %H:%M:%S'  # Specify the format of the timestamps
+    format='%(asctime)s\t%(levelname)s\t%(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
     )
 
 # Compile the regular expression pattern
 pattern = regex.compile(r'\P{Alnum}+')
-# Create a translation table to replace whitespace (for console command compatability)
+# Create a translation table to replace whitespace (for console command compatibility)
 table = str.maketrans(' ', '_', string.ascii_uppercase)
 
 
@@ -53,7 +54,7 @@ async def start(update, context):
 
 # Function to handle the response after searching for a product
 async def handle_response(user, text):
-    if (text != '') and (text.isspace()==False) and (len(text)!=1):
+    if (text != '') and (text.isspace() == False) and (len(text) != 1):
         processed = pattern.sub(' ', text.lower()).strip().translate(table)
         logging.debug(f"Searching for {processed}")
 
@@ -133,7 +134,7 @@ async def error(update, context):
             )
     else:
         logging.critical(f"{update} caused an error: {context.error}")
-        
+
 
 # Main block to run the bot
 if __name__ == "__main__":
