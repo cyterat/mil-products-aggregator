@@ -378,5 +378,35 @@ websites = [
         social_network="https://instagram.com/avis_gear/",
         tel_vodafone="",
         tel_kyivstar=""
-        ), 
+        ),
+    WebsiteScraper(
+        name="Balistyka",
+        base_url="https://balistyka.ua/search?search={query}&page={page}",
+        search_query_url="https://balistyka.ua/search?search={query}",
+        search_query_separator=" ",
+        product_container_class="product-layout",
+        extract_info_functions=lambda container: {
+            'name': container.find(class_="product-name").text.strip(),
+            'price': container.find(class_="price")["data-price-no-format"].split(".")[0].strip(),
+            'stock_status': "немає в наявності" not in container.find(class_="stock-status").text
+            },
+        social_network="https://www.instagram.com/balistyka.ua/",
+        tel_vodafone="+380978149897",
+        tel_kyivstar=""
+        ),
+    WebsiteScraper(
+        name="Killa",
+        base_url="https://killa.com.ua/uk/index.php?route=product/isearch&search={query}&page={page}",
+        search_query_url="https://killa.com.ua/uk/index.php?route=product/isearch&search={query}",
+        search_query_separator=" ",
+        product_container_class="product-layout",
+        extract_info_functions=lambda container: {
+            'name': container.find("h4").find("a").text.strip(),
+            'price': re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="price").text.strip()).group(0).replace(" ",""),
+            'stock_status': "немає в наявності" not in container.find(class_="status").text
+            },
+        social_network="https://www.instagram.com/killa_voentorg",
+        tel_vodafone="+380990604126",
+        tel_kyivstar="+380967980043"
+        ),
     ]
