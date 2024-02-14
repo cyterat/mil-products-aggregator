@@ -24,7 +24,7 @@ logging.basicConfig(
     filename=log_file_path, 
     level=logging.WARNING, 
     encoding='utf-8', 
-    filemode='w',
+    filemode='a',
     format='%(asctime)s\t%(levelname)s\t%(message)s',  # Add timestamps to logs
     datefmt='%Y-%m-%d %H:%M:%S'  # Specify the format of the timestamps
     )
