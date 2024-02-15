@@ -1,12 +1,12 @@
 # 🛒 Military Products Aggregator
 
 [![python](https://img.shields.io/badge/Python-3.12.0-FFD43B)](https://www.python.org/downloads/release/python-3120/)
-[![pdf](https://img.shields.io/badge/PDF-stores_scraping_information-f0463c)](data/mil-gear-stores-scraping.pdf)
+[![pdf](https://img.shields.io/badge/PDF-stores_scraping_information-f0463c)](assets/mil-gear-stores-scraping.pdf)
 [![telegram](https://img.shields.io/badge/Telegram_Bot-Find_Military_Gear_UA-229ED9)](https://web.telegram.org/k/#@find_mil_gear_ua_bot)
 
 ## 1. Telegram Bot
 
-<img src="data/telegram-bot/telegram-bot-qr.jpg" width="150" align="left" margin="20px">
+<img src="assets/telegram-bot/telegram-bot-qr.jpg" width="150" align="left" margin="20px">
 
 [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) can retrieve a sorted list of prices for the in-stock military clothing, gear, etc. from __27__ online stores.
 
@@ -26,15 +26,15 @@ The telegram bot has been_built on top of a `scraper.py` script. More informatio
 
 <sub>_Note: not all output is visible in the screenshots_</sub>
 
-<img src="data/telegram-bot/telegram-bot-showcase.jpg" align="left"><br clear="left">
+<img src="assets/telegram-bot/telegram-bot-showcase.jpg" align="left"><br clear="left">
 
 ### 1.2 Group chat
 
-<img src="data/telegram-bot/telegram-bot-group-1.png" align="left"><br clear="left">
+<img src="assets/telegram-bot/telegram-bot-group-1.png" align="left"><br clear="left">
 
 ❗ _NOTE: THE BOT NEEDS ADMIN RIGHTS TO WORK IN GROUP CHATS,<br>All other permissions can be disabled as shown below_
 
-<img src="data/telegram-bot/telegram-bot-group-2.png" width>
+<img src="assets/telegram-bot/telegram-bot-group-2.png" width>
 
 ## 2. Script
 
@@ -51,7 +51,7 @@ Search term: __"сумка скидання"__ (dump pouch)
 <sub>_Note: not all output is visible in the screenshot_</sub><br>
 <sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
-![terminal-output-example](data/mil-products-scraper-cli-example.png)
+![terminal-output-example](assets/mil-products-scraper-cli-example.png)
 
 #### 2.1.2 JSON file
 
@@ -59,7 +59,7 @@ Search term: __"сумка скидання"__ (dump pouch)
 
 <sub>_Note: only end lines are included in the screenshot_</sub>
 
-![json-output-example](data/mil-products-scraper-json-example.png)
+![json-output-example](assets/mil-products-scraper-json-example.png)
 
 Example of the format of a single scraped website in `output.json`:
 
@@ -85,13 +85,13 @@ Before:
 
 <sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
-![no-async-terminal-output-example](data/time-no-async.png)
+![no-async-terminal-output-example](assets/time-no-async.png)
 
 After:
 
 <sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
-![async-terminal-output-example](data/time-async.png)
+![async-terminal-output-example](assets/time-async.png)
 
 ***
 
@@ -118,7 +118,7 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 <sub>_Note: not all output is visible in the screenshot of the CLI use_</sub><br>
 <sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
-![cli-example](data/mil-products-scraper-cli-interface-example.png)
+![cli-example](assets/mil-products-scraper-cli-interface-example.png)
 
 ***
 
