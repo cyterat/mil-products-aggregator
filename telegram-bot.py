@@ -16,7 +16,7 @@ from telegram.error import BadRequest
 load_dotenv()
 
 # Telegram bot token
-TOKEN = os.getenv('TOKEN')
+TOKEN = os.getenv('TELEGRAM_TOKEN')
 BOT_USERNAME = '@find_mil_gear_ua_bot'
 
 # Create logs path
@@ -96,7 +96,7 @@ async def handle_response(user, text):
 
         # Run the scraper subprocess to get the search result
         result = await asyncio.create_subprocess_exec(
-            "python", os.path.join("event_processors","scraper.py"), "-v", "-n", processed,
+            "python", os.path.join("scripts","scraper.py"), "-v", "-n", processed,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
