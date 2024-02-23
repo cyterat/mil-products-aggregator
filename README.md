@@ -143,6 +143,8 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 🌟 Medium priority:
 
 - ~~Create a Telegram Bot~~ ✅
+  - ~~Create a docker image of a bot~~
+  - Use webhooks instead of polling
 
 <br>
 
