@@ -40,54 +40,6 @@
     ]
   },
   {
-    "website": "Militarist",
-    "search_query_url": "https://militarist.ua/ua/search/?q=сумка+скидання",
-    "price_uah_min": 416,
-    "price_uah_max": 1503,
-    "products_qty": 9,
-    "social_network": "http://instagram.com/tm_militarist",
-    "tel_vodafone": "",
-    "tel_kyivstar": "+380678296207",
-    "details": [
-      {
-        "product": "M-Tac сумка скидання магазинів Ultra Lite Elite Black",
-        "price_uah": 416
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Black",
-        "price_uah": 1248
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Ranger Green",
-        "price_uah": 1248
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Coyote",
-        "price_uah": 1248
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite MM14",
-        "price_uah": 1248
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Black",
-        "price_uah": 1269
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Ranger Green",
-        "price_uah": 1269
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Coyote",
-        "price_uah": 1284
-      },
-      {
-        "product": "M-Tac сумка скидання магазинів Elite Multicam",
-        "price_uah": 1503
-      }
-    ]
-  },
-  {
     "website": "Grad Gear",
     "search_query_url": "https://gradgear.com.ua/katalog/search/filter/?q=сумка+скидання",
     "price_uah_min": 420,
@@ -206,7 +158,7 @@
         "price_uah": 1323
       },
       {
-        "product": "M-Tac сумка скидання магазинів Lite Elite Ranger Green",
+        "product": "M-Tac сумка скидання магазинів Lite Elite Coyote",
         "price_uah": 1323
       },
       {
@@ -214,12 +166,12 @@
         "price_uah": 1345
       },
       {
-        "product": "M-Tac сумка скидання магазинів Elite Coyote",
-        "price_uah": 1361
-      },
-      {
         "product": "Сумка скидання магизинів Helikon-Tex Competition Dump Pouch® Shadow Grey",
         "price_uah": 1523
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Multicam",
+        "price_uah": 1549
       },
       {
         "product": "M-Tac сумка скидання магазинів Elite Multicam",
@@ -532,6 +484,54 @@
       {
         "product": "А.Т.А.К.А. Сумка скидання магазинів МК2 SOF Multicam ",
         "price_uah": 1140
+      }
+    ]
+  },
+  {
+    "website": "Militarist",
+    "search_query_url": "https://militarist.ua/ua/search/?q=сумка+скидання",
+    "price_uah_min": 1248,
+    "price_uah_max": 1503,
+    "products_qty": 9,
+    "social_network": "http://instagram.com/tm_militarist",
+    "tel_vodafone": "",
+    "tel_kyivstar": "+380678296207",
+    "details": [
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Black",
+        "price_uah": 1248
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Ranger Green",
+        "price_uah": 1248
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Coyote",
+        "price_uah": 1248
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite MM14",
+        "price_uah": 1248
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Black",
+        "price_uah": 1269
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Ranger Green",
+        "price_uah": 1269
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Coyote",
+        "price_uah": 1284
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Lite Elite Multicam",
+        "price_uah": 1461
+      },
+      {
+        "product": "M-Tac сумка скидання магазинів Elite Multicam",
+        "price_uah": 1503
       }
     ]
   }
