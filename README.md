@@ -24,8 +24,6 @@ The telegram bot has been_built on top of a `scraper.py` script. More informatio
 
 ### 1.1 Private chat example
 
-<sub>_Note: not all output is visible in the screenshots_</sub>
-
 <img src="assets/telegram-bot/telegram-bot-showcase.png" align="left"><br clear="left">
 
 ### 1.2 Group chat
