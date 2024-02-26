@@ -26,7 +26,7 @@ The telegram bot has been_built on top of a `scraper.py` script. More informatio
 
 <sub>_Note: not all output is visible in the screenshots_</sub>
 
-<img src="assets/telegram-bot/telegram-bot-showcase.jpg" align="left"><br clear="left">
+<img src="assets/telegram-bot/telegram-bot-showcase.png" align="left"><br clear="left">
 
 ### 1.2 Group chat
 
@@ -49,9 +49,8 @@ The script produces a JSON list of dictionaries where each dictionary represents
 Search term: __"сумка скидання"__ (dump pouch)
 
 <sub>_Note: not all output is visible in the screenshot_</sub><br>
-<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
 
-![terminal-output-example](assets/mil-products-scraper-cli-example.png)
+![terminal-output-example](assets/mil-products-scraper-cli-interface-example.png)
 
 #### 2.1.2 JSON file
 
@@ -115,16 +114,17 @@ Script logs are now stored in the respective '__script_name.log__' file within '
       
       -v, --verbose         display data after scraping
 
-<sub>_Note: not all output is visible in the screenshot of the CLI use_</sub><br>
-<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
-
-![cli-example](assets/mil-products-scraper-cli-interface-example.png)
-
 ***
 
 ### 3.4 ☑ __telegram bot__
 
 ⚡ The telegram bot [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) has been built on top of a `scraper.py` script.
+
+***
+
+### 3.5 ☑ __containerized telegram bot__
+
+The docker container with the telegram bot ![containerized-bot](assets/telegram-bot/docker-telegram-bot.png)
 
 ## 4. Future ideas
 
@@ -143,7 +143,7 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 🌟 Medium priority:
 
 - ~~Create a Telegram Bot~~ ✅
-  - ~~Create a docker image of a bot~~
+  - ~~Create a docker container with a bot~~
   - Use webhooks instead of polling
 
 <br>
