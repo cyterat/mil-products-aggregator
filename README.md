@@ -6,15 +6,31 @@
 
 ## 1. Script
 
-The `scraper.py` script can be used separately from the telegram bot. It is a data scraping and aggregation script for military gear from various Ukrainian online stores. Retrieves discount price (if available) and excludes out-of-stock products.
+The `scraper.py` is a data scraping and aggregation script which retrieves the discounted (if available) and in-stock military gear from various Ukrainian online stores. It can be used separately from the telegram bot.
 
-The script can also produce a JSON list of dictionaries, if a respective flag is used, where each dictionary represents a scraped website.
+The script can also produce a JSON list of dictionaries, if a respective flag `-j` is used, where each dictionary represents a scraped website.
+
+    usage: scraper.py [-h] [-n NAME] [-j] [-v]
+
+    options:
+      -h, --help            show this help message and exit
+      
+      -n NAME, --name NAME  name of the product to scrape
+                            (use underscore instead of space between words: сумка_скидання)
+      
+      -j, --json            write output to JSON file in 'data' folder
+      
+      -v, --verbose         display data after scraping
 
 ### 1.1 Output
 
 #### 1.1.1 Terminal output example
 
 Search term: __"сумка скидання"__ (dump pouch)
+
+It is mandatory to use `-j`,`-v`, or both at the same time for the `scraper.py` to run.
+
+In the example below, this command `python scraper.py -j -v -n сумка_скидання` is used to search for the dump pouch, save the results into a JSON file, and display these results directly in the terminal window.
 
 <sub>_Note: not all output is visible in the screenshot_</sub><br>
 
@@ -70,17 +86,7 @@ Script logs are now stored in the respective '__script_name.log__' file within '
 
 ### 2.3 ☑ __command-line interface__
 
-    usage: scraper.py [-h] [-n NAME] [-j] [-v]
-
-    options:
-      -h, --help            show this help message and exit
-      
-      -n NAME, --name NAME  name of the product to scrape
-                            (use underscore instead of space between words: сумка_скидання)
-      
-      -j, --json            write output to JSON file in 'data' folder
-      
-      -v, --verbose         display data after scraping
+The `scraper.py`script now has a CLI. More info can be seen [here](#1-script)
 
 ***
 
@@ -98,6 +104,8 @@ The docker container with the telegram bot ![containerized-bot](assets/telegram-
 
 <img src="assets/telegram-bot/telegram-bot-qr.jpg" width="150" align="left" margin="20px">
 
+The telegram bot has been_built on top of a `scraper.py` script. More information about it [here](#1-script)
+
 [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) can retrieve a sorted list of prices for the in-stock military clothing, gear, etc. from __27__ online stores.
 
 Currently supported:
@@ -108,9 +116,9 @@ Currently supported:
 [Real Defence](https://real-def.com), [Specprom-kr](https://specprom-kr.com.ua), [Sts](https://sts-gear.com), [Sturm](https://sturm.com.ua),
 [Stvol](https://stvol.ua), [Tactical Gear](https://tacticalgear.ua), [Tactical Systems](https://tactical-systems.com.ua), [Tur Gear](https://turgear.com.ua/),
 [Ukr Armor](https://ukrarmor.com.ua), [UKRTAC](https://ukrtac.com/en/), [UTactic](https://utactic.com), [Velmet](https://velmet.ua),
-
-The telegram bot has been_built on top of a `scraper.py` script. More information about it [here](#1-script)
 <br clear="left">
+
+ __⛔ The bot is currently implemented using a polling method instead of webhooks. Therefore, given its ineffective resources use, I disabled it until the webhooks are implemented.__
 
 ### 3.1 Private chat example
 
