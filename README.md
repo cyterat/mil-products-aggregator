@@ -56,51 +56,8 @@ Example of the format of a single scraped website in `output.json`:
 - __tel_kyivstar__: str,
 - __details__:
   - __product__: str, __price_uah__: int
-  - . . .
 
-## 2. Implemented features
-
-### 2.1 ☑ __asynchronous scraping__
-
-__🚀 Nearly 6x faster!__
-
-Before:
-
-<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
-
-![no-async-terminal-output-example](assets/time-no-async.png)
-
-After:
-
-<sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
-
-![async-terminal-output-example](assets/time-async.png)
-
-***
-
-### 2.2 ☑ __logging__
-
-Script logs are now stored in the respective '__script_name.log__' file within '__logs__' folder
-
-***
-
-### 2.3 ☑ __command-line interface__
-
-The `scraper.py`script now has a CLI. More info can be seen [here](#1-script)
-
-***
-
-### 2.4 ☑ __telegram bot__
-
-⚡ The telegram bot [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) has been built on top of a `scraper.py` script.
-
-***
-
-### 2.5 ☑ __containerized telegram bot__
-
-The docker container with the telegram bot ![containerized-bot](assets/telegram-bot/docker-telegram-bot.png)
-
-## 3. Telegram Bot - disabled  ⛔
+## 2. Telegram Bot - disabled  ⛔
 
 <img src="assets/telegram-bot/telegram-bot-qr.jpg" width="150" align="left" margin="20px">
 
@@ -120,17 +77,59 @@ Currently supported:
 
  __⛔ The bot is currently implemented using a polling method instead of webhooks. Therefore, given its ineffective resources use, I disabled it until the webhooks are implemented.__
 
-### 3.1 Private chat example
+### 2.1 Private chat example
 
 <img src="assets/telegram-bot/telegram-bot-showcase.png" align="left"><br clear="left">
 
-### 3.2 Group chat
+### 2.2 Group chat
 
 <img src="assets/telegram-bot/telegram-bot-group-1.png" align="left"><br clear="left">
 
 ❗ _NOTE: THE BOT NEEDS ADMIN RIGHTS TO WORK IN GROUP CHATS,<br>All other permissions can be disabled as shown below_
 
 <img src="assets/telegram-bot/telegram-bot-group-2.png" width>
+
+## 3. Implemented features
+
+- ### ☑ __asynchronous scraping__
+
+  __🚀 Nearly 6x faster!__
+
+  Before:
+
+  <sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
+
+  ![no-async-terminal-output-example](assets/time-no-async.png)
+
+  After:
+
+  <sub>_❗ Important: script has been renamed __~~main.py~~ → scraper.py___</sub>
+
+  ![async-terminal-output-example](assets/time-async.png)
+
+***
+
+- ### ☑ __logging__
+
+  Script logs are now stored in the respective '__script_name.log__' file within '__logs__' folder
+
+***
+
+- ### ☑ __command-line interface__
+
+  The `scraper.py`script now has a CLI. More info can be seen [here](#1-script)
+
+***
+
+- ### ☑ __telegram bot__
+
+  ⚡ The telegram bot [@find_mil_gear_ua_bot](https://web.telegram.org/k/#@find_mil_gear_ua_bot) has been built on top of a `scraper.py` script.
+
+***
+
+- ### ☑ __containerized telegram bot__
+
+  The docker container with the telegram bot ![containerized-bot](assets/telegram-bot/docker-telegram-bot.png)
 
 ## 4. Future ideas
 
