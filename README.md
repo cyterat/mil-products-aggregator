@@ -57,7 +57,7 @@ Example of the format of a single scraped website in `output.json`:
 - __details__:
   - __product__: str, __price_uah__: int
 
-## 2. Telegram Bot - disabled  ⛔
+## 2. Telegram Bot
 
 <img src="assets/telegram-bot/telegram-bot-qr.jpg" width="150" align="left" margin="20px">
 
@@ -74,8 +74,6 @@ Currently supported:
 [Stvol](https://stvol.ua), [Tactical Gear](https://tacticalgear.ua), [Tactical Systems](https://tactical-systems.com.ua), [Tur Gear](https://turgear.com.ua/),
 [Ukr Armor](https://ukrarmor.com.ua), [UKRTAC](https://ukrtac.com/en/), [UTactic](https://utactic.com), [Velmet](https://velmet.ua),
 <br clear="left">
-
- __⛔ The bot is currently implemented using a polling method instead of webhooks. Therefore, given its ineffective resources use, I disabled it until the webhooks are implemented.__
 
 ### 2.1 Private chat example
 
