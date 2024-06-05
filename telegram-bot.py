@@ -10,6 +10,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram.error import BadRequest
 
 from lib import generate_formatted_output
+from lib import generate_bot_usage_data
 
 
 # Load secret .env file
@@ -19,6 +20,13 @@ load_dotenv()
 TOKEN = os.getenv('TELEGRAM_TOKEN')
 BOT_USERNAME = '@find_mil_gear_ua_bot'
 
+
+# Ensure the data directory exists
+if not os.path.exists('data'):
+    os.makedirs('data')
+    
+# Define bot usage data path
+usage_data_dir = os.path.join('data','data.csv')
 
 # Ensure the logs directory exists
 if not os.path.exists('logs'):
@@ -36,7 +44,7 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-# Compile the regular expression pattern
+# Compile the regular expression pattern to process input product name
 pattern = regex.compile(r'\P{Alnum}+')
 
 
@@ -85,6 +93,9 @@ async def handle_message(update, context):
     message_type = update.message.chat.type
     text = update.message.text
     chat_id = update.message.chat_id
+    
+    # Generate bot usage data for general analysis purposes
+    generate_bot_usage_data(usage_data_dir, chat_id)
 
     user = context.user_data.get(chat_id)
     if not user:
