@@ -16,7 +16,7 @@ RUN chown -R cyterat:cyterat /app
 USER cyterat
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt && rm -rf /root/.cache
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Run your script when the container launches
 CMD ["python", "telegram-bot.py"]
