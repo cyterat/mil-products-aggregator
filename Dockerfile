@@ -6,6 +6,9 @@ RUN useradd -m cyterat
 # Set the working directory in the container to /app
 WORKDIR /app
 
+# Set environment variable placeholder (replaced in azure)
+ENV TOKEN=xxx
+
 # Copy the current directory contents into the container at /app
 COPY . /app
 
