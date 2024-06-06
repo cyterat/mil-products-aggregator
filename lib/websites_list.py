@@ -3,6 +3,7 @@ from lib.websites_scraper import WebsiteScraper
 
 
 # List of website instances
+# Commented out online stores are currently not supported due to some issues related to cloud hosting usage
 websites = [
     WebsiteScraper(
         name="Ataka",
@@ -34,21 +35,21 @@ websites = [
         tel_vodafone="+380955216148",
         tel_kyivstar="+380688736587"
         ),
-    WebsiteScraper(
-        name="Ibis",
-        base_url="https://ibis.net.ua/ua/search/?searchstring={query}&page={page}",
-        search_query_url="https://ibis.net.ua/ua/search/?searchstring={query}",
-        search_query_separator="+",
-        product_container_class="product_brief_table",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="pb_product_name").text.strip(),
-            'price': re.search(r"\b\d*", container.find(class_=["pb_price", "pb_price_witholdprice"]).text.strip()).group(0),
-            'stock_status': not container.find(class_="red")
-            },
-        social_network="https://www.instagram.com/ibis_shooting/",
-        tel_vodafone="",
-        tel_kyivstar=""
-        ),
+    # WebsiteScraper(
+    #     name="Ibis",
+    #     base_url="https://ibis.net.ua/ua/search/?searchstring={query}&page={page}",
+    #     search_query_url="https://ibis.net.ua/ua/search/?searchstring={query}",
+    #     search_query_separator="+",
+    #     product_container_class="product_brief_table",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="pb_product_name").text.strip(),
+    #         'price': re.search(r"\b\d*", container.find(class_=["pb_price", "pb_price_witholdprice"]).text.strip()).group(0),
+    #         'stock_status': not container.find(class_="red")
+    #         },
+    #     social_network="https://www.instagram.com/ibis_shooting/",
+    #     tel_vodafone="",
+    #     tel_kyivstar=""
+    #     ),
     WebsiteScraper(
         name="Kamber",
         base_url="https://kamber.com.ua/katalog/search/filter/page={page}/?q={query}",
@@ -79,21 +80,21 @@ websites = [
         tel_vodafone="",
         tel_kyivstar="+380678296207"
         ),
-    WebsiteScraper(
-        name="Militarka",
-        base_url="https://militarka.com.ua/ua/catalogsearch/result/?q={query}&p={page}",
-        search_query_url="https://militarka.com.ua/ua/catalogsearch/result/?q={query}",
-        search_query_separator="+",
-        product_container_class="product-item-info",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="product-item-name").text.strip(),
-            'price': re.search(r"\b\d*", container.find(class_="price").text.strip()).group(0),
-            'stock_status': not container.find(class_="stock unavailable")
-            },
-        social_network="https://www.instagram.com/militarka_ua/",
-        tel_vodafone="+380666163133",
-        tel_kyivstar="+380673011848"
-        ),
+    # WebsiteScraper(
+    #     name="Militarka",
+    #     base_url="https://militarka.com.ua/ua/catalogsearch/result/?q={query}&p={page}",
+    #     search_query_url="https://militarka.com.ua/ua/catalogsearch/result/?q={query}",
+    #     search_query_separator="+",
+    #     product_container_class="product-item-info",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="product-item-name").text.strip(),
+    #         'price': re.search(r"\b\d*", container.find(class_="price").text.strip()).group(0),
+    #         'stock_status': not container.find(class_="stock unavailable")
+    #         },
+    #     social_network="https://www.instagram.com/militarka_ua/",
+    #     tel_vodafone="+380666163133",
+    #     tel_kyivstar="+380673011848"
+    #     ),
     WebsiteScraper(
         name="Molli",
         base_url="https://molliua.com/katalog/search/filter/page={page}/?q={query}",
@@ -184,21 +185,21 @@ websites = [
         tel_vodafone="+380667590005",
         tel_kyivstar="+380671723639"
         ), 
-    WebsiteScraper(
-        name="Stvol",
-        base_url="https://stvol.ua/search?page={page}&query={query}",
-        search_query_url="https://stvol.ua/search?query={query}",
-        search_query_separator="+",
-        product_container_class="product-card product-card--theme-catalog",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="product-card__title").text.strip(),
-            'price': container.find(class_="product-card__price product-card__price--current").text.strip().split(".")[0].replace(" ",""),
-            'stock_status': "Товар закінчився" not in container.find(class_="product-card__bottom")
-            },
-        social_network="https://www.instagram.com/stvol_ua/",
-        tel_vodafone="+380504177677",
-        tel_kyivstar=""
-        ), 
+    # WebsiteScraper(
+    #     name="Stvol",
+    #     base_url="https://stvol.ua/search?page={page}&query={query}",
+    #     search_query_url="https://stvol.ua/search?query={query}",
+    #     search_query_separator="+",
+    #     product_container_class="product-card product-card--theme-catalog",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="product-card__title").text.strip(),
+    #         'price': container.find(class_="product-card__price product-card__price--current").text.strip().split(".")[0].replace(" ",""),
+    #         'stock_status': "Товар закінчився" not in container.find(class_="product-card__bottom")
+    #         },
+    #     social_network="https://www.instagram.com/stvol_ua/",
+    #     tel_vodafone="+380504177677",
+    #     tel_kyivstar=""
+    #     ), 
     WebsiteScraper(
         name="Tactical Gear",
         base_url="https://tacticalgear.ua/products?keyword={query}&page={page}",
@@ -229,21 +230,21 @@ websites = [
         tel_vodafone="",
         tel_kyivstar=""
         ), 
-    WebsiteScraper(
-        name="UTactic",
-        base_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
-        search_query_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
-        search_query_separator="+",
-        product_container_class="js-product-miniature-wrapper",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="product-title").text.strip(),
-            'price': "".join(re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="product-price").text.strip()).group(0).split()),
-            'stock_status': container.find(class_="product-price") != None
-            },
-        social_network="https://www.instagram.com/utactic_com/",
-        tel_vodafone="+380991143045",
-        tel_kyivstar="+380688631570"
-        ), 
+    # WebsiteScraper(
+    #     name="UTactic",
+    #     base_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
+    #     search_query_url="https://utactic.com/module/iqitsearch/searchiqit?s={query}",
+    #     search_query_separator="+",
+    #     product_container_class="js-product-miniature-wrapper",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="product-title").text.strip(),
+    #         'price': "".join(re.search(r"\b\d{1,3}(?:\s\d{3})*\b", container.find(class_="product-price").text.strip()).group(0).split()),
+    #         'stock_status': container.find(class_="product-price") != None
+    #         },
+    #     social_network="https://www.instagram.com/utactic_com/",
+    #     tel_vodafone="+380991143045",
+    #     tel_kyivstar="+380688631570"
+    #     ), 
     WebsiteScraper(
         name="Velmet",
         base_url="https://velmet.ua/index.php?route=product/search&search={query}&page={page}",
@@ -334,21 +335,21 @@ websites = [
         tel_vodafone="",
         tel_kyivstar="+380980383800"
         ), 
-    WebsiteScraper(
-        name="Real Defence",
-        base_url="https://real-def.com/all-products/page-{page}?keyword={query}",
-        search_query_url="https://real-def.com/all-products/?keyword={query}",
-        search_query_separator="+",
-        product_container_class="product_item",
-        extract_info_functions=lambda container: {
-            'name': container.find(class_="product_preview__name").text.strip(),
-            'price': container.find(class_="fn_price").text.strip().replace(" ",""),
-            'stock_status': "Придбати" in container.find(class_="product_preview__order").text
-            },
-        social_network="https://instagram.com/real.defence/",
-        tel_vodafone="",
-        tel_kyivstar="+380673879659"
-        ), 
+    # WebsiteScraper(
+    #     name="Real Defence",
+    #     base_url="https://real-def.com/all-products/page-{page}?keyword={query}",
+    #     search_query_url="https://real-def.com/all-products/?keyword={query}",
+    #     search_query_separator="+",
+    #     product_container_class="product_item",
+    #     extract_info_functions=lambda container: {
+    #         'name': container.find(class_="product_preview__name").text.strip(),
+    #         'price': container.find(class_="fn_price").text.strip().replace(" ",""),
+    #         'stock_status': "Придбати" in container.find(class_="product_preview__order").text
+    #         },
+    #     social_network="https://instagram.com/real.defence/",
+    #     tel_vodafone="",
+    #     tel_kyivstar="+380673879659"
+    #     ), 
     WebsiteScraper(
         name="AlphaBravo",
         base_url="https://alphabravo.com.ua/all-products/page-{page}?keyword={query}",
