@@ -17,7 +17,7 @@ from lib import generate_bot_usage_data
 load_dotenv()
 
 # Set telegram bot token and name
-TOKEN = os.getenv('TELEGRAM_TOKEN')
+TOKEN = os.getenv('TOKEN')
 BOT_USERNAME = '@find_mil_gear_ua_bot'
 
 
