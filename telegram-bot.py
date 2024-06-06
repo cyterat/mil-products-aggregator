@@ -44,6 +44,8 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
+logging.debug('Logging is configured correctly.')
+
 # Compile the regular expression pattern to process input product name
 pattern = regex.compile(r'\P{Alnum}+')
 
@@ -167,7 +169,6 @@ async def error(update, context):
                 "⚠ <b>Сталася помилка під час обробки вашого запиту.</b>",
                 parse_mode='html'
             )
-
 
 
 if __name__ == "__main__":

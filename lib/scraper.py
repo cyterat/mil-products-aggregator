@@ -7,17 +7,22 @@ from lib.websites_list import websites   # list of WebsiteScraper objects
 
 
 # Create logs path
-log_file_path = os.path.join('logs', 'generate_result.log')
+log_file_path = os.path.join('logs', 'scraper.log')
 
-# Set up logging
-logging.basicConfig(
-    filename=log_file_path,
-    level=logging.WARNING,
-    encoding='utf-8',
-    filemode='a',
-    format='%(asctime)s\t%(levelname)s\t%(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+# Create a logger for this module
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.WARNING)  # Set the logging level for this module
+
+# Create file handler which logs messages to a file
+file_handler = logging.FileHandler(log_file_path, encoding='utf-8')
+file_handler.setLevel(logging.WARNING)
+
+# Create a formatter and set it for the handler
+formatter = logging.Formatter('%(asctime)s\t%(levelname)s\t%(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+file_handler.setFormatter(formatter)
+
+# Add the handler to the logger
+logger.addHandler(file_handler)
 
 
 async def async_scrape(website, product_name):
