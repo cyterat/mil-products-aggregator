@@ -106,8 +106,11 @@ class WebsiteScraper:
             return response.content
         if response.status_code == 404:
             return None
+        if response.status_code == 403:
+            logging.info(f"{url} >>> Server refuses to authorize the request")
+            return None
         else:
-            logging.warning(f"Received an unexpected status code: {response.status_code}")
+            logging.warning(f"Received an unexpected status code: {response.status_code} while connecting to {url}")
             return None
 
 
